@@ -1,0 +1,114 @@
+[
+  {
+    "id": "dental-implants",
+    "title": "Dental Implants",
+    "icon": "healthicons:dental-hygiene-outline",
+    "shortDesc": "Permanent tooth replacement with titanium implants that look, feel, and function like natural teeth. Restore your smile with lasting confidence.",
+    "category": "implants"
+  },
+  {
+    "id": "orthodontic-braces",
+    "title": "Orthodontic Braces",
+    "icon": "healthicons:teeth-outline",
+    "shortDesc": "Straighten misaligned teeth with modern metal, ceramic, and self-ligating braces customized for every age group.",
+    "category": "dental-services"
+  },
+  {
+    "id": "root-canal",
+    "title": "Root Canal Treatment",
+    "icon": "healthicons:odontology-outline",
+    "shortDesc": "Advanced painless root canal therapy to save infected teeth using rotary endodontics and digital imaging.",
+    "category": "dental-services"
+  },
+  {
+    "id": "crown-bridge",
+    "title": "Crown & Bridge",
+    "icon": "mdi:tooth-outline",
+    "shortDesc": "High-quality porcelain and zirconia crowns & bridges to restore damaged or missing teeth with natural aesthetics.",
+    "category": "dental-services"
+  },
+  {
+    "id": "cosmetic-dentistry",
+    "title": "Cosmetic Dentistry",
+    "icon": "mdi:diamond-stone",
+    "shortDesc": "Transform your smile with veneers, bonding, and contouring techniques designed for aesthetic perfection.",
+    "category": "cosmetic"
+  },
+  {
+    "id": "teeth-whitening",
+    "title": "Teeth Whitening",
+    "icon": "mdi:white-balance-sunny",
+    "shortDesc": "Professional in-office and at-home teeth whitening treatments for a brighter, more radiant smile.",
+    "category": "cosmetic"
+  },
+  {
+    "id": "smile-designing",
+    "title": "Smile Designing",
+    "icon": "mdi:emoticon-happy-outline",
+    "shortDesc": "Complete smile makeovers using digital planning, veneers, and precision cosmetic techniques for a Hollywood smile.",
+    "category": "cosmetic"
+  },
+  {
+    "id": "gum-surgery",
+    "title": "Gum Surgery",
+    "icon": "healthicons:mouth-outline",
+    "shortDesc": "Treat gum disease, receding gums, and gummy smiles with minimally invasive periodontal procedures.",
+    "category": "dental-services"
+  },
+  {
+    "id": "tooth-removal",
+    "title": "Tooth Removal",
+    "icon": "healthicons:odontology",
+    "shortDesc": "Safe and painless tooth extractions including wisdom tooth removal under local or sedation anesthesia.",
+    "category": "dental-services"
+  },
+  {
+    "id": "dental-bleaching",
+    "title": "Dental Bleaching",
+    "icon": "mdi:star-four-points-outline",
+    "shortDesc": "Clinical-grade bleaching solutions that lighten stained and discolored teeth by multiple shades safely.",
+    "category": "cosmetic"
+  },
+  {
+    "id": "zirconia-crowns",
+    "title": "Zirconia Crowns",
+    "icon": "mdi:shield-check-outline",
+    "shortDesc": "Ultra-strong, metal-free zirconia crowns that offer superior strength and a natural, translucent appearance.",
+    "category": "cosmetic"
+  },
+  {
+    "id": "laser-dentistry",
+    "title": "Laser Dentistry",
+    "icon": "mdi:flash-outline",
+    "shortDesc": "Minimally invasive laser treatments for gum reshaping, cavity treatment, and soft tissue procedures with faster healing.",
+    "category": "dental-services"
+  },
+  {
+    "id": "invisalign",
+    "title": "Invisalign & Clear Aligners",
+    "icon": "mdi:blur",
+    "shortDesc": "Virtually invisible clear aligners that straighten teeth discreetly with custom-fit, removable trays.",
+    "category": "cosmetic"
+  },
+  {
+    "id": "pediatric-dentistry",
+    "title": "Pediatric Dentistry",
+    "icon": "mdi:baby-face-outline",
+    "shortDesc": "Gentle and fun dental care for children including fluoride treatments, sealants, and early orthodontic assessments.",
+    "category": "dental-services"
+  },
+  {
+    "id": "full-mouth-rehab",
+    "title": "Full Mouth Rehabilitation",
+    "icon": "healthicons:dental-hygiene",
+    "shortDesc": "Comprehensive reconstruction of the entire mouth using implants, crowns, bridges, and advanced prosthetics.",
+    "category": "implants"
+  },
+  {
+    "id": "infection-control",
+    "title": "Infection Control",
+    "icon": "mdi:shield-virus-outline",
+    "shortDesc": "World-class sterilization and hygiene protocols ensuring a 100% safe and infection-free treatment environment.",
+    "category": "dental-services"
+  }
+]

@@ -1,0 +1,92 @@
+
+https://apps.apple.com/in/app/pulse-digital/id1562328185
+
+
+
+
+Role: You are an elite, award-winning frontend developer specializing in modern, high-performance, and pixel-perfect UI/UX design.
+
+Task: Build a premium frontend website for "Dr. Batra's Dentistree" that strictly mimics the modern, airy, and high-trust design aesthetic of https://www.pediatricdentalclinic.in/, but utilizes the specific color palette and service content provided below.
+
+Color Palette (Strict Adherence):
+
+--primary-blue: #056ba3; (Use for primary headings, trusted UI elements, footer background)
+
+--primary-green: #24b14b; (Use for success states, secondary buttons, highlights)
+
+--primary-gradient: linear-gradient(135deg, #bbd700 0%, #24b14b 100%); (Use for primary CTA buttons, active states, and special accent badges)
+
+--bg-soft: #f4f9fc; (Use for alternating section backgrounds to create depth)
+
+--text-dark: #2d3748;
+
+--text-muted: #718096;
+
+1. Design Aesthetic & Layout Guidelines (Inspired by reference):
+
+Whitespace & Border Radius: Generous padding between sections (min 100px on desktop). Use large border radii (20px to 30px) on images, cards, and container sections for a friendly, modern look.
+
+Shadows: Use extremely soft, diffuse drop shadows on service cards and floating badges (e.g., box-shadow: 0 10px 30px rgba(5, 107, 163, 0.08)).
+
+Floating Elements: The hero section must include floating shapes/stars/plus icons in the background to replicate the modern medical aesthetic of the reference site.
+
+Hero Section Layout: Left side: Bold headline, subtext, and gradient CTA button. Right side: A clean, cut-out style image of a doctor overlapping the background, with floating "trusted" UI badges positioned via absolute CSS.
+
+Info Strip: Immediately below the hero, a full-width blue (#056ba3) strip containing phone, address, and an emergency button.
+
+2. Global CSS & Styling Constraints:
+
+Resets: img { width: 100%; height: auto; display: block; object-fit: cover; } and a { text-decoration: none; color: inherit; transition: all 0.3s ease; }.
+
+Typography: Implement fluid typography using clamp() for all headings (e.g., font-size: clamp(2rem, 5vw, 4rem);) to ensure perfect scaling across devices.
+
+Forms: Apply textarea { resize: none; } and style inputs with soft borders and blue focus rings.
+
+Non-Shrinking Banner: The Hero Swiper must use min-height: calc(100vh - var(--nav-height)) and height: auto. The content within the banner must never shrink below its own height on mobile; it must expand the container vertically to prevent text cut-off.
+
+--nav-height: max(65px, calc(var(--brand-height) + 16px));
+.navbar-brand{
+            height: var(--brand-height);
+            padding: 0;
+        }
+        .navbar-brand img{
+            height: 100%;
+            width: auto;
+        }
+
+3. Strict File Architecture & Tech Stack:
+You must modularize the code exactly as requested, utilizing modern libraries like Swiper (for carousels), Fancybox (for gallery modals), Isotope (for filtering grids), and GSAP + ScrollTrigger (for complex animations).
+
+data/services.json: Create a standalone JSON file containing the old website's services (Dental Implants, Orthodontic Braces, Root Canal, Cosmetic Care, etc.). Include fields for id, title, icon, shortDesc, and category.
+
+js/critical.js: Handle the immediate injection and logic of the Navbar. Build a sticky header with a clean white background. Implement a Bootstrap Offcanvas for mobile navigation with sleek, nested dropdown menus.
+
+js/services.js: Dedicated Data Handler. Write an async function to fetch services.json and dynamically map it into a modern Isotope grid of service cards. Handle all Isotope filtering and layout initialization here.
+
+js/script.js: Global UI & Animations. This file MUST ONLY contain global functionality:
+
+Inject the Footer HTML and script the dynamic current year.
+
+Handle Global WhatsApp configuration and inject floating FAB buttons.
+
+Implement Back-to-Top anchor logic and Custom Cursor tracking.
+
+Preloader dismissal logic.
+
+GSAP & Responsive Logic: Initialize global GSAP animations (slow floating background shapes, card fade-ups, text reveals). Crucially, write a robust debounce function attached to window.resize. Inside this debounce, recalculate styling and use ScrollTrigger.refresh(). Ensure text-splitting animations (like .word-wrap) properly reset on resize so the layout does not break when moving from desktop to mobile.
+
+4. Messaging & Form Logic
+WhatsApp Integration: Create a form with Bootstrap validation (needs-validation).
+
+Dynamic Messaging: Write a JavaScript handler that captures form inputs and opens a WhatsApp API link (https://api.whatsapp.com/send?phone=...) with a formatted, pre-filled message.
+
+
+5. Specific Section Requirements:
+
+Services Grid: Clean white cards, a top-aligned icon (use Iconify), title, brief text, and a "Know More ➔" link that turns gradient on hover.
+
+Central Diagram: Recreate the "Diagnosis of Dental Diseases" section with a central tooth graphic and radiating CSS lines pointing to text blocks.
+
+Footer: A robust, dark blue (#056ba3) footer containing Google Maps integration, contact info, quick links, and a bottom copyright bar.
+
+Deliver the complete code block by block (index.html, style.css, services.json, critical.js, services.js, script.js), ensuring no corners are cut and the design feels incredibly premium, fully responsive, and animated smoothly.

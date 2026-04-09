@@ -1,0 +1,410 @@
+/* ========================================================
+   SCRIPT.JS - Global UI, Footer, FABs, GSAP & Animations
+   Dr. Batra's Dentistree
+   ======================================================== */
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* ── Global Config ── */
+  const CONFIG = {
+    whatsappNumber: "919879625787",
+    whatsappMessage: "Hi Dr. Batra's Dentistree! I'd like to book an appointment.\n\nPlease share available slots.\n\nThank you!",
+    clinicName: "Dr. Batra's Dentistree",
+    animationDuration: 800,
+  };
+  window.CLINIC_CONFIG = CONFIG;
+
+  /* ══════════════════════════════════════════════
+     1. FOOTER INJECTION
+     ══════════════════════════════════════════════ */
+  const footerEl = document.getElementById("footer");
+  if (footerEl) {
+    footerEl.classList.add("clinic-footer", "spacer-y");
+    footerEl.innerHTML = `
+      <div class="container">
+        <div class="row gy-5 mb-5">
+          <!-- Col 1: About & Social -->
+          <div class="col-lg-3 col-md-6">
+            <img src="https://placehold.co/200x50/056ba3/ffffff?text=Dr.+Batra's&font=montserrat" alt="${CONFIG.clinicName}" class="footer-logo">
+            <p class="footer-desc">
+              Your smile is in expert hands. We provide world-class dental care using cutting-edge technology and a patient-first approach. Every treatment is designed for lasting results.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+              <a href="#" aria-label="Instagram"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+              <a href="#" aria-label="YouTube"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+              <a href="#" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Infection Control</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Our Services -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Services</h5>
+            <ul class="footer-links">
+              <li><a href="#">Dental Implants</a></li>
+              <li><a href="#">Orthodontic Braces</a></li>
+              <li><a href="#">Root Canal</a></li>
+              <li><a href="#">Cosmetic Dentistry</a></li>
+              <li><a href="#">Teeth Whitening</a></li>
+              <li><a href="#">Invisalign</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Map -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-heading">Contact Us</h5>
+            <div class="footer-contact-item">
+              <iconify-icon icon="ph:map-pin-bold"></iconify-icon>
+              <div>
+                <strong style="color:#fff;font-size:0.82rem;">Vadodara Clinic</strong><br>
+                101-102, Shivalik Square, Opp. Reliance Fresh,
+                Near Nilamber Circle, Vasna Bhayli Rd, Vadodara
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="ph:phone-bold"></iconify-icon>
+              <div>
+                <a href="tel:+919879625787" style="color:rgba(255,255,255,0.85);">(+91) 9879625787</a><br>
+                <a href="tel:+919825007975" style="color:rgba(255,255,255,0.85);">(+91) 9825007975</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <iconify-icon icon="ph:clock-bold"></iconify-icon>
+              <div>Mon – Sat: 10:00 AM – 7:30 PM<br>Sunday: By Appointment</div>
+            </div>
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5!2d73.15!3d22.30!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzAwLjAiTiA3M8KwMDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Dr. Batra's Dentistree Location">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="row mb-3">
+          <div class="col-12">
+            <p style="font-size:0.72rem;color:rgba(255,255,255,0.4);line-height:1.6;">
+              <strong>DISCLAIMER:</strong> ${CONFIG.clinicName} ensures content accuracy. Information provided is for educational purposes only and cannot substitute professional dental consultation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <p>© <span id="year"></span> ${CONFIG.clinicName}. All Rights Reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    `;
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  }
+
+  /* ══════════════════════════════════════════════
+     2. FLOATING FAB BUTTONS (WhatsApp + Back-to-Top)
+     ══════════════════════════════════════════════ */
+  const fabContainer = document.createElement("div");
+  fabContainer.className = "fab-container";
+  fabContainer.innerHTML = `
+    <button class="fab-btn fab-scroll-top" id="scrollTopBtn" aria-label="Back to top">
+      <iconify-icon icon="ph:caret-up-bold"></iconify-icon>
+    </button>
+    <a class="fab-btn fab-whatsapp" href="https://api.whatsapp.com/send?phone=${CONFIG.whatsappNumber}&text=${encodeURIComponent(CONFIG.whatsappMessage)}"
+       target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <span class="fab-pulse"></span>
+      <iconify-icon icon="mdi:whatsapp"></iconify-icon>
+    </a>
+  `;
+  document.body.appendChild(fabContainer);
+
+  // Back-to-top visibility
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+      scrollTopBtn.classList.add("visible");
+    } else {
+      scrollTopBtn.classList.remove("visible");
+    }
+  }, { passive: true });
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ══════════════════════════════════════════════
+     3. CUSTOM CURSOR
+     ══════════════════════════════════════════════ */
+  const cursor = document.querySelector(".custom-cursor");
+  if (cursor && window.matchMedia("(pointer: fine)").matches) {
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX - 10 + "px";
+      cursor.style.top = e.clientY - 10 + "px";
+      cursor.classList.add("active");
+    });
+
+    // Hover effect on interactive elements
+    const hoverTargets = "a, button, .service-card, .filter-btn, .fab-btn, input, textarea, .nav-link";
+    document.querySelectorAll(hoverTargets).forEach((el) => {
+      el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
+      el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+    });
+
+    // Re-bind for dynamically loaded elements
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll(hoverTargets).forEach((el) => {
+        if (!el.dataset.cursorBound) {
+          el.dataset.cursorBound = "true";
+          el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
+          el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+        }
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+  /* ══════════════════════════════════════════════
+     4. PRELOADER DISMISSAL
+     ══════════════════════════════════════════════ */
+  function dismissPreloader() {
+    const preloader = document.getElementById("preloader");
+    if (!preloader) return;
+    preloader.style.transition = "opacity 0.5s ease";
+    preloader.style.opacity = "0";
+    setTimeout(() => {
+      preloader.style.display = "none";
+      document.body.classList.remove("loading");
+    }, 500);
+  }
+
+  /* ══════════════════════════════════════════════
+     5. WHATSAPP FORM HANDLER
+     ══════════════════════════════════════════════ */
+  const whatsappForm = document.getElementById("whatsappForm");
+  if (whatsappForm) {
+    whatsappForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!whatsappForm.checkValidity()) {
+        whatsappForm.classList.add("was-validated");
+        return;
+      }
+
+      const name = whatsappForm.querySelector('[name="name"]')?.value || "";
+      const phone = whatsappForm.querySelector('[name="phone"]')?.value || "";
+      const service = whatsappForm.querySelector('[name="service"]')?.value || "General Consultation";
+      const message = whatsappForm.querySelector('[name="message"]')?.value || "";
+
+      const formattedMsg = encodeURIComponent(
+        `🦷 *New Appointment Request*\n\n` +
+        `*Name:* ${name}\n` +
+        `*Phone:* ${phone}\n` +
+        `*Service:* ${service}\n` +
+        `*Message:* ${message}\n\n` +
+        `_Sent from ${CONFIG.clinicName} Website_`
+      );
+
+      window.open(
+        `https://api.whatsapp.com/send?phone=${CONFIG.whatsappNumber}&text=${formattedMsg}`,
+        "_blank"
+      );
+
+      // Reset form
+      whatsappForm.reset();
+      whatsappForm.classList.remove("was-validated");
+    });
+  }
+
+  // Create Global AppUtils Namespace
+  window.AppUtils = window.AppUtils || {};
+
+  /* ══════════════════════════════════════════════
+     6. GENERIC GSAP ANIMATIONS
+     ══════════════════════════════════════════════ */
+  window.AppUtils.initGenericGSAP = function () {
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+
+    /* ── Text Reveal (word-by-word) ── */
+    document.querySelectorAll(".gsap-text-reveal").forEach((text) => {
+      if (text.dataset.initialized) return;
+      text.dataset.initialized = "true";
+      const words = text.textContent.trim().split(/\s+/);
+      text.innerHTML = "";
+      words.forEach((word) => {
+        const wrapper = document.createElement("span");
+        wrapper.className = "word-wrap";
+        const inner = document.createElement("span");
+        inner.className = "word";
+        inner.style.display = "inline-block";
+        inner.style.transform = "translateY(110%)";
+        inner.innerHTML = word + "&nbsp;";
+        wrapper.appendChild(inner);
+        text.appendChild(wrapper);
+      });
+
+      gsap.to(text.querySelectorAll(".word"), {
+        scrollTrigger: { trigger: text, start: "top 90%", once: true },
+        y: "0%",
+        duration: 0.8,
+        stagger: 0.06,
+        ease: "power3.out",
+      });
+    });
+
+    /* ── General Fade Up ── */
+    gsap.utils.toArray(".gsap-fade-up").forEach((el) => {
+      if (el.dataset.initialized) return;
+      el.dataset.initialized = "true";
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: "top 90%", once: true },
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+      });
+    });
+  };
+
+  /* ══════════════════════════════════════════════
+     8. RESIZE DEBOUNCE & RESPONSIVE HANDLER
+     ══════════════════════════════════════════════ */
+  function debounce(fn, delay) {
+    let timer;
+    return function (...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), delay);
+    };
+  }
+
+  const handleResize = debounce(function () {
+    // Reset word-wrap text splits
+    document.querySelectorAll(".gsap-text-reveal").forEach((el) => {
+      const words = el.querySelectorAll(".word");
+      words.forEach((w) => (w.style.transform = "translateY(0%)"));
+    });
+
+    // Refresh ScrollTrigger
+    ScrollTrigger.refresh(true);
+
+    // Re-layout Isotope if available
+    if (window.servicesIso) {
+      window.servicesIso.layout();
+    }
+  }, 300);
+
+  window.addEventListener("resize", handleResize);
+
+  /* ══════════════════════════════════════════════
+     7. REVEAL OBSERVER (Modular Generic Init)
+     ══════════════════════════════════════════════ */
+  window.AppUtils.initRevealObserver = function () {
+    const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+
+          // Handle stat counters if present inside or on the element itself
+          const statCounters = entry.target.querySelectorAll('.stat-number');
+          const countersToRun = statCounters.length > 0 ? Array.from(statCounters) : (entry.target.classList.contains('stat-number') ? [entry.target] : []);
+
+          countersToRun.forEach(statNumber => {
+            if (!statNumber.dataset.counted) {
+              statNumber.dataset.counted = "true";
+              runCounter(statNumber);
+            }
+          });
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, revealOptions);
+
+    function runCounter(el) {
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || "";
+      const duration = 2000;
+      const start = performance.now();
+
+      function update(time) {
+        const progress = Math.min((time - start) / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(easeProgress * target);
+        el.textContent = current.toLocaleString() + suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          el.textContent = target.toLocaleString() + suffix;
+        }
+      }
+      requestAnimationFrame(update);
+    }
+
+    // Mutation observer to catch dynamically added .reveal-item components
+    const DOMObserver = new MutationObserver((mutations) => {
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            if (node.classList.contains('reveal-item')) {
+              revealObserver.observe(node);
+            }
+            node.querySelectorAll('.reveal-item').forEach(child => {
+              revealObserver.observe(child);
+            });
+          }
+        });
+      });
+    });
+    DOMObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Initial observe
+    document.querySelectorAll('.reveal-item').forEach(el => revealObserver.observe(el));
+  };
+
+
+  /* ══════════════════════════════════════════════
+     8. APP INITIALIZATION SEQUENCE
+     ══════════════════════════════════════════════ */
+  // Wait for all resources to settle, then run global setups:
+  setTimeout(() => {
+    dismissPreloader();
+    
+    // Globally invoke generic animation tracking
+    if (window.AppUtils) {
+      window.AppUtils.initGenericGSAP();
+      window.AppUtils.initRevealObserver();
+    }
+
+    // Init Fancybox if globally available
+    if (typeof Fancybox !== "undefined") {
+      Fancybox.bind("[data-fancybox]", {
+        Thumbs: false,
+        Toolbar: {
+          display: { left: [], middle: [], right: ["close"] },
+        },
+      });
+    }
+  }, 1200);
+
+});
