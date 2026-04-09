@@ -1,0 +1,132 @@
+@media (max-width: 1199.98px) { 
+    
+.offcanvas .nav-link{
+    font-size: 10px;
+}
+ }
+@media (max-width: 991px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text p {
+    margin: 0 auto 32px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .badge-1 { right: 0; top: 5%; }
+  .badge-2 { left: 0; bottom: 5%; }
+  .offcanvas {
+  max-width: 236px;
+}
+}
+
+@media (max-width: 768px) {
+  .diagnosis-wrapper {
+    min-height: auto;
+  }
+
+  .diagnosis-center {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin: 0 auto 40px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .diagnosis-center img {
+    width: 124px;
+  }
+
+  .diagnosis-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .diagnosis-line {
+    display: none;
+  }
+
+  .process-connector {
+    display: none;
+  }
+  .spacer-y {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .grid-item {
+    margin-bottom: 16px;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .heroSwiper .swiper-slide {
+    padding: 40px 0;
+  }
+
+  .hero-badge {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+
+  .hero-badge .badge-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .hero-badge .badge-text strong {
+    font-size: 0.75rem;
+  }
+
+  .hero-badge .badge-text span {
+    font-size: 0.65rem;
+  }
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  .spacer-y {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .btn-gradient {
+    padding: 12px 28px;
+    font-size: 0.88rem;
+  }
+
+  .fab-container {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .fab-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+}

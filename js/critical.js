@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
           <a class="navbar-brand m-0" href="index.html" aria-label="Dr. Batra's Dentistree Home">
-            <img src="https://placehold.co/220x55/ffffff/056ba3?text=Dr.+Batra's+Dentistree&font=montserrat" alt="Dr. Batra's Dentistree Logo">
+            <img height="72px" width="174.3px" src="img/DR_BatraDentistreeLogo.webp" alt="Dr. Batra's Dentistree Logo">
           </a>
           <div class="d-flex align-items-center gap-4">
             <!-- Timing -->
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <nav class="navbar navbar-expand-lg main-navbar sticky-top" id="stickyNav">
       <div class="container">
         <a class="navbar-brand d-lg-none m-0 py-2" href="index.html" aria-label="Dr. Batra's Dentistree Home">
-          <img src="https://placehold.co/170x45/ffffff/056ba3?text=Dr.+Batra's&font=montserrat" alt="Dr. Batra's Dentistree Logo">
+          <img height="72px" width="174.3px" src="img/DR_BatraDentistreeLogo.webp" alt="Dr. Batra's Dentistree Logo">
         </a>
 
         <button class="navbar-toggler border-0 px-0" type="button"
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">
                     <iconify-icon icon="ph:user-circle" class="me-2"></iconify-icon>Dr. Samir Batra
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dental Services</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dental Services <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#services">
                     <iconify-icon icon="ph:list-checks" class="me-2"></iconify-icon>All Treatments
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetic Care</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetic Care <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">
                     <iconify-icon icon="mdi:diamond-stone" class="me-2"></iconify-icon>All Cosmetic Care
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
 
-              <li class="nav-item d-none d-lg-block">
+              <li class="nav-item d-none d-xxl-block">
                 <a class="nav-link nav-cta-btn" href="#contact">
                   <iconify-icon icon="ph:calendar-check-bold"></iconify-icon>
                   Book Now
