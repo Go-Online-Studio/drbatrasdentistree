@@ -86,6 +86,30 @@
   .contact-form-card {
     padding: 28px 20px;
   }
+
+  .clinic-footer{
+    text-align: center;
+  }
+  .footer-heading{
+    justify-content: center;
+  }
+  .footer-heading::after{
+    display: none;
+  }
+  .footer-links1{
+    max-width: 134px;
+    margin: 0 auto;
+  }
+  .footer-links2{
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .footer-social{
+    justify-content: center;
+  }
+  .footer-contact-item{
+    justify-content: center;
+  }
 }
 
 
@@ -171,5 +195,11 @@
     bottom: 80px;
     font-size: 0.82rem;
     padding: 12px 20px;
+  }
+  .contact-info-card{
+    padding: 20px 16px;
+  }
+  .assoc-badge{
+    padding: 18px;
   }
 }

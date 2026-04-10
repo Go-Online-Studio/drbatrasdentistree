@@ -2,7 +2,7 @@
   {
     "id": "dental-implants",
     "title": "Dental Implants",
-    "icon": "healthicons:dental-hygiene-outline",
+    "image": "img/Icons/implants-teeth-svgrepo-com.svg",
     "shortDesc": "Permanent tooth replacement with titanium implants that look, feel, and function like natural teeth. Restore your smile with lasting confidence.",
     "category": "dental-services"
   },

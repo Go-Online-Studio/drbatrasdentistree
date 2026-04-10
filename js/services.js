@@ -24,6 +24,27 @@
     }
   }
 
+  function isValidIcon(icon) {
+    return icon && icon.includes(':');
+  }
+
+  function renderServiceIcon(service) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'card-icon';
+
+    if (isValidIcon(service.icon)) {
+      wrapper.innerHTML = `<iconify-icon icon="${service.icon}"></iconify-icon>`;
+    } 
+    else if (service.image) {
+      wrapper.innerHTML = `<img src="${service.image}" alt="${service.title}" loading="lazy">`;
+    } 
+    else {
+      wrapper.innerHTML = `<div class="default-icon"></div>`;
+    }
+
+    return wrapper;
+  }
+
   /**
    * Build a single service card HTML string
    */
@@ -31,9 +52,6 @@
     return `
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 grid-item ${service.category}">
         <div class="service-card reveal-item">
-          <div class="card-icon">
-            <iconify-icon icon="${service.icon}"></iconify-icon>
-          </div>
           <h5>${service.title}</h5>
           <p class="card-desc">${service.shortDesc}</p>
           <a href="#" class="know-more" data-service="${service.id}">
@@ -54,8 +72,14 @@
 
     services.forEach((service) => {
       tempDiv.innerHTML = buildCardHTML(service);
-      const cardEl = tempDiv.firstElementChild;
-      if (cardEl) fragment.appendChild(cardEl);
+      const gridItem = tempDiv.firstElementChild;
+      if (gridItem) {
+        const card = gridItem.querySelector('.service-card');
+        if (card) {
+          card.prepend(renderServiceIcon(service));
+        }
+        fragment.appendChild(gridItem);
+      }
     });
 
     container.innerHTML = "";

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="row gy-5 mb-5">
           <!-- Col 1: About & Social -->
           <div class="col-lg-3 col-md-6">
-            <img src="https://placehold.co/200x50/056ba3/ffffff?text=Dr.+Batra's&font=montserrat" alt="${CONFIG.clinicName}" class="footer-logo">
+            <img src="img/DR_BatraDentistreeLogoFooter.webp" alt="DR Batra Dentistree Logo" class="footer-logo">
             <p class="footer-desc">
               Your smile is in expert hands. We provide world-class dental care using cutting-edge technology and a patient-first approach. Every treatment is designed for lasting results.
             </p>
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <!-- Col 2: Quick Links -->
           <div class="col-lg-2 col-md-6">
             <h5 class="footer-heading">Quick Links</h5>
-            <ul class="footer-links">
+            <ul class="footer-links footer-links1">
               <li><a href="index.html">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#services">Our Services</a></li>
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <!-- Col 3: Our Services -->
           <div class="col-lg-3 col-md-6">
             <h5 class="footer-heading">Services</h5>
-            <ul class="footer-links">
+            <ul class="footer-links footer-links2">
               <li><a href="#">Dental Implants</a></li>
               <li><a href="#">Orthodontic Braces</a></li>
               <li><a href="#">Root Canal</a></li>
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="footer-contact-item">
               <iconify-icon icon="ph:map-pin-bold"></iconify-icon>
               <div>
-                <strong style="color:#fff;font-size:0.82rem;">Vadodara Clinic</strong><br>
+                
                 <a href="https://maps.app.goo.gl/PkRdWAydQGrwxQ2y6" target="_blank" style="color:rgba(255,255,255,0.85); text-decoration: none;">
                   FF- 145, S9 Square, Opp. Lotus Aura,<br>
                   Near Lillleria Party Plot, Above Patanjali Store,<br>

@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!headerEl) return;
 
   /* ── Global Filter Trigger for Navbar Links ── */
-  window.triggerServiceFilter = function(filter) {
+  window.triggerServiceFilter = function (filter) {
     localStorage.setItem('activeServiceFilter', filter);
-    
+
     // Close offcanvas if mobile menu is open
     const offcanvasEl = document.getElementById('offcanvasNav');
     if (offcanvasEl) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // If we are already on index.html with grid loaded, trigger the filter button directly
       const btn = document.querySelector('.filter-btn[data-filter="' + filter + '"]');
       if (btn) btn.click();
-      
+
       // Smooth scroll to the services section, offset for sticky header
       const servicesSection = document.getElementById('services');
       if (servicesSection) {
@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="dr-samir-batra.html">
-                    <iconify-icon icon="ph:user-circle" class="me-2"></iconify-icon>Dr. Samir Batra
+                    <img src="img/Dr_BatrasProfile.webp" alt="Dr. Samir" class="nav-img-icon me-2">Dr. Samir Batra
                   </a></li>
                   <li><a class="dropdown-item" href="dr-mira-batra.html">
-                    <iconify-icon icon="ph:user-circle" class="me-2"></iconify-icon>Dr. Mira Batra
+                    <img src="img/Dr_MiraBatrasProfile.webp" alt="Dr. Mira" class="nav-img-icon me-2">Dr. Mira Batra
                   </a></li>
                   <li><a class="dropdown-item" href="about-clinic.html">
                     <iconify-icon icon="ph:buildings" class="me-2"></iconify-icon>About Clinic

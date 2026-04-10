@@ -882,6 +882,31 @@ p {
   color: var(--text-white);
 }
 
+.service-card .card-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: filter var(--transition-fast);
+}
+
+.service-card:hover .card-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.service-card .card-icon .default-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  opacity: 0.2;
+  transition: var(--transition-fast);
+}
+
+.service-card:hover .card-icon .default-icon {
+  background: var(--text-white);
+  opacity: 1;
+}
+
 .service-card h5 {
   font-size: 1.05rem;
   font-weight: 700;
@@ -1362,9 +1387,9 @@ p {
 }
 
 .footer-logo {
-  height: 50px;
-  width: auto;
+  width: 174px;
   margin-bottom: 20px;
+  /* filter: brightness(0) invert(1); */
 }
 
 .footer-desc {
@@ -2293,6 +2318,7 @@ p {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  display: inline-block;
 }
 
 .gallery-item img {
@@ -2591,4 +2617,19 @@ p {
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   color: var(--primary-blue);
+}
+
+/* ==============================================
+   NAVIGATION IMAGE ICONS
+   ============================================== */
+.dropdown-item .nav-img-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px; /* equivalent to me-2 */
+  border: 1px solid rgba(0,0,0,0.05);
+  background-color: var(--bg-soft);
 }
