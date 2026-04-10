@@ -90,3 +90,37 @@ Central Diagram: Recreate the "Diagnosis of Dental Diseases" section with a cent
 Footer: A robust, dark blue (#056ba3) footer containing Google Maps integration, contact info, quick links, and a bottom copyright bar.
 
 Deliver the complete code block by block (index.html, style.css, services.json, critical.js, services.js, script.js), ensuring no corners are cut and the design feels incredibly premium, fully responsive, and animated smoothly.
+
+
+
+dental-services-
+
+DENTAL IMPLANTS
+ORTHODONTIC BRACES
+ROOT CANAL
+CROWN & BRIDGE
+GUM SURGERY
+TOOTH REMOVAL
+DENTURES
+DENTAL FILLINGS
+PEDIATRIC DENTISTRY
+CARDIAC AND DIABETIC
+PREGNANCY CARE
+LASER DENTISTRY
+
+
+cosmetic -
+
+GUM SURGERY
+DENTAL BLEACHING
+DENTAL JEWELLERY
+DENTAL VENEERS
+DIASTEMA CLOSURE
+GUM DEPIGMENTATION
+ORTHODONTIC CARE
+SMAILE DESIGNING
+TOOTH COLOURED RESTORATIONS
+ZIRCONIA CROWNS
+
+
+* Contact/WhatsApp:  Utilize Bootstrap's UI components for form validation, including warnings and notifications for user inputs. and use proper responsive link according to device mobile, desktop and add debounce and resize for proper responsive link of whtsapp. After submitting form, form field should be empty.

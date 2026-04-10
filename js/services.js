@@ -102,6 +102,13 @@
       const filterValue = btn.getAttribute("data-filter");
       isoInstance.arrange({ filter: filterValue });
 
+      // Local storage logic
+      if (filterValue === "*") {
+        localStorage.removeItem("activeServiceFilter");
+      } else {
+        localStorage.setItem("activeServiceFilter", filterValue);
+      }
+
       // Update active state
       filterBar.querySelectorAll(".filter-btn").forEach((b) =>
         b.classList.remove("active")
@@ -111,6 +118,15 @@
       // Refresh GSAP ScrollTrigger if available
       if (typeof ScrollTrigger !== "undefined") {
         setTimeout(() => ScrollTrigger.refresh(), 600);
+      }
+
+      // Smooth scroll to focus on the services section 
+      const servicesSection = document.getElementById('services');
+      if (servicesSection) {
+        const headerOffset = 100; // Account for sticky navbar height
+        const elementPosition = servicesSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       }
     });
   }
@@ -155,6 +171,18 @@
 
     // 2. Initialize Isotope
     await initIsotope(gridContainer);
+
+    // Apply localStorage filter if exists
+    const savedFilter = localStorage.getItem("activeServiceFilter");
+    if (savedFilter && savedFilter !== "*") {
+      isoInstance.arrange({ filter: savedFilter });
+      const filterBar = document.querySelector(FILTER_SELECTOR);
+      if (filterBar) {
+        filterBar.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+        const activeBtn = filterBar.querySelector(`.filter-btn[data-filter="${savedFilter}"]`);
+        if (activeBtn) activeBtn.classList.add("active");
+      }
+    }
 
     // 3. Bind filter buttons
     bindFilters();

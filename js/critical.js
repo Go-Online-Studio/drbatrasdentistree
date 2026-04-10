@@ -8,6 +8,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerEl = document.getElementById("mainNavbar");
   if (!headerEl) return;
 
+  /* ── Global Filter Trigger for Navbar Links ── */
+  window.triggerServiceFilter = function(filter) {
+    localStorage.setItem('activeServiceFilter', filter);
+    
+    // Close offcanvas if mobile menu is open
+    const offcanvasEl = document.getElementById('offcanvasNav');
+    if (offcanvasEl) {
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl) || new bootstrap.Offcanvas(offcanvasEl);
+      bsOffcanvas.hide();
+    }
+
+    if (window.servicesIso) {
+      // If we are already on index.html with grid loaded, trigger the filter button directly
+      const btn = document.querySelector('.filter-btn[data-filter="' + filter + '"]');
+      if (btn) btn.click();
+      
+      // Smooth scroll to the services section, offset for sticky header
+      const servicesSection = document.getElementById('services');
+      if (servicesSection) {
+        const headerOffset = 100; // Account for sticky navbar height
+        const elementPosition = servicesSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      }
+    } else {
+      // If on another page, just navigate to index.html
+      window.location.href = 'index.html#services';
+    }
+  };
+
   /* ── Inject Full Header HTML ── */
   headerEl.innerHTML = `
     <!-- Top Info Bar (Desktop Only) -->
@@ -36,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
               <div class="lh-sm">
                 <span class="d-block" style="font-size:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Call Us</span>
-                <a href="tel:+919879625787" class="d-block fw-bold" style="font-size:0.88rem;color:var(--text-dark);text-decoration:none;">(+91) 98796 25787</a>
+                <a href="tel:+919879625787" class="d-block fw-bold" style="font-size:0.88rem;color:var(--text-dark);text-decoration:none;">+91 98796 25787</a>
               </div>
             </div>
             <!-- Emergency -->
@@ -80,13 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="dr-samir-batra.html">
                     <iconify-icon icon="ph:user-circle" class="me-2"></iconify-icon>Dr. Samir Batra
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="dr-mira-batra.html">
                     <iconify-icon icon="ph:user-circle" class="me-2"></iconify-icon>Dr. Mira Batra
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="about-clinic.html">
                     <iconify-icon icon="ph:buildings" class="me-2"></iconify-icon>About Clinic
                   </a></li>
                 </ul>
@@ -95,69 +125,105 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dental Services <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#services">
+                  <li><a class="dropdown-item" href="index.html#services" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.dental-services'); return false;">
                     <iconify-icon icon="ph:list-checks" class="me-2"></iconify-icon>All Treatments
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="dental-implants.html">
                     <iconify-icon icon="healthicons:dental-hygiene-outline" class="me-2"></iconify-icon>Dental Implants
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="orthodontic-braces.html">
                     <iconify-icon icon="healthicons:teeth-outline" class="me-2"></iconify-icon>Orthodontic Braces
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <iconify-icon icon="healthicons:odontology-outline" class="me-2"></iconify-icon>Root Canal
+                  <li><a class="dropdown-item" href="root-canal.html">
+                    <iconify-icon icon="healthicons:odontology-outline" class="me-2"></iconify-icon>Root Canal Treatment
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="crown-bridge.html">
                     <iconify-icon icon="mdi:tooth-outline" class="me-2"></iconify-icon>Crown & Bridge
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <iconify-icon icon="healthicons:mouth-outline" class="me-2"></iconify-icon>Gum Surgery
+                  <li><a class="dropdown-item" href="dental-gum-surgery.html">
+                    <iconify-icon icon="healthicons:mouth-outline" class="me-2"></iconify-icon>Dental Gum Surgery
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="tooth-removal.html">
                     <iconify-icon icon="healthicons:odontology" class="me-2"></iconify-icon>Tooth Removal
+                  </a></li>
+                  <li><a class="dropdown-item" href="dentures.html">
+                    <iconify-icon icon="healthicons:dentures-outline" class="me-2"></iconify-icon>Dentures
+                  </a></li>
+                  <li><a class="dropdown-item" href="dental-fillings.html">
+                    <iconify-icon icon="healthicons:dental-care-outline" class="me-2"></iconify-icon>Dental Fillings
+                  </a></li>
+                  <li><a class="dropdown-item" href="pediatric-dentistry.html">
+                    <iconify-icon icon="mdi:baby-face-outline" class="me-2"></iconify-icon>Pediatric Dentistry
+                  </a></li>
+                  <li><a class="dropdown-item" href="cardiac-diabetic.html">
+                    <iconify-icon icon="healthicons:heart-organs-outline" class="me-2"></iconify-icon>Cardiac and Diabetic
+                  </a></li>
+                  <li><a class="dropdown-item" href="pregnancy-care.html">
+                    <iconify-icon icon="mdi:human-pregnant" class="me-2"></iconify-icon>Pregnancy Care
+                  </a></li>
+                  <li><a class="dropdown-item" href="laser-dentistry.html">
+                    <iconify-icon icon="mdi:flash-outline" class="me-2"></iconify-icon>Laser Dentistry
                   </a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Implant Dentistry</a>
+                <a class="nav-link" href="implants-dentistry.html">Implant Dentistry</a>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetic Care <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="index.html#services" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.cosmetic'); return false;">
                     <iconify-icon icon="mdi:diamond-stone" class="me-2"></iconify-icon>All Cosmetic Care
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <iconify-icon icon="mdi:white-balance-sunny" class="me-2"></iconify-icon>Dental Bleaching
+                  <li><a class="dropdown-item" href="cosmetic-gum-surgery.html">
+                    <iconify-icon icon="healthicons:mouth-outline" class="me-2"></iconify-icon>Cosmetic Gum Surgery
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
+                  <li><a class="dropdown-item" href="dental-bleaching.html">
+                    <iconify-icon icon="mdi:star-four-points-outline" class="me-2"></iconify-icon>Dental Bleaching
+                  </a></li>
+                  <li><a class="dropdown-item" href="dental-jewellery.html">
+                    <iconify-icon icon="mdi:diamond-stone" class="me-2"></iconify-icon>Dental Jewellery
+                  </a></li>
+                  <li><a class="dropdown-item" href="dental-veneers.html">
+                    <iconify-icon icon="mdi:tooth-outline" class="me-2"></iconify-icon>Dental Veneers
+                  </a></li>
+                  <li><a class="dropdown-item" href="diastema-closure.html">
+                    <iconify-icon icon="healthicons:teeth-outline" class="me-2"></iconify-icon>Diastema Closure
+                  </a></li>
+                  <li><a class="dropdown-item" href="gum-depigmentation.html">
+                    <iconify-icon icon="healthicons:mouth-outline" class="me-2"></iconify-icon>Gum Depigmentation
+                  </a></li>
+                  <li><a class="dropdown-item" href="orthodontic-care.html">
+                    <iconify-icon icon="mdi:tooth-brace" class="me-2"></iconify-icon>Orthodontic Care
+                  </a></li>
+                  <li><a class="dropdown-item" href="smile-designing.html">
                     <iconify-icon icon="mdi:emoticon-happy-outline" class="me-2"></iconify-icon>Smile Designing
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <iconify-icon icon="mdi:shield-check-outline" class="me-2"></iconify-icon>Zirconia Crowns
+                  <li><a class="dropdown-item" href="tooth-coloured-restoration.html">
+                    <iconify-icon icon="mdi:tooth-outline" class="me-2"></iconify-icon>Tooth Coloured Restorations
                   </a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <iconify-icon icon="mdi:blur" class="me-2"></iconify-icon>Invisalign
+                  <li><a class="dropdown-item" href="zirconia-crowns.html">
+                    <iconify-icon icon="mdi:shield-check-outline" class="me-2"></iconify-icon>Zirconia Crowns
                   </a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Infection Control</a>
+                <a class="nav-link" href="infection-control.html">Infection Control</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
 
               <li class="nav-item d-none d-xxl-block">
-                <a class="nav-link nav-cta-btn" href="#contact">
+                <a class="nav-link nav-cta-btn" href="contact.html">
                   <iconify-icon icon="ph:calendar-check-bold"></iconify-icon>
                   Book Now
                 </a>

@@ -18,6 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ══════════════════════════════════════════════
      1. FOOTER INJECTION
      ══════════════════════════════════════════════ */
+
+ /* <div class="footer-map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.978310763274!2d73.1992098!3d22.3544478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf9988a9773b%3A0x2b808d0c55732bc2!2sDr.%20Batra&#39;s%20Dentistree!5e0!3m2!1sen!2sin!4v1775815107268!5m2!1sen!2sin"
+    allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Dr. Batra's Dentistree Location">
+  </iframe>
+</div> */
+
   const footerEl = document.getElementById("footer");
   if (footerEl) {
     footerEl.classList.add("clinic-footer", "spacer-y");
@@ -71,36 +81,32 @@ document.addEventListener("DOMContentLoaded", function () {
               <iconify-icon icon="ph:map-pin-bold"></iconify-icon>
               <div>
                 <strong style="color:#fff;font-size:0.82rem;">Vadodara Clinic</strong><br>
-                101-102, Shivalik Square, Opp. Reliance Fresh,
-                Near Nilamber Circle, Vasna Bhayli Rd, Vadodara
+                <a href="https://maps.app.goo.gl/PkRdWAydQGrwxQ2y6" target="_blank" style="color:rgba(255,255,255,0.85); text-decoration: none;">
+                  FF- 145, S9 Square, Opp. Lotus Aura,<br>
+                  Near Lillleria Party Plot, Above Patanjali Store,<br>
+                  Sama-Savli Road, Vemali, Vadodara-390008
+                </a>
               </div>
             </div>
             <div class="footer-contact-item">
               <iconify-icon icon="ph:phone-bold"></iconify-icon>
               <div>
-                <a href="tel:+919879625787" style="color:rgba(255,255,255,0.85);">(+91) 9879625787</a><br>
-                <a href="tel:+919825007975" style="color:rgba(255,255,255,0.85);">(+91) 9825007975</a>
+                <a href="tel:+919879625787" style="color:rgba(255,255,255,0.85);">+91 9879625787</a><br>
+                <a href="tel:+919825007975" style="color:rgba(255,255,255,0.85);">+91 9825007975</a>
               </div>
             </div>
             <div class="footer-contact-item">
               <iconify-icon icon="ph:clock-bold"></iconify-icon>
               <div>Mon – Sat: 10:00 AM – 7:30 PM<br>Sunday: By Appointment</div>
             </div>
-            <div class="footer-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5!2d73.15!3d22.30!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE4JzAwLjAiTiA3M8KwMDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Dr. Batra's Dentistree Location">
-              </iframe>
-            </div>
+            
           </div>
         </div>
 
         <!-- Disclaimer -->
         <div class="row mb-3">
           <div class="col-12">
-            <p style="font-size:0.72rem;color:rgba(255,255,255,0.4);line-height:1.6;">
+            <p style="font-size:0.72rem;color:rgba(255,255,255,0.4);line-height:1.6; text-align: center;">
               <strong>DISCLAIMER:</strong> ${CONFIG.clinicName} ensures content accuracy. Information provided is for educational purposes only and cannot substitute professional dental consultation.
             </p>
           </div>
@@ -110,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
           <p>© <span id="year"></span> ${CONFIG.clinicName}. All Rights Reserved.</p>
           <ul class="footer-bottom-links">
-            <li><a href="index.html">Home</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Sitemap</a></li>
@@ -200,40 +205,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* ══════════════════════════════════════════════
      5. WHATSAPP FORM HANDLER
+     (Moved to whatsapp-form.js)
      ══════════════════════════════════════════════ */
-  const whatsappForm = document.getElementById("whatsappForm");
-  if (whatsappForm) {
-    whatsappForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!whatsappForm.checkValidity()) {
-        whatsappForm.classList.add("was-validated");
-        return;
-      }
-
-      const name = whatsappForm.querySelector('[name="name"]')?.value || "";
-      const phone = whatsappForm.querySelector('[name="phone"]')?.value || "";
-      const service = whatsappForm.querySelector('[name="service"]')?.value || "General Consultation";
-      const message = whatsappForm.querySelector('[name="message"]')?.value || "";
-
-      const formattedMsg = encodeURIComponent(
-        `🦷 *New Appointment Request*\n\n` +
-        `*Name:* ${name}\n` +
-        `*Phone:* ${phone}\n` +
-        `*Service:* ${service}\n` +
-        `*Message:* ${message}\n\n` +
-        `_Sent from ${CONFIG.clinicName} Website_`
-      );
-
-      window.open(
-        `https://api.whatsapp.com/send?phone=${CONFIG.whatsappNumber}&text=${formattedMsg}`,
-        "_blank"
-      );
-
-      // Reset form
-      whatsappForm.reset();
-      whatsappForm.classList.remove("was-validated");
-    });
-  }
 
   // Create Global AppUtils Namespace
   window.AppUtils = window.AppUtils || {};
