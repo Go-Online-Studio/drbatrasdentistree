@@ -1774,7 +1774,7 @@ p {
   transition: var(--transition-smooth);
 }
 
-.expertise-card .exp-icon iconify-icon {
+.expertise-card .exp-icon iconify-icon,.expertise-card .exp-icon svg {
   font-size: 1.6rem;
   color: var(--primary-blue);
   transition: var(--transition-fast);
@@ -1784,7 +1784,7 @@ p {
   background: var(--primary-gradient);
 }
 
-.expertise-card:hover .exp-icon iconify-icon {
+.expertise-card:hover .exp-icon iconify-icon,.expertise-card:hover .exp-icon svg {
   color: var(--text-white);
 }
 
