@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (btn) btn.click();
 
       // Smooth scroll to the services section, offset for sticky header
-      const servicesSection = document.getElementById('services');
+      const servicesSection = document.getElementById('filterBtnList');
       if (servicesSection) {
         const headerOffset = 100; // Account for sticky navbar height
         const elementPosition = servicesSection.getBoundingClientRect().top;
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dental Services <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="index.html#services" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.dental-services'); return false;">
+                  <li><a class="dropdown-item" href="index.html#filterBtnList" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.dental-services'); return false;">
                     <iconify-icon icon="ph:list-checks" class="me-2"></iconify-icon>All Treatments
                   </a></li>
                   <li><a class="dropdown-item" href="dental-implants.html">
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetic Care <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="index.html#services" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.cosmetic'); return false;">
+                  <li><a class="dropdown-item" href="index.html#filterBtnList" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.cosmetic'); return false;">
                     <iconify-icon icon="mdi:diamond-stone" class="me-2"></iconify-icon>All Cosmetic Care
                   </a></li>
                   <li><a class="dropdown-item" href="cosmetic-gum-surgery.html">

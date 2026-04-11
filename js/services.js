@@ -301,7 +301,7 @@
       }
 
       // Smooth scroll to focus on the services section 
-      const servicesSection = document.getElementById('services');
+      const servicesSection = document.getElementById('filterBtnList');
       if (servicesSection) {
         const headerOffset = 100; // Account for sticky navbar height
         const elementPosition = servicesSection.getBoundingClientRect().top;

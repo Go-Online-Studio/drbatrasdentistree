@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li><a href="#services">Our Services</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#">Infection Control</a></li>
+              <li><a href="#">Infection Control</a></li> 
             </ul>
           </div>
 
@@ -254,6 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
         opacity: 0,
         duration: 1,
         ease: "power2.out",
+        clearProps: "all"
       });
     });
   };
