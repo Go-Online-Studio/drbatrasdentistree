@@ -6,7 +6,7 @@
  }
 @media (max-width: 991px) {
   .hero-inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     padding: 40px 0;
   }
@@ -31,7 +31,7 @@
   .badge-1 { right: 0; top: 50%; }
   .badge-2 { left: 0; bottom: 5%; }
   .offcanvas {
-  max-width: 236px;
+  max-width: 272px;
 }
 }
 
@@ -53,8 +53,19 @@
 
   .diagnosis-item {
     position: relative;
-    width: 100%;
+    width: 300px;
     margin-bottom: 24px;
+    border-radius: var(--radius-lg);
+    background: var(--bg-white);
+    box-shadow: var(--shadow-card);
+    padding: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    top: unset;
+    right: unset;
+    left: unset;
+    bottom: unset;
+    transform: translate(0,0) !important;
   }
 
   .diagnosis-line {
@@ -63,6 +74,18 @@
 
   .process-connector {
     display: none;
+  }
+
+  .process-step{
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 12px;
+    box-shadow: var(--shadow-float);
+    border: 1px solid rgba(5, 107, 163, 0.04);
+    height: 100%;
+  }
+  .process-step p{
+    font-size: 11px;
   }
   .spacer-y {
     padding-top: 60px;
@@ -109,6 +132,14 @@
   }
   .footer-contact-item{
     justify-content: center;
+  }
+  .footer-logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flotingExper{
+    margin-right: -11px !important;
   }
 }
 
@@ -201,5 +232,10 @@
   }
   .assoc-badge{
     padding: 18px;
+  }
+  .filter-btn{
+    width: 48%;
+    font-size: 10px;
+    padding: 8px 16px;
   }
 }

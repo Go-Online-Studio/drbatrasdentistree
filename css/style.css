@@ -70,6 +70,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  overflow-x: hidden;
+}
+section{
+  overflow: hidden;
+}
+
 body.loading {
   overflow: hidden;
 }
@@ -281,6 +288,10 @@ p {
 .navbar-brand {
   height: var(--brand-height);
   padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .navbar-brand img {
