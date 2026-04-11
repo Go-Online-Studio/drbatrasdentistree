@@ -1,5 +1,5 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#056ba3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
     <!-- Tooth base outline -->
     <path d="M44 22C34 22 28 30 28 40C28 52 34 60 38 70C42 80 42 96 48 104C52 110 58 104 60 96L64 86L68 96C70 104 76 110 80 104C86 96 86 80 90 70C94 60 100 52 100 40C100 30 94 22 84 22C76 22 70 26 64 32C58 26 52 22 44 22Z"/>
     <!-- Crown cap outline on top tooth -->

@@ -1,5 +1,5 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke="#056ba3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
     <!-- Tooth outline -->
     <path d="M44 20C34 20 28 28 28 38C28 50 34 58 38 68C42 78 42 96 48 104C52 110 58 104 60 96L64 84L68 96C70 104 76 110 80 104C86 96 86 78 90 68C94 58 100 50 100 38C100 28 94 20 84 20C76 20 70 24 64 30C58 24 52 20 44 20Z"/>
     <!-- Laser beam focus point -->

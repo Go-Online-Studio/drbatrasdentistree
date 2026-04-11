@@ -869,7 +869,7 @@ p {
 }
 
 .service-card .card-icon iconify-icon {
-  font-size: 1.8rem;
+  font-size: 48px;
   color: var(--primary-blue);
   transition: var(--transition-fast);
 }
@@ -883,8 +883,8 @@ p {
 }
 
 .service-card .card-icon img {
-  width: 28px;
-  height: 28px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   transition: filter var(--transition-fast);
 }
@@ -2625,11 +2625,8 @@ p {
 .dropdown-item .nav-img-icon {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   object-fit: cover;
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px; /* equivalent to me-2 */
-  border: 1px solid rgba(0,0,0,0.05);
-  background-color: var(--bg-soft);
 }

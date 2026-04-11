@@ -9,7 +9,7 @@
   {
     "id": "orthodontic-braces",
     "title": "Orthodontic Braces",
-    "icon": "healthicons:teeth-outline",
+    "image": "img/Icons/OrthodonticBraces.svg",
     "shortDesc": "Straighten misaligned teeth with modern metal, ceramic, and self-ligating braces customized for every age group.",
     "category": "dental-services"
   },
@@ -30,7 +30,7 @@
   {
     "id": "dental-gum-surgery",
     "title": "Dental Gum Surgery",
-    "icon": "healthicons:mouth-outline",
+    "image": "img/Icons/DentalGumSurgery.svg",
     "shortDesc": "Advanced treatment to control gum infections through scaling, root planing, and specialized procedures like bone grafts and flap surgery.",
     "category": "dental-services"
   },
@@ -51,14 +51,14 @@
   {
     "id": "dentures",
     "title": "Dentures",
-    "icon": "healthicons:dentures-outline",
+    "image": "img/Icons/Dentures.svg",
     "shortDesc": "Custom-made complete and partial dentures designed for maximum comfort, stability, and a natural appearance.",
     "category": "dental-services"
   },
   {
     "id": "dental-fillings",
     "title": "Dental Fillings",
-    "icon": "healthicons:dental-care-outline",
+    "image": "img/Icons/DentalFillings.svg",
     "shortDesc": "Durable and aesthetic tooth-colored composite fillings to restore cavities and strengthen damaged teeth seamlessly.",
     "category": "dental-services"
   },
@@ -72,7 +72,7 @@
   {
     "id": "cardiac-diabetic",
     "title": "Cardiac and Diabetic Dental Care",
-    "icon": "healthicons:heart-organs-outline",
+    "image": "img/Icons/CardiacAndDiabeticDentalCare.svg",
     "shortDesc": "Specialized dental management for patients with heart conditions or diabetes, ensuring safe and effective treatments.",
     "category": "dental-services"
   },
@@ -86,21 +86,21 @@
   {
     "id": "laser-dentistry",
     "title": "Laser Dentistry",
-    "icon": "mdi:flash-outline",
+    "image": "img/Icons/LaserDentistry.svg",
     "shortDesc": "Minimally invasive laser treatments for gum reshaping, cavity treatment, and soft tissue procedures with faster healing.",
     "category": "dental-services"
   },
   {
     "id": "dental-bleaching",
     "title": "Dental Bleaching",
-    "icon": "mdi:star-four-points-outline",
+    "image": "img/Icons/DentalBleaching.svg",
     "shortDesc": "Clinical-grade bleaching solutions that lighten stained and discolored teeth by multiple shades safely.",
     "category": "cosmetic"
   },
   {
     "id": "dental-jewellery",
     "title": "Dental Jewellery",
-    "icon": "mdi:diamond-stone",
+    "image": "img/Icons/DentalJewellery.svg",
     "shortDesc": "Add a touch of sparkle to your smile with safe, painless dental crystals and gems bonded to your tooth surface.",
     "category": "cosmetic"
   },
@@ -114,7 +114,7 @@
   {
     "id": "diastema-closure",
     "title": "Diastema Closure",
-    "icon": "healthicons:teeth-outline",
+    "image": "img/Icons/DiastemaClosure.svg",
     "shortDesc": "Professional treatment to close gaps between teeth using bonding, veneers, or orthodontics for a unified smile.",
     "category": "cosmetic"
   },
@@ -128,7 +128,7 @@
   {
     "id": "orthodontic-care",
     "title": "Orthodontic Care",
-    "icon": "mdi:tooth-brace",
+    "image": "img/Icons/OrthodonticBraces.svg",
     "shortDesc": "Comprehensive orthodontic solutions including clear aligners and modern braces for aesthetic teeth straightening.",
     "category": "cosmetic"
   },
@@ -149,21 +149,21 @@
   {
     "id": "zirconia-crowns",
     "title": "Zirconia Crowns",
-    "icon": "mdi:shield-check-outline",
+    "image": "img/Icons/ZirconiaCrowns.svg",
     "shortDesc": "Ultra-strong, metal-free zirconia crowns that offer superior strength and a natural, translucent appearance.",
     "category": "cosmetic"
   },
   {
     "id": "implants-dentistry",
     "title": "Implants Dentistry",
-    "icon": "healthicons:dental-hygiene",
+    "image": "img/Icons/implants-teeth-svgrepo-com.svg",
     "shortDesc": "Replacement tooth roots made of biocompatible titanium. They provide a strong foundation for fixed teeth, prevent bone loss, and maintain natural facial shape and density.",
     "category": "implants"
   },
   {
     "id": "infection-control",
     "title": "Infection Control",
-    "icon": "mdi:shield-virus-outline",
+    "image": "img/Icons/InfectionControl.svg",
     "shortDesc": "We follow 4-stage sterilization: scrubbing, ultrasonic cleaning, autoclaving in disposable wraps, and UV storage. Strict hygiene protocols ensure a 100% safe environment.",
     "category": "infection-control"
   }
