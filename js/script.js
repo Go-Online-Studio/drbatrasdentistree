@@ -113,13 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <!-- Footer Bottom -->
-        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
           <p>© <span id="year"></span> ${CONFIG.clinicName}. All Rights Reserved.</p>
-          <ul class="footer-bottom-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Sitemap</a></li>
-          </ul>
         </div>
       </div>
     `;
