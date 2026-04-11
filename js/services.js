@@ -49,12 +49,14 @@
    * Build a single service card HTML string
    */
   function buildCardHTML(service) {
+    let pageLink = `${service.id}.html`;
+
     return `
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 grid-item ${service.category}">
         <div class="service-card reveal-item">
           <h5>${service.title}</h5>
           <p class="card-desc">${service.shortDesc}</p>
-          <a href="#" class="know-more" data-service="${service.id}">
+          <a href="${pageLink}" class="know-more" data-service="${service.id}">
             Know More
             <iconify-icon icon="ph:arrow-right-bold"></iconify-icon>
           </a>
@@ -158,21 +160,21 @@
   /**
    * Bind "Know More" clicks → WhatsApp
    */
-  function bindKnowMore(container) {
-    container.addEventListener("click", function (e) {
-      const link = e.target.closest(".know-more");
-      if (!link) return;
-      e.preventDefault();
+  // function bindKnowMore(container) {
+  //   container.addEventListener("click", function (e) {
+  //     const link = e.target.closest(".know-more");
+  //     if (!link) return;
+  //     e.preventDefault();
 
-      const serviceId = link.dataset.service;
-      const serviceTitle = link.closest(".service-card")?.querySelector("h5")?.textContent || serviceId;
-      const phone = window.CLINIC_CONFIG?.whatsappNumber || "919879625787";
-      const message = encodeURIComponent(
-        `Hi Dr. Batra's Dentistree!\nI'd like to know more about your *${serviceTitle}* service.\nPlease share details.\n\nThank you!`
-      );
-      window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${message}`, "_blank");
-    });
-  }
+  //     const serviceId = link.dataset.service;
+  //     const serviceTitle = link.closest(".service-card")?.querySelector("h5")?.textContent || serviceId;
+  //     const phone = window.CLINIC_CONFIG?.whatsappNumber || "919879625787";
+  //     const message = encodeURIComponent(
+  //       `Hi Dr. Batra's Dentistree!\nI'd like to know more about your *${serviceTitle}* service.\nPlease share details.\n\nThank you!`
+  //     );
+  //     window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${message}`, "_blank");
+  //   });
+  // }
 
   /* ── Main Initialization ── */
   document.addEventListener("DOMContentLoaded", async function () {
@@ -212,7 +214,7 @@
     bindFilters();
 
     // 4. Bind Know More → WhatsApp
-    bindKnowMore(gridContainer);
+    // bindKnowMore(gridContainer);
 
     // Expose for external use (e.g., resize handler in script.js)
     window.servicesIso = isoInstance;

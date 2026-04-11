@@ -284,6 +284,12 @@
       delete from.duration;
       delete from.ease;
 
+      // Prevent CSS transitions from fighting GSAP by stripping the classes
+      const elementArray = Array.isArray(targets) ? targets : [targets];
+      elementArray.forEach(el => {
+        el.classList.remove('reveal-item', 'is-visible');
+      });
+
       gsap.fromTo(targets, from, toVars);
     }
 
