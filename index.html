@@ -325,8 +325,16 @@
         <button class="filter-btn" data-filter=".infection-control">Infection Control</button>
       </div>
 
-      <!-- Services Grid (Populated by services.js) -->
+      <!-- Services Grid (Populated by services.js) — DESKTOP/TABLET -->
       <div class="row grid" id="servicesGrid"></div>
+
+      <!-- Services Swiper (Populated by services.js) — MOBILE ONLY -->
+      <div class="services-mobile-swiper-wrap" id="servicesMobileWrap">
+        <div class="swiper servicesMobileSwiper">
+          <div class="swiper-wrapper" id="servicesMobileWrapper"></div>
+          <div class="swiper-pagination services-mobile-pagination"></div>
+        </div>
+      </div>
 
       <div class="text-center mt-4 gsap-fade-up">
         <a href="#contact" class="btn-gradient">

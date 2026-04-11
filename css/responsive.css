@@ -141,6 +141,20 @@
   .flotingExper{
     margin-right: -11px !important;
   }
+
+  /* Mobile Swiper: hide grid, show swiper */
+  #servicesGrid {
+    display: none !important;
+  }
+  .services-mobile-swiper-wrap {
+    display: block;
+  }
+
+  /* Filter bar mobile tweaks for swiper context */
+  .filter-bar {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
 }
 
 
