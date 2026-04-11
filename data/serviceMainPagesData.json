@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "dental-implants",
+    "title": "Dental Implants",
+    "metaTitle": "Dental Implants in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Get permanent dental implants at Dr Batra's Dentistree, Vadodara. Titanium implants that look, feel, and function like natural teeth. Book your consultation today.",
+    "hero": {
+      "subtitle": "Specialized Care",
+      "subtitleIcon": "ph:tooth-bold",
+      "heading": "Dental Implants",
+      "breadcrumb": "Dental Implants"
+    },
+    "intro": {
+      "subtitle": "What Are Dental Implants?",
+      "subtitleIcon": "ph:tooth-bold",
+      "heading": "Permanent Tooth Replacement with <span class=\"text-gradient\">Modern Technology</span>",
+      "paragraphs": [
+        "Dental implants are the gold standard in tooth replacement, offering a permanent solution that looks, feels, and functions exactly like your natural teeth. Made from biocompatible titanium, implants are surgically placed into the jawbone where they fuse naturally with the bone tissue through a process called osseointegration.",
+        "Unlike traditional bridges or dentures, dental implants preserve your jawbone density, prevent facial structure deterioration, and don't require any modification to neighboring healthy teeth. At Dr. Batra's Dentistree, we use advanced 3D imaging and computer-guided surgery techniques to ensure precise, minimally invasive implant placement.",
+        "Whether you're missing a single tooth, multiple teeth, or need a full-mouth restoration, our customized implant solutions are designed for lasting comfort and a confident, natural-looking smile."
+      ]
+    },
+    "benefits": [
+      { "title": "Imitates Natural Teeth", "desc": "Implants replicate the feel and function of natural tooth roots, providing a stable foundation for your crown that looks and works exactly like your own teeth." },
+      { "title": "No Trimming Adjacent Teeth", "desc": "Unlike bridges, implants don't require grinding down healthy neighboring teeth. Your surrounding teeth remain completely untouched and undamaged." },
+      { "title": "Prevents Bone Loss", "desc": "Dental implants stimulate the jawbone just like natural roots, preventing the bone resorption that typically occurs after tooth loss and maintaining facial structure." },
+      { "title": "Supports Facial Structure", "desc": "By preserving jawbone density, implants help maintain the natural contours of your face, preventing the sunken appearance that often accompanies tooth loss." },
+      { "title": "Look & Feel Natural", "desc": "With custom-crafted porcelain crowns matched to your exact tooth shade, dental implants are virtually indistinguishable from natural teeth." },
+      { "title": "Long-lasting Solution", "desc": "With proper care and regular check-ups, dental implants can last a lifetime, making them the most cost-effective long-term tooth replacement option." }
+    ],
+    "steps": [
+      { "title": "Consultation & Planning", "desc": "Comprehensive examination with digital X-rays and 3D CBCT scanning to assess bone quality and plan precise implant placement." },
+      { "title": "Implant Placement", "desc": "Minimally invasive surgical placement of the titanium implant into the jawbone under local anesthesia with zero discomfort." },
+      { "title": "Healing & Integration", "desc": "A 3-6 month healing period allows the implant to fuse with your jawbone through osseointegration, creating an incredibly strong foundation." },
+      { "title": "Crown Placement", "desc": "Your custom-made porcelain crown is crafted to match your natural teeth and securely attached to the implant for a flawless, permanent result." }
+    ],
+    "features": [
+      { "icon": "healthicons:odontology-outline", "title": "Single Tooth Replacement", "desc": "Replace one missing tooth with a single implant and crown, preserving adjacent teeth and restoring natural function." },
+      { "icon": "streamline-ultimate:dentistry-tooth-jaws", "title": "Multiple Teeth Replacement", "desc": "Implant-supported bridges replace several missing teeth with superior stability, comfort, and aesthetics." },
+      { "icon": "healthicons:dental-hygiene", "title": "Full Mouth Rehabilitation", "desc": "All-on-4 or All-on-6 implant systems can replace a complete arch of teeth with just 4-6 strategically placed implants." }
+    ],
+    "faqs": [
+      { "q": "Are dental implants painful?", "a": "Most patients report the procedure is much less painful than expected. Local anesthesia ensures you feel nothing during surgery, and post-operative discomfort is typically mild and manageable with over-the-counter pain medication for 2-3 days." },
+      { "q": "How long do dental implants last?", "a": "With proper oral hygiene and regular dental check-ups, implants can last a lifetime. The crown on top may need replacement after 10-15 years due to normal wear, but the titanium implant itself is designed to be permanent." },
+      { "q": "Am I a candidate for dental implants?", "a": "Most adults with good general health qualify for implants. Adequate jawbone density is needed to support the implant. Patients with diabetes, heart conditions, or those who smoke may need additional evaluation before proceeding." },
+      { "q": "How much do dental implants cost?", "a": "Cost varies based on the number of implants, type of restoration, and case complexity. We provide detailed estimates during your consultation. Implants are a long-term investment offering superior value compared to repeated bridge or denture replacements." },
+      { "q": "What is the success rate of dental implants?", "a": "Dental implants have a remarkable success rate of 95-98%. Success depends on implant location, patient health, oral hygiene, and adherence to aftercare instructions." }
+    ],
+    "cta": {
+      "heading": "Ready to Restore Your <span class=\"text-gradient\">Smile?</span>",
+      "desc": "Schedule your implant consultation today and take the first step towards a confident, permanent smile.",
+      "buttonText": "Book Consultation",
+      "buttonLink": "contact.html"
+    },
+    "relatedServices": ["crown-bridge", "dentures", "orthodontic-braces"],
+    "category": "dental-services"
+  },
+  {
+    "id": "orthodontic-braces",
+    "title": "Orthodontic Braces",
+    "metaTitle": "Orthodontic Braces in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Straighten your teeth with modern orthodontic braces at Dr Batra's Dentistree, Vadodara. Metal, ceramic, and self-ligating braces for all ages.",
+    "hero": {
+      "subtitle": "Smile Correction",
+      "subtitleIcon": "ph:tooth-bold",
+      "heading": "Orthodontic Braces",
+      "breadcrumb": "Orthodontic Braces"
+    },
+    "intro": {
+      "subtitle": "What Is Orthodontic Treatment?",
+      "subtitleIcon": "ph:tooth-bold",
+      "heading": "Achieving Perfect <span class=\"text-gradient\">Teeth Alignment</span>",
+      "paragraphs": [
+        "Orthodontic treatment involves the use of specialized braces and appliances to correct misaligned teeth, irregular bites, and jaw discrepancies. Modern orthodontics has evolved dramatically, offering discreet, comfortable, and efficient solutions for patients of all ages.",
+        "At Dr. Batra's Dentistree, we offer a comprehensive range of orthodontic solutions including traditional metal braces, tooth-colored ceramic braces, self-ligating systems, and clear aligners. Our orthodontic specialists use digital treatment planning and 3D imaging to create precise, customized treatment plans.",
+        "Whether you're dealing with crowding, spacing, overbite, underbite, or crossbite, our goal is to help you achieve a harmonious, confident smile with optimal dental health."
+      ]
+    },
+    "benefits": [
+      { "title": "Improved Smile Aesthetics", "desc": "Properly aligned teeth create a beautiful, symmetrical smile that enhances your facial appearance and boosts your confidence." },
+      { "title": "Better Oral Health", "desc": "Straight teeth are easier to clean, reducing the risk of cavities, gum disease, and plaque buildup in hard-to-reach areas." },
+      { "title": "Correct Bite Problems", "desc": "Orthodontic treatment fixes overbites, underbites, and crossbites, preventing jaw pain, uneven wear, and TMJ disorders." },
+      { "title": "Multiple Options Available", "desc": "From traditional metal braces to invisible ceramic options, we offer solutions that match your lifestyle, budget, and aesthetic preferences." },
+      { "title": "Prevent Future Dental Issues", "desc": "Addressing misalignment early prevents more serious dental problems, tooth damage, and costly treatments down the road." },
+      { "title": "Suitable for All Ages", "desc": "Modern orthodontics is not just for teens. Adults of all ages benefit from orthodontic treatment with discreet options available." }
+    ],
+    "steps": [
+      { "title": "Initial Consultation", "desc": "Complete dental examination with X-rays, photographs, and digital impressions to assess your orthodontic needs." },
+      { "title": "Custom Treatment Plan", "desc": "Your personalized plan is designed using 3D digital models, outlining the treatment timeline, appliance selection, and expected results." },
+      { "title": "Braces Placement", "desc": "Brackets are carefully bonded to your teeth and connected with archwires. The process is comfortable and takes about 60-90 minutes." },
+      { "title": "Regular Adjustments", "desc": "Scheduled follow-up visits every 4-6 weeks for wire adjustments, ensuring your teeth move progressively toward their ideal positions." }
+    ],
+    "features": [
+      { "icon": "mdi:tooth-outline", "title": "Metal Braces", "desc": "Traditional stainless steel braces offering proven effectiveness and reliability for comprehensive orthodontic correction." },
+      { "icon": "ph:diamond-bold", "title": "Ceramic Braces", "desc": "Tooth-colored ceramic brackets that blend seamlessly with your teeth, offering a discreet alternative to metal braces." },
+      { "icon": "ph:star-bold", "title": "Self-Ligating Braces", "desc": "Advanced bracket systems that use specialized clips instead of elastic ties, offering faster treatment times and fewer adjustments." }
+    ],
+    "faqs": [
+      { "q": "How long does orthodontic treatment take?", "a": "Treatment duration typically ranges from 12-24 months depending on the complexity of your case. Minor corrections may be completed in as few as 6 months, while complex cases may take up to 30 months." },
+      { "q": "Are braces painful?", "a": "You may experience mild discomfort for 3-5 days after initial placement and after each adjustment. This is completely normal and manageable with over-the-counter pain relievers. The discomfort decreases significantly with each visit." },
+      { "q": "Can adults get braces?", "a": "Absolutely! There is no age limit for orthodontic treatment. In fact, an increasing number of adults are seeking orthodontic care. We offer discreet options like ceramic braces and clear aligners specifically designed for adult patients." },
+      { "q": "How do I care for my braces?", "a": "Brush thoroughly after every meal, use interdental brushes to clean around brackets, floss daily with special orthodontic flossers, and avoid hard, sticky, or chewy foods that could damage your braces." },
+      { "q": "Will I need to wear retainers after treatment?", "a": "Yes, retainers are essential after braces removal to maintain your new smile. You'll typically wear them full-time initially, then transition to nighttime-only wear." }
+    ],
+    "cta": {
+      "heading": "Ready for a <span class=\"text-gradient\">Straighter Smile?</span>",
+      "desc": "Get your free orthodontic consultation and find the perfect braces option for you.",
+      "buttonText": "Book Consultation",
+      "buttonLink": "contact.html"
+    },
+    "relatedServices": ["dental-implants", "smile-designing", "orthodontic-care"],
+    "category": "dental-services"
+  },
+  {
+    "id": "root-canal",
+    "title": "Root Canal Treatment",
+    "metaTitle": "Root Canal Treatment in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Painless root canal treatment at Dr Batra's Dentistree, Vadodara. Advanced rotary endodontics and digital imaging for safe, effective tooth-saving therapy.",
+    "hero": {
+      "subtitle": "Endodontic Care",
+      "subtitleIcon": "healthicons:odontology-outline",
+      "heading": "Root Canal Treatment",
+      "breadcrumb": "Root Canal Treatment"
+    },
+    "intro": {
+      "subtitle": "What Is Root Canal Therapy?",
+      "subtitleIcon": "healthicons:odontology-outline",
+      "heading": "Save Your Natural Tooth with <span class=\"text-gradient\">Advanced Endodontics</span>",
+      "paragraphs": [
+        "Root canal therapy, also known as endodontic treatment, is a precise dental procedure designed to save a tooth that has become severely infected or damaged. It involves removing the infected pulp tissue from inside the tooth, cleaning and disinfecting the root canals, and sealing them to prevent further infection.",
+        "At Dr. Batra's Dentistree, we utilize advanced rotary endodontic instruments, electronic apex locators, and digital radiography to ensure thorough, precise, and comfortable treatment. Our modern techniques have made root canals virtually painless — a far cry from the outdated reputation this procedure once had.",
+        "Saving your natural tooth is always the best option. A properly treated tooth can last a lifetime with good oral care, maintaining your natural bite, chewing ability, and smile appearance."
+      ]
+    },
+    "benefits": [
+      { "title": "Saves Your Natural Tooth", "desc": "Root canal therapy preserves your original tooth, which is always preferable to extraction. Natural teeth provide the best chewing function and aesthetic appearance." },
+      { "title": "Eliminates Pain & Infection", "desc": "By removing the infected pulp and bacteria, the procedure relieves the severe toothache and eliminates the source of infection completely." },
+      { "title": "Virtually Painless Procedure", "desc": "Modern anesthesia and advanced rotary instruments make root canals comfortable and pain-free. Most patients compare it to getting a regular filling." },
+      { "title": "Prevents Spread of Infection", "desc": "Untreated dental infections can spread to surrounding tissues, the jawbone, and even enter the bloodstream. Root canal therapy stops this dangerous progression." },
+      { "title": "Cost-Effective Long-Term", "desc": "Saving your natural tooth with a root canal is more economical than extraction followed by implant or bridge placement." },
+      { "title": "Restores Normal Function", "desc": "After treatment and crown placement, your tooth will function normally for biting, chewing, and speaking with no restrictions." }
+    ],
+    "steps": [
+      { "title": "Diagnosis & X-rays", "desc": "Detailed examination with digital X-rays to identify the extent of infection and map the root canal anatomy." },
+      { "title": "Pulp Removal", "desc": "Under local anesthesia, the infected pulp tissue is carefully removed using advanced rotary instruments for precision and comfort." },
+      { "title": "Cleaning & Shaping", "desc": "The root canals are thoroughly cleaned, disinfected with antimicrobial solutions, and shaped to receive the filling material." },
+      { "title": "Sealing & Restoration", "desc": "Canals are sealed with biocompatible gutta-percha material, and a custom crown is placed to protect and restore the tooth." }
+    ],
+    "features": [
+      { "icon": "ph:lightning-bold", "title": "Rotary Endodontics", "desc": "Advanced nickel-titanium rotary instruments for faster, more precise, and comfortable root canal procedures." },
+      { "icon": "ph:monitor-bold", "title": "Digital Radiography", "desc": "High-resolution digital X-rays for accurate diagnosis with significantly reduced radiation exposure." },
+      { "icon": "ph:shield-check-bold", "title": "Single-Visit RCT", "desc": "Many root canal treatments can be completed in a single appointment, saving you time and reducing overall discomfort." }
+    ],
+    "faqs": [
+      { "q": "Is root canal treatment painful?", "a": "Modern root canal treatment is virtually painless. Advanced anesthesia ensures complete numbness, and rotary instruments minimize discomfort. Most patients describe the experience as comparable to getting a regular filling." },
+      { "q": "How many visits does a root canal require?", "a": "Most root canals at our clinic are completed in 1-2 visits. Single-visit root canals are possible for many cases, while severely infected teeth may require 2-3 appointments." },
+      { "q": "What happens if I don't get a root canal?", "a": "Without treatment, the infection will worsen, potentially leading to abscess formation, bone loss, spread of infection to other areas, and eventually tooth loss. Early treatment is always recommended." },
+      { "q": "Do I need a crown after root canal?", "a": "Yes, a crown is highly recommended after root canal treatment. The treated tooth becomes more brittle and a crown provides essential protection against fracture while restoring full function and appearance." },
+      { "q": "How long does a root canal treated tooth last?", "a": "With proper care and a well-fitted crown, a root canal treated tooth can last a lifetime. Regular dental check-ups and good oral hygiene are key to its longevity." }
+    ],
+    "cta": {
+      "heading": "Experiencing <span class=\"text-gradient\">Tooth Pain?</span>",
+      "desc": "Don't wait for the infection to spread. Get expert root canal treatment and save your natural tooth.",
+      "buttonText": "Book Consultation",
+      "buttonLink": "contact.html"
+    },
+    "relatedServices": ["dental-fillings", "crown-bridge", "dental-implants"],
+    "category": "dental-services"
+  },
+  {
+    "id": "crown-bridge",
+    "title": "Crown & Bridge",
+    "metaTitle": "Crown & Bridge in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "High-quality dental crowns and bridges at Dr Batra's Dentistree, Vadodara. Porcelain and zirconia restorations for damaged or missing teeth.",
+    "hero": {
+      "subtitle": "Restorative Dentistry",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Crown & Bridge",
+      "breadcrumb": "Crown & Bridge"
+    },
+    "intro": {
+      "subtitle": "What Are Dental Crowns & Bridges?",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Restore Damaged Teeth with <span class=\"text-gradient\">Precision Restorations</span>",
+      "paragraphs": [
+        "Dental crowns and bridges are custom-crafted prosthetic restorations used to repair damaged, weakened, or missing teeth. A crown (or cap) encases an entire tooth, restoring its shape, strength, and appearance, while a bridge uses adjacent teeth as anchors to replace one or more missing teeth.",
+        "At Dr. Batra's Dentistree, we use premium materials including porcelain-fused-to-metal (PFM), all-ceramic, and zirconia to create restorations that perfectly match your natural teeth in color, shape, and translucency. Our digital impression technology ensures exceptional fit and comfort.",
+        "Whether you need to protect a weakened tooth after root canal treatment, replace a missing tooth, or improve the appearance of a discolored or misshapen tooth, our expert team delivers restorations that combine aesthetics with durability."
+      ]
+    },
+    "benefits": [
+      { "title": "Restores Tooth Strength", "desc": "Crowns encase the entire visible portion of a damaged tooth, providing complete protection and restoring its ability to withstand normal biting forces." },
+      { "title": "Natural-Looking Results", "desc": "Our porcelain and zirconia crowns are custom-shaded and shaped to blend seamlessly with your natural teeth for an undetectable restoration." },
+      { "title": "Replaces Missing Teeth", "desc": "Bridges fill the gap left by missing teeth, restoring your ability to chew properly, speak clearly, and smile confidently." },
+      { "title": "Prevents Tooth Shifting", "desc": "By filling gaps with bridges, surrounding teeth are prevented from shifting out of position, maintaining proper bite alignment." },
+      { "title": "Durable & Long-lasting", "desc": "High-quality crowns and bridges can last 15-20 years or more with proper care, making them an excellent investment in your oral health." },
+      { "title": "Protects Root Canal Teeth", "desc": "Teeth that have undergone root canal treatment require crowns for protection against fracture and to restore full functionality." }
+    ],
+    "steps": [
+      { "title": "Consultation & Evaluation", "desc": "Thorough assessment of your dental condition, discussion of material options, and digital impressions for precision planning." },
+      { "title": "Tooth Preparation", "desc": "The affected tooth is carefully shaped to accommodate the crown, and precise impressions are taken for custom fabrication." },
+      { "title": "Temporary Restoration", "desc": "A comfortable temporary crown protects your prepared tooth while your permanent restoration is being crafted in the dental laboratory." },
+      { "title": "Permanent Placement", "desc": "Your custom crown or bridge is checked for fit, color, and comfort before being permanently cemented for a flawless result." }
+    ],
+    "features": [
+      { "icon": "ph:diamond-bold", "title": "Zirconia Crowns", "desc": "Ultra-strong, metal-free restorations that offer superior strength and a beautifully natural, translucent appearance." },
+      { "icon": "ph:star-bold", "title": "All-Ceramic Crowns", "desc": "Premium porcelain crowns with exceptional aesthetics, ideal for front teeth where appearance matters most." },
+      { "icon": "ph:shield-check-bold", "title": "PFM Crowns", "desc": "Porcelain fused to metal crowns combining the strength of metal with the aesthetics of porcelain for reliable, good-looking restorations." }
+    ],
+    "faqs": [
+      { "q": "How long does a dental crown last?", "a": "With proper care and good oral hygiene, dental crowns typically last 15-20 years. Zirconia crowns are known for their exceptional durability and can last even longer with proper maintenance." },
+      { "q": "Is getting a crown painful?", "a": "The procedure is performed under local anesthesia, so you won't feel any pain. Some patients experience mild sensitivity after the procedure, which resolves within a few days." },
+      { "q": "What material should I choose for my crown?", "a": "The best material depends on the tooth location and your priorities. Zirconia crowns offer the best combination of strength and aesthetics. For front teeth, all-ceramic crowns provide the most natural look." },
+      { "q": "Can a bridge be placed on implants?", "a": "Yes, implant-supported bridges are an excellent option when adjacent teeth are healthy and you prefer not to modify them. Implants provide a stronger, more durable foundation." },
+      { "q": "How do I care for my crown or bridge?", "a": "Maintain regular brushing and flossing, use a water flosser for bridge areas, avoid chewing very hard objects, and visit your dentist regularly for check-ups and professional cleaning." }
+    ],
+    "cta": {
+      "heading": "Need a Dental <span class=\"text-gradient\">Restoration?</span>",
+      "desc": "Get custom-crafted crowns and bridges that look and function like natural teeth.",
+      "buttonText": "Book Consultation",
+      "buttonLink": "contact.html"
+    },
+    "relatedServices": ["root-canal", "zirconia-crowns", "dental-implants"],
+    "category": "dental-services"
+  },
+  {
+    "id": "dental-gum-surgery",
+    "title": "Dental Gum Surgery",
+    "metaTitle": "Gum Surgery & Periodontal Treatment in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Advanced gum surgery and periodontal treatment at Dr Batra's Dentistree, Vadodara. Scaling, root planing, flap surgery, and bone grafts for healthy gums.",
+    "hero": {
+      "subtitle": "Periodontal Care",
+      "subtitleIcon": "healthicons:mouth-outline",
+      "heading": "Dental Gum Surgery",
+      "breadcrumb": "Dental Gum Surgery"
+    },
+    "intro": {
+      "subtitle": "Understanding Gum Disease",
+      "subtitleIcon": "healthicons:mouth-outline",
+      "heading": "Advanced Treatment for <span class=\"text-gradient\">Gum Health</span>",
+      "paragraphs": [
+        "Gum disease (periodontal disease) is a serious infection of the gum tissues and bones that support your teeth. If left untreated, it progressively destroys the bone and connective tissue anchoring your teeth, eventually leading to tooth loss. Gum surgery becomes necessary when non-surgical treatments are insufficient to address the damage.",
+        "At Dr. Batra's Dentistree, we provide comprehensive periodontal care including deep scaling, root planing, flap surgery, bone grafting, and guided tissue regeneration. Our periodontists use advanced techniques and instruments to effectively treat gum disease while ensuring patient comfort throughout the process.",
+        "Early detection and treatment of gum disease is crucial. If you notice symptoms like bleeding gums, persistent bad breath, gum recession, or loose teeth, we recommend scheduling an immediate consultation."
+      ]
+    },
+    "benefits": [
+      { "title": "Stops Disease Progression", "desc": "Surgical intervention effectively halts the progression of gum disease, preventing further bone loss and tissue destruction." },
+      { "title": "Saves Natural Teeth", "desc": "By treating the underlying infection and regenerating lost tissue, gum surgery helps preserve teeth that would otherwise need extraction." },
+      { "title": "Eliminates Deep Pockets", "desc": "Surgery reduces the depth of periodontal pockets where bacteria accumulate, making future cleaning more effective and manageable." },
+      { "title": "Bone Regeneration", "desc": "Advanced bone grafting procedures can regenerate bone lost to periodontal disease, restoring support for your natural teeth." },
+      { "title": "Improves Overall Health", "desc": "Research links gum disease to heart disease, diabetes complications, and stroke. Treating periodontal disease improves your systemic health." },
+      { "title": "Fresher Breath", "desc": "Eliminating bacterial pockets and infection resolves persistent bad breath caused by periodontal disease." }
+    ],
+    "steps": [
+      { "title": "Periodontal Assessment", "desc": "Comprehensive evaluation including pocket depth measurement, bone level X-rays, and bacterial assessment to determine disease severity." },
+      { "title": "Non-Surgical Phase", "desc": "Deep scaling and root planing to remove tartar and bacteria from below the gumline and smooth root surfaces." },
+      { "title": "Surgical Intervention", "desc": "When required, flap surgery, bone grafts, or guided tissue regeneration procedures are performed under local anesthesia." },
+      { "title": "Maintenance Program", "desc": "Ongoing periodontal maintenance visits every 3-4 months to monitor healing and prevent disease recurrence." }
+    ],
+    "features": [
+      { "icon": "ph:shield-check-bold", "title": "Flap Surgery", "desc": "Deep cleaning procedure where gum tissue is lifted to access and clean root surfaces and bone, then repositioned for optimal healing." },
+      { "icon": "ph:bone-bold", "title": "Bone Grafting", "desc": "Surgical placement of bone material to regenerate bone lost due to periodontal disease, restoring structural support." },
+      { "icon": "ph:first-aid-kit-bold", "title": "Guided Tissue Regeneration", "desc": "Advanced technique using special membranes to encourage regrowth of bone and gum tissue destroyed by periodontitis." }
+    ],
+    "faqs": [
+      { "q": "What are the signs of gum disease?", "a": "Common signs include red, swollen, or tender gums; bleeding when brushing or flossing; persistent bad breath; receding gums; loose teeth; and changes in bite alignment. If you notice any of these, seek treatment promptly." },
+      { "q": "Is gum surgery painful?", "a": "The procedure is performed under local anesthesia, so you'll be comfortable during surgery. Post-operative discomfort is manageable with prescribed medications and typically subsides within a week." },
+      { "q": "How long is the recovery from gum surgery?", "a": "Most patients recover within 1-2 weeks. You'll follow a soft diet for a few days and receive detailed aftercare instructions. Complete healing of the surgical site takes 4-6 weeks." },
+      { "q": "Can gum disease be reversed?", "a": "Gingivitis (early-stage gum disease) is fully reversible with professional treatment and good oral hygiene. Advanced periodontitis can be controlled and managed, but lost bone and tissue may require surgical regeneration." },
+      { "q": "Will my gums grow back after surgery?", "a": "Surgical techniques along with grafting procedures can help regenerate gum tissue. However, the extent of regrowth depends on the severity of the condition and your body's healing response." }
+    ],
+    "cta": {
+      "heading": "Concerned About Your <span class=\"text-gradient\">Gum Health?</span>",
+      "desc": "Early treatment prevents tooth loss. Schedule your periodontal evaluation today.",
+      "buttonText": "Book Consultation",
+      "buttonLink": "contact.html"
+    },
+    "relatedServices": ["cosmetic-gum-surgery", "laser-dentistry", "dental-implants"],
+    "category": "dental-services"
+  },
+  {
+    "id": "tooth-removal",
+    "title": "Tooth Removal",
+    "metaTitle": "Tooth Extraction & Removal in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Safe and painless tooth removal at Dr Batra's Dentistree, Vadodara. Wisdom tooth extraction and simple extractions under local or sedation anesthesia.",
+    "hero": { "subtitle": "Oral Surgery", "subtitleIcon": "healthicons:odontology", "heading": "Tooth Removal", "breadcrumb": "Tooth Removal" },
+    "intro": {
+      "subtitle": "When Is Extraction Necessary?",
+      "subtitleIcon": "healthicons:odontology",
+      "heading": "Safe & Painless <span class=\"text-gradient\">Tooth Extraction</span>",
+      "paragraphs": [
+        "While preserving natural teeth is always our priority, tooth extraction becomes necessary in cases of severe decay, advanced periodontal disease, impacted wisdom teeth, or teeth that cannot be saved with any restorative procedure. Tooth removal is also sometimes required for orthodontic treatment or as preparation for dentures or implants.",
+        "At Dr. Batra's Dentistree, we perform both simple and surgical extractions using advanced techniques, ensuring a safe, comfortable, and minimally traumatic experience. Our oral surgeons are experienced in handling complex cases including impacted wisdom teeth and multi-rooted extractions.",
+        "We provide comprehensive aftercare guidance and follow-up to ensure quick, comfortable healing, and we discuss replacement options to restore your smile after extraction."
+      ]
+    },
+    "benefits": [
+      { "title": "Eliminates Pain & Infection", "desc": "Removing a severely damaged or infected tooth provides immediate relief from pain and prevents the spread of infection to surrounding teeth and tissues." },
+      { "title": "Prevents Complications", "desc": "Impacted wisdom teeth can cause crowding, cysts, infections, and damage to adjacent teeth. Timely removal prevents these complications." },
+      { "title": "Painless Procedure", "desc": "Modern anesthesia techniques ensure complete numbness during the procedure. Sedation options are available for anxious patients." },
+      { "title": "Quick Recovery", "desc": "With proper aftercare, most patients recover within 3-5 days for simple extractions and 7-10 days for surgical extractions." },
+      { "title": "Creates Space for Treatment", "desc": "Extraction may be necessary to create room for orthodontic treatment or to prepare for dental implants, bridges, or dentures." },
+      { "title": "Preserves Oral Health", "desc": "Removing problematic teeth protects the health of remaining teeth and prevents further damage to your jawbone and gum tissue." }
+    ],
+    "steps": [
+      { "title": "Examination & X-rays", "desc": "Detailed assessment with digital X-rays to evaluate the tooth's position, root structure, and proximity to nerves." },
+      { "title": "Anesthesia", "desc": "Local anesthesia is administered to ensure complete numbness. Sedation options are available for anxious patients." },
+      { "title": "Extraction Procedure", "desc": "The tooth is carefully loosened and removed using specialized instruments. Surgical extraction is used for impacted teeth." },
+      { "title": "Post-Care Instructions", "desc": "Detailed aftercare guidance is provided, along with prescribed medications to ensure comfortable, complication-free healing." }
+    ],
+    "features": [
+      { "icon": "healthicons:odontology", "title": "Simple Extraction", "desc": "For visible, fully erupted teeth that can be removed with forceps under local anesthesia." },
+      { "icon": "ph:first-aid-kit-bold", "title": "Surgical Extraction", "desc": "For impacted, broken, or deeply rooted teeth requiring a small incision and sometimes bone removal." },
+      { "icon": "mdi:tooth-outline", "title": "Wisdom Tooth Removal", "desc": "Specialized removal of impacted third molars to prevent crowding, cysts, and infection." }
+    ],
+    "faqs": [
+      { "q": "Is tooth extraction painful?", "a": "With modern anesthesia, the extraction procedure itself is painless. You'll feel pressure but no pain. Post-operative discomfort is mild and manageable with prescribed medication." },
+      { "q": "How long does recovery take?", "a": "Simple extractions typically heal in 3-5 days, while surgical extractions may take 7-10 days. Complete bone healing takes 3-6 months." },
+      { "q": "Should I replace the extracted tooth?", "a": "Yes, it's important to replace missing teeth to prevent shifting of adjacent teeth, bone loss, and bite problems. Options include implants, bridges, or dentures." },
+      { "q": "When should wisdom teeth be removed?", "a": "Wisdom teeth are typically removed when they are impacted, causing pain, growing at an angle, or when there isn't enough room in the jaw. Early removal (ages 17-25) is recommended." },
+      { "q": "What should I avoid after extraction?", "a": "Avoid smoking, drinking through straws, vigorous rinsing, and hard foods for 24-48 hours. Follow your dentist's specific instructions for optimal healing." }
+    ],
+    "cta": { "heading": "Need a Tooth <span class=\"text-gradient\">Extraction?</span>", "desc": "Our gentle approach ensures a comfortable experience from start to finish.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-implants", "dentures", "root-canal"],
+    "category": "dental-services"
+  },
+  {
+    "id": "dentures",
+    "title": "Dentures",
+    "metaTitle": "Dentures in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Custom-made complete and partial dentures at Dr Batra's Dentistree, Vadodara. Comfortable, natural-looking dentures for missing teeth replacement.",
+    "hero": { "subtitle": "Prosthetic Dentistry", "subtitleIcon": "mdi:tooth-outline", "heading": "Dentures", "breadcrumb": "Dentures" },
+    "intro": {
+      "subtitle": "What Are Dental Dentures?",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Comfortable & <span class=\"text-gradient\">Natural-Looking</span> Dentures",
+      "paragraphs": [
+        "Dentures are removable prosthetic devices designed to replace missing teeth and surrounding tissues. Modern dentures are crafted from high-quality acrylic and porcelain materials that closely resemble natural teeth and gums, providing both functional and aesthetic benefits.",
+        "At Dr. Batra's Dentistree, we offer complete dentures for patients missing all teeth, partial dentures for those with some natural teeth remaining, and implant-supported overdentures for superior stability. Every denture is custom-fabricated using precise impressions and bite recordings.",
+        "Our goal is to create dentures that look natural, fit comfortably, and restore your ability to eat, speak, and smile with confidence. We take the time to ensure proper fit and aesthetics through multiple try-in appointments."
+      ]
+    },
+    "benefits": [
+      { "title": "Restores Chewing Ability", "desc": "Well-fitted dentures restore your ability to eat a variety of foods, improving nutrition and overall health." },
+      { "title": "Improves Speech", "desc": "Missing teeth can affect speech clarity. Dentures restore proper tongue and lip positioning for clear, natural speech." },
+      { "title": "Natural Appearance", "desc": "Modern dentures are crafted with lifelike teeth and realistic gum tissue, providing an attractive, youthful appearance." },
+      { "title": "Supports Facial Structure", "desc": "Dentures provide support for facial muscles, preventing the sunken appearance that develops when teeth are missing." },
+      { "title": "Affordable Solution", "desc": "Dentures offer a cost-effective option for replacing multiple missing teeth compared to individual implants." },
+      { "title": "Easy Maintenance", "desc": "Dentures are simple to clean and maintain. Regular cleaning and overnight soaking keeps them in excellent condition." }
+    ],
+    "steps": [
+      { "title": "Initial Assessment", "desc": "Comprehensive evaluation of your oral health, remaining teeth, jawbone structure, and discussion of denture options." },
+      { "title": "Impressions & Measurements", "desc": "Precise dental impressions and bite recordings are taken to create dentures that fit your mouth perfectly." },
+      { "title": "Wax Try-in", "desc": "A wax model of your dentures is created for you to try, allowing adjustments to tooth position, color, and bite before final fabrication." },
+      { "title": "Fitting & Adjustments", "desc": "Your finished dentures are carefully fitted, and follow-up appointments ensure optimal comfort and function." }
+    ],
+    "features": [
+      { "icon": "mdi:tooth-outline", "title": "Complete Dentures", "desc": "Full arch replacement for patients missing all teeth in the upper or lower jaw, custom-crafted for natural appearance." },
+      { "icon": "healthicons:odontology-outline", "title": "Partial Dentures", "desc": "Replace one or more missing teeth while preserving remaining natural teeth, using clasps or precision attachments." },
+      { "icon": "ph:shield-check-bold", "title": "Implant-Supported Dentures", "desc": "Dentures anchored to dental implants for superior stability, eliminating slipping and adhesive dependency." }
+    ],
+    "faqs": [
+      { "q": "How long does it take to get used to dentures?", "a": "Most patients adapt to new dentures within 2-4 weeks. You may experience temporary difficulty eating and speaking, but this improves quickly with practice." },
+      { "q": "How do I care for my dentures?", "a": "Remove and rinse dentures after eating, brush them daily with a soft brush and denture cleaner, soak overnight in a cleaning solution, and handle carefully to avoid dropping." },
+      { "q": "How often should dentures be replaced?", "a": "Dentures typically need relining or replacement every 5-7 years as your jawbone and gums change shape over time. Regular dental check-ups monitor fit and condition." },
+      { "q": "Can I eat normally with dentures?", "a": "Yes, once adapted you can eat most foods. Start with soft foods cut into small pieces, chew on both sides simultaneously, and gradually introduce firmer foods." },
+      { "q": "Do dentures look natural?", "a": "Absolutely! Modern dentures are crafted with high-quality teeth and gum-colored bases that closely mimic natural teeth, providing a very natural, attractive appearance." }
+    ],
+    "cta": { "heading": "Missing Multiple <span class=\"text-gradient\">Teeth?</span>", "desc": "Restore your complete smile with comfortable, custom-made dentures.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-implants", "crown-bridge", "tooth-removal"],
+    "category": "dental-services"
+  },
+  {
+    "id": "dental-fillings",
+    "title": "Dental Fillings",
+    "metaTitle": "Dental Fillings & Restorations in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Durable tooth-colored composite dental fillings at Dr Batra's Dentistree, Vadodara. Restore cavities and strengthen damaged teeth seamlessly.",
+    "hero": { "subtitle": "Restorative Care", "subtitleIcon": "mdi:tooth-outline", "heading": "Dental Fillings", "breadcrumb": "Dental Fillings" },
+    "intro": {
+      "subtitle": "What Are Dental Fillings?",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Restore Cavities with <span class=\"text-gradient\">Tooth-Colored Fillings</span>",
+      "paragraphs": [
+        "Dental fillings are restorative materials used to repair teeth damaged by decay (cavities) or minor fractures. The decayed portion of the tooth is removed, and the resulting cavity is filled with a durable, aesthetic material that restores the tooth's shape, function, and integrity.",
+        "At Dr. Batra's Dentistree, we primarily use tooth-colored composite resin fillings that blend invisibly with your natural teeth. Unlike traditional silver amalgam fillings, composite fillings bond directly to the tooth structure, providing better support and a more natural appearance.",
+        "Early detection and treatment of cavities is essential. Small cavities treated promptly with fillings prevent the need for more extensive and expensive procedures like root canals or crowns later."
+      ]
+    },
+    "benefits": [
+      { "title": "Natural Appearance", "desc": "Tooth-colored composite fillings match your natural tooth shade perfectly, making the restoration virtually invisible." },
+      { "title": "Preserves Tooth Structure", "desc": "Composite fillings bond directly to the tooth, requiring less removal of healthy tooth structure compared to amalgam fillings." },
+      { "title": "Mercury-Free", "desc": "Composite resin fillings contain no mercury or metal, providing a safe and biocompatible restoration option." },
+      { "title": "Durable & Strong", "desc": "Modern composite materials are highly durable and can withstand normal biting and chewing forces for many years." },
+      { "title": "Quick Procedure", "desc": "Most fillings can be completed in a single visit, typically taking just 30-60 minutes per tooth." },
+      { "title": "Prevents Further Decay", "desc": "Properly placed fillings seal the tooth and prevent bacteria from entering, protecting against further decay." }
+    ],
+    "steps": [
+      { "title": "Detection & Diagnosis", "desc": "Thorough examination and digital X-rays to identify cavities and assess the extent of damage." },
+      { "title": "Decay Removal", "desc": "The decayed portion of the tooth is carefully removed using precise dental instruments under local anesthesia." },
+      { "title": "Filling Placement", "desc": "Composite resin is applied in layers, sculpted to match your tooth's natural shape, and cured with a special blue light." },
+      { "title": "Polishing & Finishing", "desc": "The filling is shaped, adjusted for proper bite, and polished to a smooth, natural finish." }
+    ],
+    "features": [
+      { "icon": "ph:star-bold", "title": "Composite Resin Fillings", "desc": "Tooth-colored restorations that provide excellent aesthetics and strong bonding to natural tooth structure." },
+      { "icon": "ph:diamond-bold", "title": "Glass Ionomer Fillings", "desc": "Fluoride-releasing fillings particularly useful for children and root surface cavities." },
+      { "icon": "ph:shield-check-bold", "title": "Ceramic Inlays/Onlays", "desc": "Lab-fabricated porcelain restorations for larger cavities that require superior strength and aesthetics." }
+    ],
+    "faqs": [
+      { "q": "How long do composite fillings last?", "a": "Composite fillings typically last 7-10 years with proper care. Factors affecting longevity include filling size, location, oral hygiene habits, and bite forces." },
+      { "q": "Are dental fillings painful?", "a": "The procedure is performed under local anesthesia, so you'll feel no pain during placement. Mild sensitivity after the procedure is normal and usually resolves within a few days." },
+      { "q": "Can old silver fillings be replaced?", "a": "Yes, we routinely replace old amalgam fillings with tooth-colored composite fillings for improved aesthetics and reduced mercury exposure." },
+      { "q": "How do I know if I have a cavity?", "a": "Symptoms include tooth sensitivity, pain when biting or eating sweets, visible holes or dark spots on teeth. However, many cavities are asymptomatic and can only be detected through dental examinations and X-rays." },
+      { "q": "Is it better to get a filling or a crown?", "a": "Small to moderate cavities are best treated with fillings. When more than 60% of the tooth structure is damaged, a crown provides better protection and longevity." }
+    ],
+    "cta": { "heading": "Have a <span class=\"text-gradient\">Cavity?</span>", "desc": "Get it fixed quickly with our painless, tooth-colored fillings. Walk in or book online.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["root-canal", "crown-bridge", "tooth-coloured-restoration"],
+    "category": "dental-services"
+  },
+  {
+    "id": "pediatric-dentistry",
+    "title": "Pediatric Dentistry",
+    "metaTitle": "Pediatric Dentistry in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Gentle and fun dental care for children at Dr Batra's Dentistree, Vadodara. Fluoride treatments, sealants, and early orthodontic assessments.",
+    "hero": { "subtitle": "Children's Dental Care", "subtitleIcon": "mdi:baby-face-outline", "heading": "Pediatric Dentistry", "breadcrumb": "Pediatric Dentistry" },
+    "intro": {
+      "subtitle": "Specialized Care for Little Smiles",
+      "subtitleIcon": "mdi:baby-face-outline",
+      "heading": "Gentle Dental Care for <span class=\"text-gradient\">Children</span>",
+      "paragraphs": [
+        "Children's dental needs are fundamentally different from adults, requiring specialized knowledge, techniques, and a gentle, patient approach. Pediatric dentistry focuses on the oral health of infants, children, and adolescents, from eruption of the first baby tooth through the transition to permanent teeth.",
+        "At Dr. Batra's Dentistree, we create a warm, child-friendly environment where young patients feel safe and comfortable. Our team is trained in behavior management, age-appropriate communication, and painless treatment techniques specifically designed for children.",
+        "We believe that positive early dental experiences set the foundation for a lifetime of good oral health. Our preventive-focused approach includes regular check-ups, fluoride applications, dental sealants, and education about proper oral hygiene habits."
+      ]
+    },
+    "benefits": [
+      { "title": "Child-Friendly Environment", "desc": "Our clinic is designed to make children feel comfortable and at ease, with a warm, welcoming atmosphere that makes dental visits enjoyable." },
+      { "title": "Preventive Focus", "desc": "We emphasize prevention through fluoride treatments, sealants, and education to protect your child's teeth from cavities and decay." },
+      { "title": "Early Detection", "desc": "Regular check-ups catch potential problems early, including cavities, misalignment, and developmental issues, enabling simpler, less invasive treatment." },
+      { "title": "Behavior Management", "desc": "Our team uses age-appropriate communication and gentle techniques to build trust and create positive dental experiences for children." },
+      { "title": "Habit Counseling", "desc": "We provide guidance on thumb-sucking, pacifier use, diet, and oral hygiene to prevent issues before they develop." },
+      { "title": "Orthodontic Monitoring", "desc": "Early assessment of jaw growth and tooth alignment helps identify orthodontic needs early, potentially reducing the complexity of future treatment." }
+    ],
+    "steps": [
+      { "title": "First Visit & Introduction", "desc": "A gentle, fun introduction to the dental environment with a non-threatening examination of your child's teeth and gums." },
+      { "title": "Preventive Care", "desc": "Cleaning, fluoride application, and dental sealants to protect against cavities and strengthen developing teeth." },
+      { "title": "Treatment (If Needed)", "desc": "Any necessary procedures are performed using child-friendly techniques, gentle anesthesia, and age-appropriate communication." },
+      { "title": "Education & Follow-up", "desc": "Your child learns proper brushing and flossing techniques, and regular follow-up appointments maintain their dental health." }
+    ],
+    "features": [
+      { "icon": "ph:shield-check-bold", "title": "Dental Sealants", "desc": "Thin protective coatings applied to the chewing surfaces of back teeth to prevent cavities in the deep grooves." },
+      { "icon": "ph:drop-bold", "title": "Fluoride Treatment", "desc": "Professional fluoride application to strengthen enamel and provide extra protection against tooth decay." },
+      { "icon": "mdi:tooth-outline", "title": "Pulp Therapy", "desc": "Specialized root canal treatment for baby teeth (pulpotomy) to save infected primary teeth until they naturally fall out." }
+    ],
+    "faqs": [
+      { "q": "When should my child first visit the dentist?", "a": "The American Academy of Pediatric Dentistry recommends the first dental visit by age 1 or within 6 months of the first tooth erupting. Early visits help establish a dental home and catch issues early." },
+      { "q": "Are baby teeth really important?", "a": "Absolutely! Baby teeth serve critical functions: they help with proper chewing and nutrition, guide proper jaw development, maintain space for permanent teeth, and aid in speech development." },
+      { "q": "How can I prevent cavities in my child?", "a": "Limit sugary snacks and drinks, brush twice daily with fluoride toothpaste, floss daily, schedule regular dental visits, and consider dental sealants for back teeth." },
+      { "q": "What if my child is afraid of the dentist?", "a": "Our team specializes in making children comfortable. We use tell-show-do technique, positive reinforcement, and age-appropriate language. For very anxious children, sedation options are available." },
+      { "q": "When should my child start brushing on their own?", "a": "Children should brush with parental supervision until age 7-8. Before that, parents should assist with brushing to ensure thorough cleaning. Children can begin flossing with help around age 2-3." }
+    ],
+    "cta": { "heading": "Your Child's Smile <span class=\"text-gradient\">Matters</span>", "desc": "Give your kids a lifetime of healthy smiles with our gentle pediatric dental care.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-fillings", "orthodontic-braces", "tooth-removal"],
+    "category": "dental-services"
+  },
+  {
+    "id": "cardiac-diabetic",
+    "title": "Cardiac & Diabetic Dental Care",
+    "metaTitle": "Cardiac & Diabetic Dental Care in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Specialized dental care for cardiac and diabetic patients at Dr Batra's Dentistree, Vadodara. Safe, customized treatments with medical monitoring.",
+    "hero": { "subtitle": "Specialized Care", "subtitleIcon": "ph:heart-bold", "heading": "Cardiac & Diabetic Dental Care", "breadcrumb": "Cardiac & Diabetic Care" },
+    "intro": {
+      "subtitle": "Dental Care for Medical Conditions",
+      "subtitleIcon": "ph:heart-bold",
+      "heading": "Safe Dental Care for <span class=\"text-gradient\">Cardiac & Diabetic</span> Patients",
+      "paragraphs": [
+        "Patients with cardiac conditions or diabetes require specialized dental care protocols to ensure safe and effective treatment. These medical conditions directly impact oral health and require careful coordination between dental and medical teams.",
+        "At Dr. Batra's Dentistree, our experienced team is well-versed in managing dental treatment for patients with heart disease, hypertension, diabetes, and other systemic conditions. We follow strict protocols including pre-treatment medical clearance, vital sign monitoring, and modified anesthesia approaches.",
+        "Research has established clear links between oral health and systemic conditions. Gum disease can worsen diabetes control, and untreated oral infections can pose risks for cardiac patients. Our comprehensive approach addresses both your dental and overall health needs."
+      ]
+    },
+    "benefits": [
+      { "title": "Medically Safe Protocols", "desc": "Treatment protocols are specifically designed for patients with cardiac and diabetic conditions, with continuous monitoring throughout procedures." },
+      { "title": "Coordinated Care", "desc": "We work closely with your physician to ensure dental treatments are compatible with your medications and medical condition." },
+      { "title": "Infection Prevention", "desc": "Enhanced infection control protocols protect immunocompromised patients from post-procedure complications." },
+      { "title": "Diabetes-Oral Health Link", "desc": "We address the bidirectional relationship between diabetes and gum disease, helping improve both your oral and systemic health." },
+      { "title": "Modified Anesthesia", "desc": "Anesthesia selection and dosing are carefully adjusted to accommodate cardiovascular medications and blood sugar management." },
+      { "title": "Emergency Preparedness", "desc": "Our clinic is equipped with emergency protocols and equipment specifically for managing cardiac and diabetic emergencies." }
+    ],
+    "steps": [
+      { "title": "Medical History Review", "desc": "Comprehensive review of your medical history, current medications, recent lab results, and coordination with your cardiologist or endocrinologist." },
+      { "title": "Risk Assessment", "desc": "Evaluation of treatment risks related to your specific condition, with customized treatment plans to minimize complications." },
+      { "title": "Safe Treatment Delivery", "desc": "Procedures performed with continuous vital sign monitoring, appropriate anesthesia choices, and strict infection control." },
+      { "title": "Post-Treatment Follow-up", "desc": "Close monitoring after treatment, detailed aftercare instructions, and coordination with your medical team for optimal recovery." }
+    ],
+    "features": [
+      { "icon": "ph:heart-bold", "title": "Cardiac-Safe Dentistry", "desc": "Modified treatment protocols for patients with heart conditions, pacemakers, or those on blood-thinning medications." },
+      { "icon": "ph:first-aid-kit-bold", "title": "Diabetic Care Protocol", "desc": "Specialized scheduling, blood sugar monitoring, and infection prevention strategies for diabetic patients." },
+      { "icon": "ph:shield-check-bold", "title": "Vital Sign Monitoring", "desc": "Continuous blood pressure, pulse, and oxygen level monitoring throughout all dental procedures." }
+    ],
+    "faqs": [
+      { "q": "Can diabetic patients get dental implants?", "a": "Yes, diabetic patients with well-controlled blood sugar levels can safely receive dental implants. Good glycemic control (HbA1c below 7%) is important for proper healing and implant success." },
+      { "q": "Do I need to stop blood thinners before dental treatment?", "a": "Generally, routine blood thinners should NOT be stopped for most dental procedures. We coordinate with your cardiologist to determine the safest approach for your specific situation." },
+      { "q": "Is dental anesthesia safe for heart patients?", "a": "Yes, with appropriate modifications. We use anesthetics with controlled vasoconstrictor levels and monitor vital signs throughout the procedure to ensure your safety." },
+      { "q": "How does diabetes affect oral health?", "a": "Diabetes increases the risk of gum disease, dry mouth, fungal infections, delayed healing, and tooth decay. Regular dental care is especially important for diabetic patients." },
+      { "q": "Should I inform my dentist about my medications?", "a": "Absolutely! Always provide a complete list of medications, supplements, and medical conditions. This information is crucial for safe treatment planning." }
+    ],
+    "cta": { "heading": "Need <span class=\"text-gradient\">Specialized</span> Dental Care?", "desc": "We provide safe, expert dental treatment tailored to your medical needs.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-gum-surgery", "dental-implants", "root-canal"],
+    "category": "dental-services"
+  },
+  {
+    "id": "pregnancy-care",
+    "title": "Pregnancy Dental Care",
+    "metaTitle": "Pregnancy Dental Care in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Safe dental care during pregnancy at Dr Batra's Dentistree, Vadodara. Gentle treatment for expectant mothers with prenatal oral health guidance.",
+    "hero": { "subtitle": "Prenatal Dental Care", "subtitleIcon": "mdi:human-pregnant", "heading": "Pregnancy Dental Care", "breadcrumb": "Pregnancy Care" },
+    "intro": {
+      "subtitle": "Oral Health During Pregnancy",
+      "subtitleIcon": "mdi:human-pregnant",
+      "heading": "Safe & Gentle Care for <span class=\"text-gradient\">Expectant Mothers</span>",
+      "paragraphs": [
+        "Pregnancy brings significant hormonal changes that can dramatically affect your oral health. Increased levels of progesterone and estrogen make gums more susceptible to inflammation and bleeding, a condition known as pregnancy gingivitis, which affects up to 75% of pregnant women.",
+        "At Dr. Batra's Dentistree, we provide safe, gentle dental care tailored specifically for expectant mothers. We follow strict protocols regarding X-ray avoidance, medication safety, and timing of procedures to ensure the safety of both mother and baby.",
+        "The second trimester (weeks 14-20) is generally considered the safest time for dental treatment. However, dental emergencies can and should be treated at any stage of pregnancy. Maintaining good oral health during pregnancy is not just important for you — research links maternal periodontal disease to preterm birth and low birth weight."
+      ]
+    },
+    "benefits": [
+      { "title": "Safe for Mother & Baby", "desc": "All treatments follow pregnancy-safe protocols with appropriate timing, medication choices, and positioning for your comfort." },
+      { "title": "Prevents Pregnancy Gingivitis", "desc": "Professional cleaning and monitoring help manage the hormonal gum changes that affect most pregnant women." },
+      { "title": "Reduces Preterm Birth Risk", "desc": "Studies show that treating periodontal disease during pregnancy can significantly reduce the risk of preterm birth and low birth weight." },
+      { "title": "Morning Sickness Dental Care", "desc": "We provide guidance on protecting tooth enamel from stomach acid exposure and managing dry mouth during pregnancy." },
+      { "title": "Medication-Safe Treatment", "desc": "Only pregnancy-category-A and B medications are used, and all drug selections are verified for fetal safety." },
+      { "title": "Comfortable Positioning", "desc": "Special attention to positioning during treatment ensures comfort and prevents supine hypotension syndrome." }
+    ],
+    "steps": [
+      { "title": "Prenatal Dental Assessment", "desc": "Gentle examination of your oral health status with pregnancy-safe diagnostic methods and consultation about your trimester." },
+      { "title": "Professional Cleaning", "desc": "Thorough but gentle cleaning to remove plaque and tartar, helping prevent pregnancy gingivitis and periodontal complications." },
+      { "title": "Treatment (If Needed)", "desc": "Any necessary procedures are performed using pregnancy-safe anesthesia and medications, ideally during the second trimester." },
+      { "title": "Postnatal Follow-up", "desc": "Post-delivery dental check-up to address any issues that developed during pregnancy and establish ongoing care." }
+    ],
+    "features": [
+      { "icon": "ph:shield-check-bold", "title": "Pregnancy-Safe Protocols", "desc": "Modified treatment approaches including specific anesthesia choices, positioning, and timing aligned with trimester guidelines." },
+      { "icon": "ph:drop-bold", "title": "Gingivitis Management", "desc": "Specialized care for pregnancy gingivitis including professional cleanings, home care guidance, and monitoring." },
+      { "icon": "ph:heart-bold", "title": "Nutritional Guidance", "desc": "Dietary advice to support both your oral health and your baby's developing teeth, including calcium and vitamin D recommendations." }
+    ],
+    "faqs": [
+      { "q": "Is it safe to go to the dentist while pregnant?", "a": "Yes! Dental care is not only safe during pregnancy but essential. The American Dental Association and ACOG recommend maintaining dental visits throughout pregnancy. The second trimester is ideal for elective procedures." },
+      { "q": "Can I get dental X-rays during pregnancy?", "a": "Routine X-rays are typically postponed until after delivery. If an emergency requires X-rays, modern digital X-rays with proper shielding expose you to minimal radiation and are considered safe when necessary." },
+      { "q": "Why do my gums bleed more during pregnancy?", "a": "Hormonal changes increase blood flow to gum tissue and alter the body's response to bacteria, making gums more prone to inflammation and bleeding. This is called pregnancy gingivitis and is very common." },
+      { "q": "Can dental problems affect my baby?", "a": "Yes, severe gum disease has been linked to preterm birth, low birth weight, and preeclampsia. Maintaining good oral health during pregnancy supports your baby's health." },
+      { "q": "What can I do about morning sickness and my teeth?", "a": "Don't brush immediately after vomiting — rinse with water or baking soda solution first to neutralize acid. Wait 30 minutes before brushing to avoid enamel erosion." }
+    ],
+    "cta": { "heading": "Expecting & Need <span class=\"text-gradient\">Dental Care?</span>", "desc": "Our gentle, pregnancy-safe approach keeps you and your baby healthy.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-gum-surgery", "dental-fillings", "pediatric-dentistry"],
+    "category": "dental-services"
+  },
+  {
+    "id": "laser-dentistry",
+    "title": "Laser Dentistry",
+    "metaTitle": "Laser Dentistry in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Advanced laser dental treatments at Dr Batra's Dentistree, Vadodara. Minimally invasive laser procedures for gum reshaping, cavity treatment, and faster healing.",
+    "hero": { "subtitle": "Advanced Technology", "subtitleIcon": "ph:lightning-bold", "heading": "Laser Dentistry", "breadcrumb": "Laser Dentistry" },
+    "intro": {
+      "subtitle": "The Future of Dental Treatment",
+      "subtitleIcon": "ph:lightning-bold",
+      "heading": "Minimally Invasive <span class=\"text-gradient\">Laser Procedures</span>",
+      "paragraphs": [
+        "Laser dentistry represents the cutting edge of modern dental treatment, using focused light energy to perform a wide range of procedures with unprecedented precision, minimal discomfort, and faster healing times. Dental lasers can treat both hard tissues (teeth) and soft tissues (gums) with remarkable accuracy.",
+        "At Dr. Batra's Dentistree, we integrate laser technology into multiple treatment areas including gum reshaping, cavity preparation, periodontal therapy, and soft tissue surgery. Laser procedures often eliminate the need for anesthesia, sutures, and result in significantly less bleeding and swelling.",
+        "Whether you need gum recontouring, treatment of aphthous ulcers, or minimally invasive soft tissue surgery, our laser technology delivers superior results with maximum comfort."
+      ]
+    },
+    "benefits": [
+      { "title": "Minimally Invasive", "desc": "Lasers precisely target only the affected tissue, preserving healthy surrounding areas and reducing overall tissue trauma." },
+      { "title": "Faster Healing", "desc": "Laser-treated tissues heal significantly faster than conventionally treated tissues, with less post-operative discomfort." },
+      { "title": "Reduced Bleeding", "desc": "Laser energy naturally cauterizes blood vessels during procedures, resulting in minimal bleeding and better visibility." },
+      { "title": "Less Need for Anesthesia", "desc": "Many laser procedures can be performed with minimal or no local anesthesia, ideal for patients with needle anxiety." },
+      { "title": "Lower Infection Risk", "desc": "The laser sterilizes the treatment area as it works, significantly reducing the risk of post-operative infection." },
+      { "title": "Greater Precision", "desc": "Laser technology allows for extremely precise tissue removal, enabling treatments that would be difficult or impossible with traditional instruments." }
+    ],
+    "steps": [
+      { "title": "Consultation & Planning", "desc": "Assessment of your dental condition to determine if laser treatment is the optimal approach for your specific needs." },
+      { "title": "Treatment Preparation", "desc": "Protective eyewear is provided, and the appropriate laser wavelength and settings are selected for your procedure." },
+      { "title": "Laser Procedure", "desc": "The laser is applied with precision to treat the target area. Most patients feel minimal to no discomfort during the procedure." },
+      { "title": "Post-Treatment Care", "desc": "Minimal aftercare is typically needed. Most patients resume normal activities immediately with little to no downtime." }
+    ],
+    "features": [
+      { "icon": "ph:lightning-bold", "title": "Soft Tissue Laser", "desc": "Precisely reshapes gum tissue, removes overgrowth, and treats periodontal disease with minimal bleeding and pain." },
+      { "icon": "ph:tooth-bold", "title": "Cavity Detection", "desc": "Laser fluorescence technology detects early-stage cavities invisible to X-rays, enabling earlier, less invasive treatment." },
+      { "icon": "ph:star-bold", "title": "Gum Depigmentation", "desc": "Laser treatment effectively removes dark pigmentation from gums, restoring a healthy pink appearance in just one session." }
+    ],
+    "faqs": [
+      { "q": "Is laser dentistry safe?", "a": "Yes, dental lasers are FDA-approved and have been used safely in dentistry for over 25 years. Our lasers are operated by trained professionals following strict safety protocols." },
+      { "q": "Do laser procedures hurt?", "a": "Most laser procedures involve minimal to no pain. Many treatments can be performed without anesthesia. Patients typically describe a warm sensation rather than pain." },
+      { "q": "What conditions can be treated with dental lasers?", "a": "Dental lasers treat gum disease, gum reshaping, gum depigmentation, canker sores, cavity preparation, frenectomy, and biopsy of oral lesions, among other applications." },
+      { "q": "Is laser treatment more expensive?", "a": "While laser equipment is advanced technology, the reduced treatment time, faster healing, and fewer follow-up visits often make it a cost-effective choice overall." },
+      { "q": "How long does healing take after laser treatment?", "a": "Healing after laser procedures is typically much faster than conventional surgery. Most soft tissue procedures heal within 1-2 days compared to 1-2 weeks for traditional methods." }
+    ],
+    "cta": { "heading": "Experience the <span class=\"text-gradient\">Precision</span> of Laser Dentistry", "desc": "Faster healing, less pain, and better results with advanced laser technology.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-gum-surgery", "gum-depigmentation", "cosmetic-gum-surgery"],
+    "category": "dental-services"
+  },
+  {
+    "id": "cosmetic-gum-surgery",
+    "title": "Cosmetic Gum Surgery",
+    "metaTitle": "Cosmetic Gum Surgery in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Professional cosmetic gum surgery at Dr Batra's Dentistree, Vadodara. Gum contouring and reshaping for a balanced, beautiful smile.",
+    "hero": { "subtitle": "Cosmetic Dentistry", "subtitleIcon": "healthicons:mouth-outline", "heading": "Cosmetic Gum Surgery", "breadcrumb": "Cosmetic Gum Surgery" },
+    "intro": {
+      "subtitle": "Gum Aesthetics",
+      "subtitleIcon": "healthicons:mouth-outline",
+      "heading": "Sculpting the Perfect <span class=\"text-gradient\">Gum Line</span>",
+      "paragraphs": [
+        "Cosmetic gum surgery, also known as gum contouring or gum plastic surgery, is a specialized procedure designed to reshape the gum line for improved smile aesthetics. Whether you have a 'gummy smile' with excess gum tissue, uneven gum margins, or gum recession exposing too much tooth root, cosmetic gum surgery can create a harmonious, balanced appearance.",
+        "At Dr. Batra's Dentistree, we use a combination of advanced laser technology and minimally invasive surgical techniques to precisely sculpt gum tissue for optimal aesthetic results. Our approach ensures minimal discomfort, reduced bleeding, and faster recovery compared to traditional surgical methods.",
+        "A beautiful smile isn't just about teeth — the frame your gums provide is equally important. Cosmetic gum surgery can dramatically transform your smile by creating the ideal proportion between teeth and gums."
+      ]
+    },
+    "benefits": [
+      { "title": "Corrects Gummy Smile", "desc": "Excess gum tissue is precisely removed to reveal more of your natural teeth, creating a balanced, proportionate smile." },
+      { "title": "Even Gum Line", "desc": "Uneven gum margins are reshaped to create a symmetrical frame that enhances the overall aesthetics of your smile." },
+      { "title": "Minimally Invasive", "desc": "Laser-assisted techniques minimize pain, bleeding, and recovery time compared to traditional gum surgery." },
+      { "title": "Immediate Results", "desc": "You can see the improvement in your gum line immediately after the procedure, with the final result visible within 2-3 weeks." },
+      { "title": "Boosts Confidence", "desc": "Patients who were self-conscious about their gummy smile or uneven gums experience significant improvement in confidence." },
+      { "title": "Complements Other Treatments", "desc": "Often combined with veneers or whitening for a complete smile makeover with stunning overall results." }
+    ],
+    "steps": [
+      { "title": "Smile Analysis", "desc": "Digital smile design to plan the ideal gum line proportions, ensuring a balanced relationship between teeth, gums, and lips." },
+      { "title": "Treatment Planning", "desc": "Customized plan based on your facial features, tooth size, and desired outcome, with pre-treatment visualization." },
+      { "title": "Gum Contouring", "desc": "Precise reshaping using laser or microsurgical techniques under local anesthesia for comfortable, predictable results." },
+      { "title": "Healing & Results", "desc": "Recovery takes 1-2 weeks with minimal discomfort. The final beautiful result is visible within 2-3 weeks." }
+    ],
+    "features": [
+      { "icon": "ph:lightning-bold", "title": "Laser Gum Contouring", "desc": "Precise laser technology sculpts gum tissue with minimal bleeding and faster healing than traditional surgery." },
+      { "icon": "ph:star-bold", "title": "Crown Lengthening", "desc": "Removes excess bone and gum tissue to expose more tooth structure, ideal for teeth that appear short or stubby." },
+      { "icon": "ph:heart-bold", "title": "Gum Grafting", "desc": "Tissue grafts cover exposed root surfaces caused by gum recession, restoring protection and improving appearance." }
+    ],
+    "faqs": [
+      { "q": "Is cosmetic gum surgery painful?", "a": "The procedure is performed under local anesthesia, so you'll feel no pain during treatment. Post-operative discomfort is minimal, especially with laser techniques, and is easily managed with medication." },
+      { "q": "How long does cosmetic gum surgery take?", "a": "Most procedures are completed in 1-2 hours depending on the extent of reshaping needed. The procedure is typically performed in a single appointment." },
+      { "q": "Will my gums grow back after contouring?", "a": "Gum tissue that has been removed through contouring does not grow back, making the results permanent. This is one of the great advantages of the procedure." },
+      { "q": "Can gum surgery fix a gummy smile?", "a": "Yes! Gum contouring is one of the most effective treatments for a gummy smile. By removing excess tissue, we reveal more of your natural teeth for a balanced, attractive smile." },
+      { "q": "What is the recovery time?", "a": "Most patients return to normal activities within 1-2 days. Complete healing takes about 2-3 weeks. A soft diet is recommended for the first few days after surgery." }
+    ],
+    "cta": { "heading": "Want a More <span class=\"text-gradient\">Balanced Smile?</span>", "desc": "Transform your gum line with our expert cosmetic gum surgery.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["smile-designing", "dental-bleaching", "gum-depigmentation"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "dental-bleaching",
+    "title": "Dental Bleaching",
+    "metaTitle": "Dental Bleaching & Teeth Whitening in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Professional teeth whitening and dental bleaching at Dr Batra's Dentistree, Vadodara. Safe, effective whitening that brightens your smile by multiple shades.",
+    "hero": { "subtitle": "Teeth Whitening", "subtitleIcon": "ph:sun-bold", "heading": "Dental Bleaching", "breadcrumb": "Dental Bleaching" },
+    "intro": {
+      "subtitle": "Professional Teeth Whitening",
+      "subtitleIcon": "ph:sun-bold",
+      "heading": "Brighten Your Smile by <span class=\"text-gradient\">Multiple Shades</span>",
+      "paragraphs": [
+        "Dental bleaching, also known as teeth whitening, is one of the most popular cosmetic dental procedures available today. It effectively lightens the color of your teeth by removing stains and discoloration caused by aging, coffee, tea, red wine, tobacco, and certain medications.",
+        "At Dr. Batra's Dentistree, we offer professional in-office whitening treatments that deliver dramatic results in a single visit. Our clinical-grade whitening systems use carefully formulated hydrogen peroxide gels activated by specialized light to safely lighten your teeth by 3-8 shades.",
+        "Unlike over-the-counter whitening products, our professional treatments are customized to your specific needs, ensuring optimal results with minimal sensitivity under the supervision of experienced dental professionals."
+      ]
+    },
+    "benefits": [
+      { "title": "Dramatic Results", "desc": "Professional whitening can lighten your teeth by 3-8 shades in a single session, far exceeding over-the-counter products." },
+      { "title": "Safe & Supervised", "desc": "Treatment is performed under professional supervision with gum protection, ensuring safe application and minimal sensitivity." },
+      { "title": "Fast Results", "desc": "In-office whitening delivers noticeable results in just 30-90 minutes, compared to weeks of using home whitening products." },
+      { "title": "Boosts Confidence", "desc": "A brighter, whiter smile dramatically improves your appearance and self-confidence in social and professional settings." },
+      { "title": "Customized Treatment", "desc": "Treatment intensity and duration are tailored to your specific discoloration type and desired shade of whiteness." },
+      { "title": "Long-lasting Results", "desc": "With proper maintenance and touch-ups, professional whitening results can last 1-3 years." }
+    ],
+    "steps": [
+      { "title": "Shade Assessment", "desc": "Your current tooth shade is documented and your target shade is discussed to set realistic expectations." },
+      { "title": "Teeth Cleaning", "desc": "Professional cleaning removes surface stains and plaque to ensure the whitening agent contacts the tooth surface directly." },
+      { "title": "Whitening Application", "desc": "A professional-grade whitening gel is applied and activated with a specialized light for 15-20 minute cycles." },
+      { "title": "Results & Maintenance", "desc": "Your new brighter shade is documented, and you receive aftercare instructions and take-home maintenance products." }
+    ],
+    "features": [
+      { "icon": "ph:sun-bold", "title": "In-Office Whitening", "desc": "Professional chairside whitening with light activation for dramatic results in a single 60-90 minute appointment." },
+      { "icon": "ph:house-bold", "title": "Take-Home Kits", "desc": "Custom-fitted whitening trays with professional-grade gel for convenient, gradual whitening at home." },
+      { "icon": "ph:shield-check-bold", "title": "Sensitivity Management", "desc": "Desensitizing agents are applied before and after treatment to minimize post-whitening tooth sensitivity." }
+    ],
+    "faqs": [
+      { "q": "Is teeth whitening safe?", "a": "Yes, professional teeth whitening is safe when performed by qualified dental professionals. We take precautions to protect gums and customize treatment intensity for your specific needs." },
+      { "q": "How long does whitening last?", "a": "Results typically last 1-3 years depending on diet, oral hygiene, and lifestyle habits. Touch-up treatments can maintain your bright smile." },
+      { "q": "Will whitening make my teeth sensitive?", "a": "Some temporary sensitivity is normal after whitening, typically lasting 24-48 hours. We use desensitizing agents and adjust treatment intensity to minimize discomfort." },
+      { "q": "Can all teeth be whitened?", "a": "Whitening works best on natural teeth with extrinsic staining. Intrinsic staining from medications (tetracycline), dental work (crowns/veneers), and severe fluorosis may not respond well to bleaching." },
+      { "q": "What stains does whitening remove?", "a": "Whitening is most effective on yellow and brown stains from coffee, tea, wine, tobacco, and aging. Gray stains from medications respond less predictably to treatment." }
+    ],
+    "cta": { "heading": "Ready for a <span class=\"text-gradient\">Brighter Smile?</span>", "desc": "Transform your smile in just one visit with our professional whitening treatment.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["smile-designing", "dental-veneers", "cosmetic-gum-surgery"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "dental-jewellery",
+    "title": "Dental Jewellery",
+    "metaTitle": "Dental Jewellery in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Add sparkle to your smile with dental jewellery at Dr Batra's Dentistree, Vadodara. Safe, painless tooth gems and crystals.",
+    "hero": { "subtitle": "Smile Accessories", "subtitleIcon": "ph:diamond-bold", "heading": "Dental Jewellery", "breadcrumb": "Dental Jewellery" },
+    "intro": {
+      "subtitle": "Sparkle in Your Smile",
+      "subtitleIcon": "ph:diamond-bold",
+      "heading": "A Touch of <span class=\"text-gradient\">Brilliance</span> for Your Smile",
+      "paragraphs": [
+        "Dental jewellery adds a unique, eye-catching sparkle to your smile with beautiful crystals, gems, or gold ornaments bonded safely to the surface of your tooth. It's a fun, painless, and reversible cosmetic enhancement that has become increasingly popular.",
+        "At Dr. Batra's Dentistree, we use premium Swarovski crystals and dental-grade gems that are bonded to the tooth using the same safe composite materials used for tooth-colored fillings. The procedure is completely painless, non-invasive, and causes no damage to the tooth enamel.",
+        "Whether you want a subtle sparkle or a statement piece, dental jewellery offers a unique way to personalize your smile and express your style."
+      ]
+    },
+    "benefits": [
+      { "title": "Completely Painless", "desc": "The procedure involves no drilling, no anesthesia, and no tooth modification. A crystal is simply bonded to the tooth surface." },
+      { "title": "Fully Reversible", "desc": "Dental jewellery can be removed anytime without any damage to the tooth enamel, leaving no marks or discoloration." },
+      { "title": "No Tooth Damage", "desc": "The bonding process is identical to placing a bracket for braces — completely safe with no enamel removal required." },
+      { "title": "Quick Procedure", "desc": "Application takes just 15-20 minutes. Walk in with a regular smile, walk out with a sparkling one." },
+      { "title": "Variety of Designs", "desc": "Choose from Swarovski crystals, sapphires, rubies, diamonds, or gold shapes in various sizes and colors." },
+      { "title": "Unique Style Statement", "desc": "Stand out with a personalized smile accessory that reflects your personality and style." }
+    ],
+    "steps": [
+      { "title": "Design Selection", "desc": "Choose your preferred gem, crystal, or gold design from our extensive collection of dental jewellery options." },
+      { "title": "Tooth Preparation", "desc": "The selected tooth surface is cleaned and etched with a mild conditioning agent for optimal bonding." },
+      { "title": "Jewellery Placement", "desc": "The gem is precisely positioned and bonded using dental composite material, then cured with a blue light." },
+      { "title": "Final Polish", "desc": "The area is polished for a smooth finish, and you can admire your new sparkling smile immediately." }
+    ],
+    "features": [
+      { "icon": "ph:diamond-bold", "title": "Swarovski Crystals", "desc": "Premium Austrian crystals in various colors and sizes that catch the light beautifully for a glamorous sparkle." },
+      { "icon": "ph:star-bold", "title": "Gold Designs", "desc": "Elegant gold shapes including hearts, stars, and initials for a sophisticated, personalized touch." },
+      { "icon": "ph:sparkle-bold", "title": "Precious Stones", "desc": "Real gemstones including diamonds, sapphires, and rubies for those who want ultimate luxury in their smile." }
+    ],
+    "faqs": [
+      { "q": "Does dental jewellery damage the tooth?", "a": "No, absolutely not. The procedure is completely non-invasive with no drilling or enamel removal. The gem is bonded to the surface using safe dental materials." },
+      { "q": "How long does dental jewellery last?", "a": "Dental jewellery typically lasts 6 months to 2 years depending on its location, your eating habits, and oral hygiene. It can be easily reapplied when needed." },
+      { "q": "Can I eat normally with dental jewellery?", "a": "Yes! You can eat, drink, brush, and floss normally. The gem is securely bonded to withstand normal oral activities." },
+      { "q": "Can the jewellery be removed?", "a": "Yes, dental jewellery can be easily and safely removed by your dentist at any time without causing any damage to the tooth." },
+      { "q": "Is the procedure painful?", "a": "The procedure is completely painless — no needles, no drilling, no discomfort at all. It takes just 15-20 minutes." }
+    ],
+    "cta": { "heading": "Add Some <span class=\"text-gradient\">Sparkle</span> to Your Smile", "desc": "Quick, painless, and fabulous — get your dental jewellery in just 15 minutes.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-bleaching", "smile-designing", "dental-veneers"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "dental-veneers",
+    "title": "Dental Veneers",
+    "metaTitle": "Dental Veneers in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Custom porcelain dental veneers at Dr Batra's Dentistree, Vadodara. Correct tooth shape, color, size, and alignment with ultra-thin veneers.",
+    "hero": { "subtitle": "Smile Makeover", "subtitleIcon": "mdi:tooth-outline", "heading": "Dental Veneers", "breadcrumb": "Dental Veneers" },
+    "intro": {
+      "subtitle": "Transform Your Smile",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Ultra-Thin Shells for a <span class=\"text-gradient\">Perfect Smile</span>",
+      "paragraphs": [
+        "Dental veneers are ultra-thin, custom-made shells of porcelain or composite resin bonded to the front surfaces of your teeth. They are designed to improve the appearance of teeth that are discolored, chipped, worn, uneven, misaligned, or oddly shaped, creating a flawless, natural-looking smile.",
+        "At Dr. Batra's Dentistree, we use premium porcelain veneers crafted by skilled dental technicians to perfectly match the color, shape, and translucency of natural teeth. Our digital smile design technology allows you to preview your new smile before any preparation begins.",
+        "Veneers offer a versatile and long-lasting solution for multiple cosmetic concerns simultaneously. In just 2-3 appointments, you can achieve the smile you've always dreamed of."
+      ]
+    },
+    "benefits": [
+      { "title": "Natural Appearance", "desc": "Porcelain veneers mimic the light-reflecting properties of natural teeth, creating an incredibly realistic, beautiful result." },
+      { "title": "Stain Resistant", "desc": "Unlike natural enamel, porcelain veneers are highly resistant to staining from coffee, tea, wine, and other coloring agents." },
+      { "title": "Minimal Tooth Reduction", "desc": "Only 0.3-0.5mm of enamel is removed for veneer placement, preserving most of your natural tooth structure." },
+      { "title": "Corrects Multiple Issues", "desc": "Veneers simultaneously address discoloration, chips, gaps, minor misalignment, and irregular tooth shapes in a single treatment." },
+      { "title": "Durable & Long-lasting", "desc": "High-quality porcelain veneers can last 10-15 years with proper care, providing excellent long-term value." },
+      { "title": "Boosts Confidence", "desc": "A beautiful, uniform smile dramatically improves self-esteem and makes a positive impression in every interaction." }
+    ],
+    "steps": [
+      { "title": "Smile Design", "desc": "Digital smile analysis and wax-up to plan your ideal smile, allowing you to preview results before treatment begins." },
+      { "title": "Tooth Preparation", "desc": "A minimal amount of enamel is gently removed from the front surfaces, and precise impressions are taken." },
+      { "title": "Temporary Veneers", "desc": "Beautiful temporary veneers protect your teeth while your custom porcelain veneers are crafted in the dental lab." },
+      { "title": "Final Bonding", "desc": "Your custom veneers are tried in, adjusted for perfect fit and color, then permanently bonded for a stunning result." }
+    ],
+    "features": [
+      { "icon": "ph:diamond-bold", "title": "Porcelain Veneers", "desc": "Premium ceramic veneers offering the most natural appearance, superior stain resistance, and exceptional durability." },
+      { "icon": "ph:star-bold", "title": "Composite Veneers", "desc": "Direct composite veneers applied in a single visit, offering an affordable alternative with good aesthetic results." },
+      { "icon": "ph:lightning-bold", "title": "Minimal Prep Veneers", "desc": "Ultra-thin veneers requiring little to no tooth preparation, preserving maximum natural tooth structure." }
+    ],
+    "faqs": [
+      { "q": "How long do dental veneers last?", "a": "Porcelain veneers typically last 10-15 years, while composite veneers last 5-7 years. Proper care, regular dental visits, and avoiding bite stress can extend their lifespan." },
+      { "q": "Are veneers reversible?", "a": "Traditional veneers require some enamel removal and are not fully reversible. However, minimal-prep and no-prep veneers preserve more tooth structure and offer greater reversibility." },
+      { "q": "Will veneers stain?", "a": "Porcelain veneers are highly stain-resistant, though the bonding margins may stain over time. Good oral hygiene and avoiding excessive staining agents help maintain their appearance." },
+      { "q": "How much do veneers cost?", "a": "Cost varies based on the number of veneers, material choice, and case complexity. We provide detailed estimates during your consultation and offer flexible payment options." },
+      { "q": "Can veneers fix crooked teeth?", "a": "Veneers can correct the appearance of mildly crooked or uneven teeth. For significant misalignment, orthodontic treatment may be recommended first for the best results." }
+    ],
+    "cta": { "heading": "Dream of a <span class=\"text-gradient\">Perfect Smile?</span>", "desc": "Custom porcelain veneers can make it a reality. Start your smile transformation today.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["smile-designing", "dental-bleaching", "tooth-coloured-restoration"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "diastema-closure",
+    "title": "Diastema Closure",
+    "metaTitle": "Diastema Closure & Gap Treatment in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Professional diastema closure at Dr Batra's Dentistree, Vadodara. Close gaps between teeth with bonding, veneers, or orthodontics for a unified smile.",
+    "hero": { "subtitle": "Gap Correction", "subtitleIcon": "mdi:tooth-outline", "heading": "Diastema Closure", "breadcrumb": "Diastema Closure" },
+    "intro": {
+      "subtitle": "Closing the Gap",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Achieve a <span class=\"text-gradient\">Unified Smile</span>",
+      "paragraphs": [
+        "A diastema is a gap or space between two teeth, most commonly noticed between the upper front teeth. While some people embrace their gap as a unique feature, others may feel self-conscious about it. Diastema can occur due to a mismatch between jaw size and tooth size, missing teeth, gum disease, or habits like thumb-sucking.",
+        "At Dr. Batra's Dentistree, we offer multiple approaches to close diastema depending on the size of the gap, its cause, and your aesthetic goals. Options include direct composite bonding, porcelain veneers, orthodontic treatment, or a combination of approaches for optimal results.",
+        "Our personalized treatment plans consider your facial features, smile line, and desired outcome to deliver natural-looking results that enhance your overall appearance."
+      ]
+    },
+    "benefits": [
+      { "title": "Improved Smile Aesthetics", "desc": "Closing gaps creates a more uniform, attractive smile that enhances your facial appearance and boosts confidence." },
+      { "title": "Multiple Treatment Options", "desc": "From same-day bonding to veneers and braces, we offer solutions for every gap size and patient preference." },
+      { "title": "Prevents Complications", "desc": "Gaps can worsen over time and contribute to food trapping, gum problems, and bite issues. Treatment prevents these complications." },
+      { "title": "Quick Results", "desc": "Composite bonding can close small gaps in a single appointment, while veneers take just 2-3 visits." },
+      { "title": "Natural Appearance", "desc": "Our restorations are sculpted and shaded to blend seamlessly with your natural teeth for an undetectable result." },
+      { "title": "Long-lasting Results", "desc": "Properly maintained diastema treatments provide years of beautiful, gap-free smiles." }
+    ],
+    "steps": [
+      { "title": "Assessment & Planning", "desc": "Evaluation of the gap size, cause, and surrounding teeth to determine the ideal closure method for your case." },
+      { "title": "Treatment Selection", "desc": "Discussion of options — bonding for small gaps, veneers for moderate gaps, or orthodontics for larger gaps — tailored to your goals." },
+      { "title": "Procedure", "desc": "The selected treatment is performed with precision, ensuring symmetrical, natural-looking results." },
+      { "title": "Follow-up", "desc": "Regular check-ups ensure the closure remains stable and aesthetically pleasing over time." }
+    ],
+    "features": [
+      { "icon": "ph:star-bold", "title": "Composite Bonding", "desc": "Tooth-colored resin applied directly to widen teeth and close the gap in a single painless appointment." },
+      { "icon": "ph:diamond-bold", "title": "Porcelain Veneers", "desc": "Custom-made ceramic shells bonded to front teeth for larger gaps, providing superior aesthetics and durability." },
+      { "icon": "mdi:tooth-outline", "title": "Orthodontic Closure", "desc": "Braces or clear aligners that gradually move teeth together for a natural, permanent closure of the gap." }
+    ],
+    "faqs": [
+      { "q": "What causes gaps between teeth?", "a": "Gaps can be caused by a mismatch between jaw and tooth size, oversized labial frenum, missing teeth, gum disease, or childhood habits like thumb-sucking." },
+      { "q": "Which treatment is best for diastema?", "a": "The best treatment depends on the gap size. Small gaps (1-2mm) respond well to bonding, medium gaps are ideal for veneers, and large gaps may benefit from orthodontic treatment." },
+      { "q": "Is diastema closure permanent?", "a": "Each method has different longevity. Composite bonding lasts 5-7 years, veneers 10-15 years, and orthodontic closure is permanent with retainer use." },
+      { "q": "Can gaps come back after treatment?", "a": "With proper maintenance and follow-up, results are long-lasting. Orthodontic patients should wear retainers as prescribed to prevent gap recurrence." },
+      { "q": "Is the procedure painful?", "a": "Composite bonding is completely painless and requires no anesthesia. Veneers require minimal tooth preparation with local anesthesia. Orthodontic treatment involves mild, temporary discomfort." }
+    ],
+    "cta": { "heading": "Close the Gap in Your <span class=\"text-gradient\">Smile</span>", "desc": "Multiple options to achieve a seamless, beautiful smile. Consult us today.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-veneers", "orthodontic-care", "smile-designing"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "gum-depigmentation",
+    "title": "Gum Depigmentation",
+    "metaTitle": "Gum Depigmentation in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Advanced laser gum depigmentation at Dr Batra's Dentistree, Vadodara. Remove dark patches and restore healthy pink gums safely.",
+    "hero": { "subtitle": "Gum Aesthetics", "subtitleIcon": "healthicons:mouth-outline", "heading": "Gum Depigmentation", "breadcrumb": "Gum Depigmentation" },
+    "intro": {
+      "subtitle": "Pink, Healthy-Looking Gums",
+      "subtitleIcon": "healthicons:mouth-outline",
+      "heading": "Restore Your Gums' <span class=\"text-gradient\">Natural Pink</span> Color",
+      "paragraphs": [
+        "Gum depigmentation is a cosmetic procedure designed to remove dark patches, brown or black spots, and uneven pigmentation from the gum tissue. Dark gums are usually caused by excess melanin production, similar to skin pigmentation, and while harmless, many people feel self-conscious about the appearance.",
+        "At Dr. Batra's Dentistree, we use advanced laser technology for gum depigmentation, offering a virtually painless, precise, and effective treatment with immediate results. The laser gently removes the pigmented layer, allowing new, lighter tissue to regenerate naturally.",
+        "The procedure is quick, comfortable, and delivers dramatic results in just one session, transforming dark or blotchy gums into a uniform, healthy pink shade that beautifully frames your smile."
+      ]
+    },
+    "benefits": [
+      { "title": "Instant Results", "desc": "Visible improvement immediately after the procedure, with final results appearing within 2-3 weeks as new pink tissue regenerates." },
+      { "title": "Painless Treatment", "desc": "Laser depigmentation is virtually painless with minimal to no anesthesia required for most patients." },
+      { "title": "Safe & Effective", "desc": "The laser precisely targets only pigmented cells without damaging surrounding healthy tissue." },
+      { "title": "Quick Procedure", "desc": "The entire treatment takes just 20-45 minutes, making it convenient even for busy schedules." },
+      { "title": "No Downtime", "desc": "Most patients resume normal activities immediately after the procedure with no special diet restrictions." },
+      { "title": "Enhances Overall Smile", "desc": "Pink, healthy-looking gums provide the perfect frame for your teeth, significantly enhancing your overall smile aesthetics." }
+    ],
+    "steps": [
+      { "title": "Color Assessment", "desc": "Evaluation of gum pigmentation extent and pattern to plan the treatment area and expected results." },
+      { "title": "Gum Preparation", "desc": "The treatment area is prepared with topical anesthetic if needed for maximum comfort." },
+      { "title": "Laser Treatment", "desc": "Controlled laser energy precisely removes the pigmented layer, revealing the lighter tissue underneath." },
+      { "title": "Post-Care", "desc": "Simple aftercare instructions are provided. New, pink gum tissue regenerates naturally within 2-3 weeks." }
+    ],
+    "features": [
+      { "icon": "ph:lightning-bold", "title": "Laser Depigmentation", "desc": "Advanced diode laser technology for precise, painless removal of gum pigmentation in a single session." },
+      { "icon": "ph:shield-check-bold", "title": "Safe for All Skin Types", "desc": "The procedure is safe and effective regardless of your skin tone or the degree of gum pigmentation." },
+      { "icon": "ph:star-bold", "title": "Uniform Results", "desc": "Laser treatment achieves even, consistent results across the entire treated area for a naturally pink appearance." }
+    ],
+    "faqs": [
+      { "q": "Why are my gums dark?", "a": "Dark gums are usually caused by melanin (natural pigment) production in the gum tissue. This is genetic and common in people with darker skin tones. It's completely harmless but can be a cosmetic concern." },
+      { "q": "Is laser gum depigmentation permanent?", "a": "Results can last several years. Some patients may experience gradual re-pigmentation over time due to melanin re-production, but a touch-up treatment can restore the results." },
+      { "q": "How many sessions are needed?", "a": "Most patients achieve excellent results in a single session. Severe or widespread pigmentation may occasionally require a second treatment." },
+      { "q": "Is there any pain after the procedure?", "a": "Minimal to no discomfort after the procedure. The laser seals nerve endings as it works, reducing post-operative sensitivity. Any mild soreness resolves within 1-2 days." },
+      { "q": "Can smoking cause dark gums?", "a": "Yes, smoking can contribute to gum pigmentation through a condition called smoker's melanosis. Quitting smoking can prevent further pigmentation, and laser treatment can remove existing discoloration." }
+    ],
+    "cta": { "heading": "Want <span class=\"text-gradient\">Pink, Beautiful</span> Gums?", "desc": "Advanced laser treatment delivers stunning results in just one visit.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["cosmetic-gum-surgery", "laser-dentistry", "smile-designing"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "orthodontic-care",
+    "title": "Orthodontic Care",
+    "metaTitle": "Orthodontic Care & Cosmetic Braces in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Comprehensive cosmetic orthodontic care at Dr Batra's Dentistree, Vadodara. Clear aligners, ceramic braces, and aesthetic teeth straightening.",
+    "hero": { "subtitle": "Cosmetic Orthodontics", "subtitleIcon": "mdi:tooth-outline", "heading": "Orthodontic Care", "breadcrumb": "Orthodontic Care" },
+    "intro": {
+      "subtitle": "Aesthetic Teeth Straightening",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Cosmetic Orthodontic <span class=\"text-gradient\">Solutions</span>",
+      "paragraphs": [
+        "Cosmetic orthodontic care focuses on straightening teeth using discreet, aesthetically pleasing methods that work effectively while remaining virtually invisible. Unlike traditional metal braces, cosmetic orthodontic options allow you to improve your smile without compromising your appearance during treatment.",
+        "At Dr. Batra's Dentistree, we offer a comprehensive range of cosmetic orthodontic solutions including clear aligners, ceramic braces, lingual braces (behind the teeth), and advanced self-ligating systems. Our orthodontic specialists use digital treatment planning to customize your treatment for optimal results.",
+        "Modern cosmetic orthodontics is suitable for teens and adults alike, offering comfortable, convenient, and effective teeth straightening solutions that fit seamlessly into your lifestyle."
+      ]
+    },
+    "benefits": [
+      { "title": "Virtually Invisible", "desc": "Clear aligners and ceramic braces are designed to be discreet, allowing you to straighten your teeth without anyone noticing." },
+      { "title": "Comfortable Treatment", "desc": "Modern materials and techniques minimize discomfort, with smooth brackets and custom-fitted aligners for a gentle experience." },
+      { "title": "Removable Options", "desc": "Clear aligners can be removed for eating, brushing, and special occasions, offering maximum flexibility and convenience." },
+      { "title": "Predictable Results", "desc": "Digital treatment planning shows you the expected outcome before you begin, setting clear expectations for your smile transformation." },
+      { "title": "Improved Oral Health", "desc": "Straight teeth are easier to clean, reducing the risk of decay and gum disease, improving your long-term dental health." },
+      { "title": "Enhanced Aesthetics", "desc": "Beyond just straight teeth, cosmetic orthodontics improves your overall facial balance and smile harmony." }
+    ],
+    "steps": [
+      { "title": "Digital Consultation", "desc": "3D scanning and digital photography for precise treatment planning and virtual smile preview." },
+      { "title": "Treatment Plan Design", "desc": "Custom treatment plan created using advanced software showing predicted tooth movements and estimated timeline." },
+      { "title": "Appliance Fitting", "desc": "Your chosen orthodontic appliance — aligners, ceramic braces, or lingual braces — is fitted for comfort and effectiveness." },
+      { "title": "Progress Monitoring", "desc": "Regular check-ups track your progress and make necessary adjustments to ensure optimal teeth movement." }
+    ],
+    "features": [
+      { "icon": "ph:diamond-bold", "title": "Clear Aligners", "desc": "Custom-made, removable transparent trays that gradually shift teeth into alignment without brackets or wires." },
+      { "icon": "ph:star-bold", "title": "Ceramic Braces", "desc": "Tooth-colored brackets with clear wires that blend with your teeth for a discreet orthodontic experience." },
+      { "icon": "ph:eye-slash-bold", "title": "Lingual Braces", "desc": "Brackets placed behind the teeth making them completely invisible from the front while providing effective treatment." }
+    ],
+    "faqs": [
+      { "q": "What is the difference between cosmetic and traditional orthodontics?", "a": "Cosmetic orthodontics prioritizes aesthetics during treatment using transparent, tooth-colored, or hidden appliances. Both achieve similar clinical results, but cosmetic options are significantly more discreet." },
+      { "q": "Can clear aligners fix my teeth?", "a": "Clear aligners effectively treat mild to moderate orthodontic issues including crowding, spacing, and minor bite problems. Severe cases may require traditional braces for optimal results." },
+      { "q": "How long does cosmetic orthodontic treatment take?", "a": "Treatment typically takes 6-18 months for most cosmetic cases, compared to 18-30 months for complex traditional orthodontic cases." },
+      { "q": "Are clear aligners as effective as braces?", "a": "For appropriate cases, clear aligners are equally effective. However, complex tooth movements or severe bite corrections may require fixed braces for the best results." },
+      { "q": "Can I eat normally with cosmetic braces?", "a": "Clear aligners are removed for eating, so there are no food restrictions. With ceramic braces, avoid hard and sticky foods that could damage the brackets." }
+    ],
+    "cta": { "heading": "Straighten Your Teeth <span class=\"text-gradient\">Invisibly</span>", "desc": "Discover our range of discreet orthodontic solutions for a perfect smile.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["orthodontic-braces", "smile-designing", "dental-veneers"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "smile-designing",
+    "title": "Smile Designing",
+    "metaTitle": "Smile Designing & Makeover in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Complete smile makeover with digital smile design at Dr Batra's Dentistree, Vadodara. Veneers, whitening, and cosmetic dentistry for your dream smile.",
+    "hero": { "subtitle": "Complete Makeover", "subtitleIcon": "mdi:emoticon-happy-outline", "heading": "Smile Designing", "breadcrumb": "Smile Designing" },
+    "intro": {
+      "subtitle": "Your Dream Smile, Designed",
+      "subtitleIcon": "mdi:emoticon-happy-outline",
+      "heading": "The Art & Science of <span class=\"text-gradient\">Smile Makeover</span>",
+      "paragraphs": [
+        "Smile designing is the ultimate cosmetic dentistry experience — a comprehensive, customized approach to transforming your smile by addressing every aspect of your dental appearance. Using advanced digital smile design technology, we analyze your facial features, lip dynamics, tooth proportions, and personal preferences to create your ideal smile.",
+        "At Dr. Batra's Dentistree, our smile makeover process combines the precision of digital technology with the artistry of skilled cosmetic dentistry. We may integrate multiple procedures including porcelain veneers, teeth whitening, gum contouring, bonding, and orthodontics to achieve your perfect result.",
+        "Every smile we design is unique — tailored to complement your individual facial features, skin tone, age, and personality. The result is a smile that looks naturally beautiful and feels authentically yours."
+      ]
+    },
+    "benefits": [
+      { "title": "Preview Before You Commit", "desc": "Digital smile design lets you see your new smile on screen before any treatment begins, ensuring you love the planned result." },
+      { "title": "Comprehensive Approach", "desc": "We address all aspects of your smile — tooth color, shape, alignment, gum line, and facial harmony — for a complete transformation." },
+      { "title": "Personalized to You", "desc": "Your smile design is crafted to complement your unique facial features, creating a result that looks naturally beautiful." },
+      { "title": "Multiple Techniques Combined", "desc": "We blend the best of whitening, veneers, bonding, contouring, and orthodontics for optimal, synergistic results." },
+      { "title": "Life-Changing Confidence", "desc": "Patients consistently report that their smile makeover dramatically improved their confidence, social life, and professional opportunities." },
+      { "title": "Long-lasting Transformation", "desc": "Using premium materials and precise techniques, your new smile provides years of beautiful, reliable results." }
+    ],
+    "steps": [
+      { "title": "Smile Analysis", "desc": "Comprehensive evaluation including facial photos, video of your smile in motion, and digital scanning for precise treatment planning." },
+      { "title": "Digital Design", "desc": "Advanced software creates a virtual mockup of your new smile, adjustable in real-time based on your feedback and preferences." },
+      { "title": "Trial Smile", "desc": "A physical preview of your new smile using temporary mock-ups so you can test-drive your future smile before committing." },
+      { "title": "Smile Delivery", "desc": "Your treatments are executed sequentially by our specialized team, and your stunning new smile is finally revealed." }
+    ],
+    "features": [
+      { "icon": "ph:monitor-bold", "title": "Digital Smile Design", "desc": "Advanced software for creating and previewing your ideal smile with precision measurements and facial analysis." },
+      { "icon": "ph:diamond-bold", "title": "Porcelain Veneers", "desc": "Ultra-thin ceramic shells that transform the shape, color, and alignment of your front teeth for a Hollywood smile." },
+      { "icon": "ph:star-bold", "title": "Combination Therapy", "desc": "Strategic blend of whitening, bonding, gum contouring, and veneers for comprehensive, synergistic results." }
+    ],
+    "faqs": [
+      { "q": "What does a smile makeover include?", "a": "A smile makeover may include any combination of whitening, veneers, bonding, crowns, gum contouring, and orthodontics. The specific treatments depend on your individual needs and goals." },
+      { "q": "How long does a smile makeover take?", "a": "Timeline varies by complexity. Simple makeovers (whitening + bonding) can be completed in 1-2 visits. Comprehensive makeovers with veneers take 2-3 weeks. Cases involving orthodontics may take several months." },
+      { "q": "How much does smile designing cost?", "a": "Cost depends on the specific treatments included. We provide a detailed estimate after your consultation. We offer flexible payment plans to make your dream smile accessible." },
+      { "q": "Will my smile look natural?", "a": "Absolutely! Our digital design process ensures your new smile complements your facial features naturally. We use premium materials that replicate the translucency and color of natural teeth." },
+      { "q": "Can I see the result before treatment?", "a": "Yes! Our digital smile design allows you to preview your new smile on screen. We also create a physical trial smile so you can see and feel the result before committing to treatment." }
+    ],
+    "cta": { "heading": "Ready for Your <span class=\"text-gradient\">Dream Smile?</span>", "desc": "Let our smile design experts create the smile you've always wanted.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-veneers", "dental-bleaching", "cosmetic-gum-surgery"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "tooth-coloured-restoration",
+    "title": "Tooth Coloured Restorations",
+    "metaTitle": "Tooth Coloured Restorations in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Natural-looking tooth coloured restorations at Dr Batra's Dentistree, Vadodara. Ceramic and composite restorations that blend perfectly with your natural teeth.",
+    "hero": { "subtitle": "Aesthetic Restorations", "subtitleIcon": "mdi:tooth-outline", "heading": "Tooth Coloured Restorations", "breadcrumb": "Tooth Coloured Restorations" },
+    "intro": {
+      "subtitle": "Invisible Dental Restorations",
+      "subtitleIcon": "mdi:tooth-outline",
+      "heading": "Restorations That <span class=\"text-gradient\">Blend Perfectly</span>",
+      "paragraphs": [
+        "Tooth coloured restorations use advanced ceramic and composite materials to repair damaged teeth in a way that is virtually invisible. Unlike traditional metal or amalgam restorations, these aesthetic solutions match the exact color, translucency, and texture of your natural teeth.",
+        "At Dr. Batra's Dentistree, we specialize in creating seamless tooth coloured restorations including direct composite fillings, porcelain inlays/onlays, ceramic crowns, and composite bonding. Each restoration is custom-crafted using precise shade-matching techniques.",
+        "Whether you need to replace old metal fillings, repair chipped teeth, or restore decayed teeth, our tooth coloured restorations provide the perfect blend of aesthetics, function, and durability."
+      ]
+    },
+    "benefits": [
+      { "title": "Invisible Restoration", "desc": "Precise shade-matching ensures your restoration blends seamlessly with surrounding natural teeth, making it virtually undetectable." },
+      { "title": "Mercury-Free", "desc": "Unlike silver amalgam fillings, tooth coloured restorations contain no mercury or metal, providing a safer, biocompatible alternative." },
+      { "title": "Bonds to Tooth", "desc": "Composite and ceramic materials bond directly to tooth structure, strengthening the tooth rather than just filling a space." },
+      { "title": "Preserves Tooth Structure", "desc": "Less healthy tooth structure needs to be removed compared to metal restorations, preserving more of your natural tooth." },
+      { "title": "Versatile Application", "desc": "Suitable for fillings, inlays, onlays, veneers, and bonding — one material system for multiple aesthetic applications." },
+      { "title": "Temperature Neutral", "desc": "Unlike metal restorations, tooth coloured materials don't conduct heat or cold, reducing post-operative sensitivity." }
+    ],
+    "steps": [
+      { "title": "Assessment & Shade Match", "desc": "Evaluation of the tooth and precise shade-matching using advanced color analysis to select the perfect restoration shade." },
+      { "title": "Tooth Preparation", "desc": "Minimal preparation of the affected tooth, removing only damaged or decayed structure while preserving healthy enamel." },
+      { "title": "Restoration Placement", "desc": "The tooth coloured material is precisely applied, shaped, and cured to bond permanently with your natural tooth." },
+      { "title": "Final Contouring", "desc": "The restoration is contoured, adjusted for proper bite, and polished to achieve a natural, smooth finish." }
+    ],
+    "features": [
+      { "icon": "ph:star-bold", "title": "Composite Bonding", "desc": "Direct application of composite resin to repair chips, gaps, and imperfections in a single comfortable visit." },
+      { "icon": "ph:diamond-bold", "title": "Ceramic Inlays & Onlays", "desc": "Lab-crafted porcelain restorations for larger cavities, offering superior strength and aesthetics compared to direct fillings." },
+      { "icon": "ph:shield-check-bold", "title": "Amalgam Replacement", "desc": "Safe removal of old metal fillings and replacement with modern, aesthetic tooth coloured materials." }
+    ],
+    "faqs": [
+      { "q": "Are tooth coloured fillings as strong as metal?", "a": "Modern composite and ceramic materials have excellent strength and durability. For most applications, they perform comparably to metal restorations while providing far superior aesthetics." },
+      { "q": "Can old metal fillings be replaced?", "a": "Yes, we routinely replace old amalgam fillings with tooth coloured restorations. The metal filling is safely removed and replaced with a beautiful, natural-looking composite or ceramic restoration." },
+      { "q": "How long do tooth coloured restorations last?", "a": "Direct composite restorations last 7-10 years, while ceramic inlays and onlays can last 15-20 years with proper care. Regular dental visits help monitor their condition." },
+      { "q": "Will the restoration match my teeth perfectly?", "a": "Yes! We use advanced shade-matching systems to select the exact color that matches your natural teeth. The restoration blends seamlessly and is virtually undetectable." },
+      { "q": "Are composite fillings safe?", "a": "Absolutely. Composite and ceramic dental materials are thoroughly tested and approved. They are biocompatible, mercury-free, and have an excellent safety track record." }
+    ],
+    "cta": { "heading": "Want <span class=\"text-gradient\">Invisible</span> Dental Work?", "desc": "Our tooth coloured restorations look and feel exactly like natural teeth.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["dental-fillings", "dental-veneers", "crown-bridge"],
+    "category": "cosmetic"
+  },
+  {
+    "id": "zirconia-crowns",
+    "title": "Zirconia Crowns",
+    "metaTitle": "Zirconia Crowns in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Premium zirconia dental crowns at Dr Batra's Dentistree, Vadodara. Ultra-strong, metal-free crowns with natural translucency and superior aesthetics.",
+    "hero": { "subtitle": "Premium Restorations", "subtitleIcon": "ph:diamond-bold", "heading": "Zirconia Crowns", "breadcrumb": "Zirconia Crowns" },
+    "intro": {
+      "subtitle": "The Gold Standard in Crowns",
+      "subtitleIcon": "ph:diamond-bold",
+      "heading": "Ultra-Strong, <span class=\"text-gradient\">Metal-Free</span> Crowns",
+      "paragraphs": [
+        "Zirconia crowns represent the pinnacle of modern dental restoration technology. Made from zirconium dioxide — one of the strongest ceramic materials available — these crowns offer exceptional strength, durability, and aesthetics without any metal components.",
+        "At Dr. Batra's Dentistree, we use advanced CAD/CAM technology and premium-grade zirconia to create crowns that perfectly replicate the translucency, color, and light-reflecting properties of natural teeth. The result is a restoration that is virtually indistinguishable from your own teeth.",
+        "Zirconia crowns are ideal for both front and back teeth, offering the perfect combination of beauty and strength. They are biocompatible, hypoallergenic, and resist chipping, cracking, and staining far better than traditional porcelain-fused-to-metal crowns."
+      ]
+    },
+    "benefits": [
+      { "title": "Exceptional Strength", "desc": "Zirconia is significantly stronger than traditional porcelain, making these crowns resistant to chipping, cracking, and fracture." },
+      { "title": "Natural Translucency", "desc": "Modern multilayer zirconia replicates the natural gradation from opaque root to translucent edge, mimicking real teeth perfectly." },
+      { "title": "Metal-Free & Biocompatible", "desc": "No metal core means no dark lines at the gum margin and no allergic reactions — ideal for patients with metal sensitivities." },
+      { "title": "Stain Resistant", "desc": "Zirconia resists staining from coffee, tea, wine, and other pigmented substances, maintaining their beautiful appearance." },
+      { "title": "Gentle on Opposing Teeth", "desc": "Modern zirconia is polished to reduce wear on opposing natural teeth, protecting your overall bite health." },
+      { "title": "Long-lasting Investment", "desc": "Zirconia crowns can last 20+ years with proper care, offering exceptional long-term value compared to other crown materials." }
+    ],
+    "steps": [
+      { "title": "Consultation & Shade Selection", "desc": "Detailed assessment and precise shade selection using digital color analysis to match your natural teeth perfectly." },
+      { "title": "Digital Impression", "desc": "Advanced digital scanning captures precise 3D measurements of your tooth, eliminating the need for messy traditional impressions." },
+      { "title": "CAD/CAM Fabrication", "desc": "Your crown is designed and milled using computer-aided technology for a precision fit from premium zirconia material." },
+      { "title": "Crown Cementation", "desc": "Your completed crown is checked for fit, color match, and bite, then permanently bonded to your prepared tooth." }
+    ],
+    "features": [
+      { "icon": "ph:diamond-bold", "title": "Multilayer Zirconia", "desc": "Advanced layered zirconia with natural color gradient from the neck to the incisal edge for the most lifelike appearance." },
+      { "icon": "ph:monitor-bold", "title": "CAD/CAM Technology", "desc": "Computer-designed and milled crowns ensure micrometer-level precision for a perfect fit and optimal function." },
+      { "icon": "ph:star-bold", "title": "Full-Contour Zirconia", "desc": "Monolithic (full-zirconia) design eliminating the porcelain layer for maximum strength in high-stress areas." }
+    ],
+    "faqs": [
+      { "q": "How long do zirconia crowns last?", "a": "With proper care, zirconia crowns can last 20 years or more. Their exceptional strength and resistance to wear make them one of the most durable crown options available." },
+      { "q": "Are zirconia crowns better than PFM crowns?", "a": "Zirconia crowns offer several advantages over PFM: no dark metal line at the gumline, better aesthetics, greater strength, biocompatibility, and no risk of porcelain chipping off metal." },
+      { "q": "Can you tell if someone has a zirconia crown?", "a": "Modern zirconia crowns are virtually indistinguishable from natural teeth. The advanced layering technology replicates natural tooth translucency, making detection extremely difficult." },
+      { "q": "Is a zirconia crown worth the investment?", "a": "Yes! The superior strength, aesthetics, longevity, and biocompatibility of zirconia crowns make them an excellent value. Their longer lifespan means fewer replacements and lower overall cost." },
+      { "q": "Are zirconia crowns safe for people with allergies?", "a": "Yes, zirconia is completely biocompatible and hypoallergenic. It contains no metal and is the ideal choice for patients with metal allergies or sensitivities." }
+    ],
+    "cta": { "heading": "Upgrade to <span class=\"text-gradient\">Premium</span> Zirconia Crowns", "desc": "Experience the strongest, most beautiful crowns modern dentistry has to offer.", "buttonText": "Book Consultation", "buttonLink": "contact.html" },
+    "relatedServices": ["crown-bridge", "dental-implants", "tooth-coloured-restoration"],
+    "category": "cosmetic"
+  }
+]
