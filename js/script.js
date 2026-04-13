@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <!-- Col 3: Our Services -->
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-heading">Services</h5>
+            <h5 class="footer-heading">Treatments</h5>
             <ul class="footer-links footer-links2">
               <li><a href="dental-implants.html">Dental Implants</a></li>
               <li><a href="orthodontic-braces.html">Orthodontic Braces</a></li>

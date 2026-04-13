@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dental Services <iconify-icon icon="prime:caret-down"></iconify-icon></a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dental Treatments <iconify-icon icon="prime:caret-down"></iconify-icon></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="index.html#filterBtnList" onclick="window.triggerServiceFilter && window.triggerServiceFilter('.dental-services'); return false;">
                     <iconify-icon icon="ph:list-checks" class="me-2"></iconify-icon>All Treatments
