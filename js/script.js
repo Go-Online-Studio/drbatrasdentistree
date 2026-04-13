@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
             <h5 class="footer-heading">Quick Links</h5>
             <ul class="footer-links footer-links1">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#services">Our Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#">Infection Control</a></li> 
+              <li><a href="about-clinic.html">About Us</a></li>
+              <li><a href="index.html#services">Our Treatments</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="infection-control.html">Infection Control</a></li> 
             </ul>
           </div>
 
@@ -65,12 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-3 col-md-6">
             <h5 class="footer-heading">Services</h5>
             <ul class="footer-links footer-links2">
-              <li><a href="#">Dental Implants</a></li>
-              <li><a href="#">Orthodontic Braces</a></li>
-              <li><a href="#">Root Canal</a></li>
-              <li><a href="#">Cosmetic Dentistry</a></li>
-              <li><a href="#">Teeth Whitening</a></li>
-              <li><a href="#">Invisalign</a></li>
+              <li><a href="dental-implants.html">Dental Implants</a></li>
+              <li><a href="orthodontic-braces.html">Orthodontic Braces</a></li>
+              <li><a href="root-canal.html">Root Canal</a></li>
+              <li><a href="crown-bridge.html">Crown & Bridge</a></li>
+              <li><a href="dental-bleaching.html">Teeth Whitening</a></li>
+              <li><a href="dental-veneers.html">Dental Veneers</a></li>
             </ul>
           </div>
 
