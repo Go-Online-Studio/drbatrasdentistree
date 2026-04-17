@@ -826,6 +826,24 @@ p {
   color: var(--text-dark);
 }
 
+.flotingExperBox{
+background:var(--primary-gradient);color:#fff;padding:20px 28px;border-radius:var(--radius-md);box-shadow:var(--shadow-float);text-align:center;
+}
+
+.flotHead{
+  font-size:2rem;
+  font-weight:800;
+  display:block;
+  font-family:'Outfit',sans-serif;
+}
+
+.flotText{
+  font-size:0.75rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
 /* ==============================================
    SERVICES SECTION
    ============================================== */

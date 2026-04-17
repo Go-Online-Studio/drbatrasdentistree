@@ -146,6 +146,18 @@
     margin-right: -11px !important;
   }
 
+  .flotingExperBox{
+    padding:16px 20px;
+  }
+
+  .flotHead{
+    font-size:24px;
+  }
+
+  .flotText{
+    font-size:10px;
+  }
+
   /* Mobile Swiper: hide grid, show swiper */
   #servicesGrid {
     display: none !important;
