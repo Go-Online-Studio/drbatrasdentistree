@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Cosmetic Care in Vadodara | Dr Batra's Dentistree</title>
+  <meta name="description" content="Explore all cosmetic dental treatments offered at Dr Batra's Dentistree, Vadodara." />
+  <link rel="canonical" href="https://drbatrasdentistree.com/all-cosmetic-care.html" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Iconify -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+  <!-- Swiper (for mobile consistency) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="loading">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="preloader-spinner"></div>
+      <p class="loader-text">Dr. Batra's Dentistree</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Navbar (injected by critical.js) -->
+  <header id="mainNavbar"></header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-subtitle reveal-item">
+        <iconify-icon icon="mdi:diamond-stone"></iconify-icon> Cosmetic Care
+      </span>
+      <h1 class="reveal-item">All Cosmetic Care</h1>
+      <div class="breadcrumb-nav reveal-item">
+        <a href="index.html">Home</a>
+        <span class="separator">&#8250;</span>
+        <span>All Cosmetic Care</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section spacer-y" id="services" style="background: var(--bg-soft);">
+    <div class="container">
+
+      <!-- Services Grid — DESKTOP/TABLET -->
+      <div class="row grid" id="servicesGrid"></div>
+
+      <!-- Services Swiper — MOBILE ONLY -->
+      <div class="services-mobile-swiper-wrap" id="servicesMobileWrap">
+        <div class="swiper servicesMobileSwiper">
+          <div class="swiper-wrapper" id="servicesMobileWrapper"></div>
+          <div class="swiper-pagination services-mobile-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section spacer-y">
+    <div class="container text-center position-relative" style="z-index:2;">
+      <h2 class="reveal-item" id="ctaHeading">Ready to Get Started?</h2>
+      <p class="section-desc reveal-item" id="ctaDesc" style="color:rgba(255,255,255,0.8);max-width:560px;margin:0 auto 32px;">
+        Schedule your consultation today and take the first step towards a healthier smile.
+      </p>
+      <a href="contact.html" class="btn-white reveal-item" id="ctaButton">
+        <iconify-icon icon="ph:calendar-check-bold"></iconify-icon> Book Consultation
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer (injected by script.js) -->
+  <footer id="footer"></footer>
+
+  <!-- Scripts -->
+  <script>
+    window.CATEGORY_FILTER = "cosmetic";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/critical.js"></script>
+  <script src="js/category-services.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

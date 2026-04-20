@@ -57,8 +57,8 @@
   },
   {
     "id": "orthodontic-braces",
-    "title": "Orthodontic Braces",
-    "metaTitle": "Orthodontic Braces in Vadodara | Dr Batra's Dentistree",
+    "title": "Braces (Bite & Jaw Correction)",
+    "metaTitle": "Orthodontic Braces (Bite & Jaw Correction) in Vadodara | Dr Batra's Dentistree",
     "metaDescription": "Straighten your teeth with modern orthodontic braces at Dr Batra's Dentistree, Vadodara. Metal, ceramic, and self-ligating braces for all ages.",
     "hero": {
       "subtitle": "Smile Correction",
@@ -71,9 +71,9 @@
       "subtitleIcon": "ph:tooth-bold",
       "heading": "Achieving Perfect <span class=\"text-gradient\">Teeth Alignment</span>",
       "paragraphs": [
-        "Orthodontic treatment involves the use of specialized braces and appliances to correct misaligned teeth, irregular bites, and jaw discrepancies. Modern orthodontics has evolved dramatically, offering discreet, comfortable, and efficient solutions for patients of all ages.",
-        "At Dr. Batra's Dentistree, we offer a comprehensive range of orthodontic solutions including traditional metal braces, tooth-colored ceramic braces, self-ligating systems, and clear aligners. Our orthodontic specialists use digital treatment planning and 3D imaging to create precise, customized treatment plans.",
-        "Whether you're dealing with crowding, spacing, overbite, underbite, or crossbite, our goal is to help you achieve a harmonious, confident smile with optimal dental health."
+        "Orthodontic treatment helps straighten teeth and fix bite issues like crowding, gaps, overbite, underbite, and crossbite. It’s a simple and effective way to improve both your smile and overall dental health. Today’s braces and aligners are more comfortable, less noticeable, and suitable for all age groups.",
+        "At Dr. Batra’s Dentistree, we offer different orthodontic options including metal braces, ceramic (tooth-colored) braces, self-ligating braces, and clear aligners. We use digital planning and advanced 3D imaging to design a treatment that fits your teeth perfectly.",
+        "Our focus is not just on straight teeth, but on giving you a balanced, healthy, and confident smile that lasts long."
       ]
     },
     "benefits": [
@@ -419,18 +419,19 @@
   },
   {
     "id": "pediatric-dentistry",
-    "title": "Pediatric Dentistry",
-    "metaTitle": "Pediatric Dentistry in Vadodara | Dr Batra's Dentistree",
+    "title": "Early Orthodontic Treatment",
+    "metaTitle": "Early Orthodontic Treatment in Vadodara | Dr Batra's Dentistree",
     "metaDescription": "Gentle and fun dental care for children at Dr Batra's Dentistree, Vadodara. Fluoride treatments, sealants, and early orthodontic assessments.",
-    "hero": { "subtitle": "Children's Dental Care", "subtitleIcon": "mdi:baby-face-outline", "heading": "Pediatric Dentistry", "breadcrumb": "Pediatric Dentistry" },
+    "hero": { "subtitle": "Children's Dental Care", "subtitleIcon": "mdi:baby-face-outline", "heading": "Early Orthodontic Treatment", "breadcrumb": "Early Orthodontic Treatment" },
     "intro": {
       "subtitle": "Specialized Care for Little Smiles",
       "subtitleIcon": "mdi:baby-face-outline",
       "heading": "Gentle Dental Care for <span class=\"text-gradient\">Children</span>",
       "paragraphs": [
-        "Children's dental needs are fundamentally different from adults, requiring specialized knowledge, techniques, and a gentle, patient approach. Pediatric dentistry focuses on the oral health of infants, children, and adolescents, from eruption of the first baby tooth through the transition to permanent teeth.",
-        "At Dr. Batra's Dentistree, we create a warm, child-friendly environment where young patients feel safe and comfortable. Our team is trained in behavior management, age-appropriate communication, and painless treatment techniques specifically designed for children.",
-        "We believe that positive early dental experiences set the foundation for a lifetime of good oral health. Our preventive-focused approach includes regular check-ups, fluoride applications, dental sealants, and education about proper oral hygiene habits."
+        "Children need a different kind of dental care than adults. Their teeth, gums, and habits are still developing, so they need gentle handling, extra attention, and treatments designed just for kids. Pediatric dentistry focuses on caring for infants, children, and teenagers — from the first baby tooth to the growth of permanent teeth.",
+        "At Dr. Batra's Dentistree, we create a friendly and stress-free environment so children feel comfortable during their visit. Our team uses simple communication, gentle techniques, and child-focused dental treatments to make every appointment easy and painless.",
+        "We focus strongly on preventive dental care to keep your child’s teeth healthy from the start. This includes regular dental check-ups, fluoride treatments, dental sealants, cavity prevention, and guidance on proper brushing and oral hygiene habits.",
+        "Our goal is to build positive dental experiences early on, so your child grows up with healthy teeth, good habits, and no fear of visiting the dentist."
       ]
     },
     "benefits": [
@@ -877,10 +878,10 @@
     "relatedServices": ["cosmetic-gum-surgery", "laser-dentistry", "smile-designing"],
     "category": "cosmetic"
   },
-  {
+  { 
     "id": "orthodontic-care",
-    "title": "Orthodontic Care",
-    "metaTitle": "Orthodontic Care & Cosmetic Braces in Vadodara | Dr Batra's Dentistree",
+    "title": "Aesthetic Orthodontic Services",
+    "metaTitle": "Aesthetic Orthodontic Care & Cosmetic Braces in Vadodara | Dr Batra's Dentistree",
     "metaDescription": "Comprehensive cosmetic orthodontic care at Dr Batra's Dentistree, Vadodara. Clear aligners, ceramic braces, and aesthetic teeth straightening.",
     "hero": { "subtitle": "Cosmetic Orthodontics", "subtitleIcon": "mdi:tooth-outline", "heading": "Orthodontic Care", "breadcrumb": "Orthodontic Care" },
     "intro": {
@@ -888,9 +889,11 @@
       "subtitleIcon": "mdi:tooth-outline",
       "heading": "Cosmetic Orthodontic <span class=\"text-gradient\">Solutions</span>",
       "paragraphs": [
-        "Cosmetic orthodontic care focuses on straightening teeth using discreet, aesthetically pleasing methods that work effectively while remaining virtually invisible. Unlike traditional metal braces, cosmetic orthodontic options allow you to improve your smile without compromising your appearance during treatment.",
-        "At Dr. Batra's Dentistree, we offer a comprehensive range of cosmetic orthodontic solutions including clear aligners, ceramic braces, lingual braces (behind the teeth), and advanced self-ligating systems. Our orthodontic specialists use digital treatment planning to customize your treatment for optimal results.",
-        "Modern cosmetic orthodontics is suitable for teens and adults alike, offering comfortable, convenient, and effective teeth straightening solutions that fit seamlessly into your lifestyle."
+        "Cosmetic orthodontic treatment is designed to improve your smile in a subtle and aesthetically pleasing way. It focuses not just on straightening teeth, but also on enhancing overall smile balance — including alignment, spacing, smile arc, and facial harmony. The best part is that modern options are discreet, so you can continue your daily life without feeling conscious during treatment.",
+        "At Dr. Batra's Dentistree, we offer advanced cosmetic orthodontic solutions such as clear aligners, ceramic braces, lingual braces (behind the teeth), and self-ligating systems. Using digital smile planning and precise 3D imaging, we customize every treatment based on your teeth, face shape, and smile goals.",
+        "Our treatments go beyond basic alignment. We carefully work on details like midline correction, black triangle reduction, smile arc enhancement, and bite adjustment caused by wear or imbalance. These small refinements make a big difference in achieving a natural, well-balanced, and confident smile.",
+        "Cosmetic orthodontics is ideal for both teens and adults who want a comfortable, nearly invisible teeth straightening option. With proper planning and the use of retainers after treatment, we ensure your results stay stable and long-lasting.",
+        "The goal is simple — to give you a smile that looks natural, feels right, and boosts your confidence every day."
       ]
     },
     "benefits": [
@@ -934,9 +937,13 @@
       "subtitleIcon": "mdi:emoticon-happy-outline",
       "heading": "The Art & Science of <span class=\"text-gradient\">Smile Makeover</span>",
       "paragraphs": [
-        "Smile designing is the ultimate cosmetic dentistry experience — a comprehensive, customized approach to transforming your smile by addressing every aspect of your dental appearance. Using advanced digital smile design technology, we analyze your facial features, lip dynamics, tooth proportions, and personal preferences to create your ideal smile.",
-        "At Dr. Batra's Dentistree, our smile makeover process combines the precision of digital technology with the artistry of skilled cosmetic dentistry. We may integrate multiple procedures including porcelain veneers, teeth whitening, gum contouring, bonding, and orthodontics to achieve your perfect result.",
-        "Every smile we design is unique — tailored to complement your individual facial features, skin tone, age, and personality. The result is a smile that looks naturally beautiful and feels authentically yours."
+        "Smile designing is all about creating a smile that truly suits you. It’s a complete cosmetic dentistry treatment where we improve the overall look of your teeth by considering your face shape, smile style, and personal preferences.",
+
+"At Dr. Batra's Dentistree, We use modern digital smile design tools to plan your new smile, so you can preview the results before starting. Based on your needs, treatments may include veneers, teeth whitening, gum contouring, bonding, orthodontics, and retainers to maintain alignment after correction.",
+
+"Once your smile is achieved, retainers play an important role in keeping your teeth in place. We offer both fixed and removable retainers along with simple guidance to help you maintain your results long-term.",
+
+"Every smile is designed differently — to match your natural features and personality. The goal is a smile that looks beautiful, feels natural, and stays perfect for years."
       ]
     },
     "benefits": [

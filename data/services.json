@@ -8,7 +8,7 @@
   },
   {
     "id": "orthodontic-braces",
-    "title": "Orthodontic Braces",
+    "title": "Braces (Bite & Jaw Correction)",
     "image": "img/Icons/OrthodonticBraces.svg",
     "shortDesc": "Straighten misaligned teeth with modern metal, ceramic, and self-ligating braces customized for every age group.",
     "category": "dental-services"
@@ -64,7 +64,7 @@
   },
   {
     "id": "pediatric-dentistry",
-    "title": "Pediatric Dentistry",
+    "title": "Early Orthodontic Treatment",
     "icon": "mdi:baby-face-outline",
     "shortDesc": "Gentle and fun dental care for children including fluoride treatments, sealants, and early orthodontic assessments.",
     "category": "dental-services"
@@ -127,14 +127,14 @@
   },
   {
     "id": "orthodontic-care",
-    "title": "Orthodontic Care",
+    "title": "Aesthetic Orthodontic Services",
     "image": "img/Icons/OrthodonticBraces.svg",
     "shortDesc": "Comprehensive orthodontic solutions including clear aligners and modern braces for aesthetic teeth straightening.",
     "category": "cosmetic"
   },
   {
     "id": "smile-designing",
-    "title": "Smile Designing",
+    "title": "Retainers & Smile Maintenance",
     "icon": "mdi:emoticon-happy-outline",
     "shortDesc": "Complete smile makeovers using digital planning, veneers, and precision cosmetic techniques for a Hollywood smile.",
     "category": "cosmetic"
