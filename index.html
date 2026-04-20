@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,80 +20,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
-  <style>
-    /* ==============================================
-   PRELOADER
-   ============================================== */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-white);
-  z-index: 99999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.loader-content {
-  text-align: center;
-}
-
-.preloader-spinner {
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgba(5, 107, 163, 0.1);
-  border-top-color: var(--primary-blue);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  margin: 0 auto 16px;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-.loader-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--primary-blue);
-}
-
-/* ==============================================
-   CUSTOM CURSOR
-   ============================================== */
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--primary-blue);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 99998;
-  transition: transform 0.15s ease, opacity 0.3s ease;
-  opacity: 0;
-  mix-blend-mode: difference;
-}
-
-.custom-cursor.active {
-  opacity: 1;
-}
-
-.custom-cursor.hover {
-  transform: scale(2);
-  background: rgba(5, 107, 163, 0.1);
-}
-
-@media (pointer: coarse) {
-  .custom-cursor { display: none !important; }
-}
-  </style>
-
   <noscript>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
@@ -101,10 +27,14 @@
       .custom-cursor { display: none; }
     </style>
   </noscript>
+  
+<style id="critical-above-fold-css">
+:root{--primary-blue:#056ba3;--primary-green:#24b14b;--primary-gradient:linear-gradient(135deg, #bbd700 0%, #24b14b 100%);--bg-white:#ffffff;--bg-soft:#f4f9fc;--text-dark:#2d3748;--text-muted:#718096;--text-white:#ffffff;--radius-lg:24px;--brand-height:72px;--nav-height:max(65px, calc(var(--brand-height) + 16px));--spacer-section:clamp(80px, 10vw, 120px)}#mainNavbar{min-height:130px}@media (max-width:991px){#mainNavbar{min-height:72px}}body{font-family:Inter,"Segoe UI",sans-serif;color:var(--text-dark);background-color:var(--bg-white);overflow-x:hidden;-webkit-font-smoothing:antialiased}body.loading{overflow:hidden}#preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg-white);z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px}.loader-content{text-align:center}.preloader-spinner{width:50px;height:50px;border:3px solid rgba(5,107,163,.1);border-top-color:var(--primary-blue);border-radius:50%;animation:.8s linear infinite spin;margin:0 auto 16px}@keyframes spin{to{transform:rotate(360deg)}}.loader-text{font-family:Outfit,sans-serif;font-weight:700;font-size:1.1rem;color:var(--primary-blue)}.custom-cursor{width:20px;height:20px;border:2px solid var(--primary-blue);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;transition:transform .15s,opacity .3s;opacity:0;mix-blend-mode:difference}.custom-cursor.active{opacity:1}.custom-cursor.hover{transform:scale(2);background:rgba(5,107,163,.1)}@media (pointer:coarse){.custom-cursor{display:none!important}}
+</style>
 </head>
 <body class="loading">
 
-  <!-- ═══ PRELOADER ═══ -->
+  <!-- â•â•â• PRELOADER â•â•â• -->
   <div id="preloader">
     <div class="loader-content">
       <div class="preloader-spinner"></div>
@@ -112,15 +42,15 @@
     </div>
   </div>
 
-  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <!-- â•â•â• CUSTOM CURSOR â•â•â• -->
   <div class="custom-cursor"></div>
 
-  <!-- ═══ NAVBAR (Injected by critical.js) ═══ -->
+  <!-- â•â•â• NAVBAR (Injected by critical.js) â•â•â• -->
   <header id="mainNavbar"></header>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        HERO SECTION - Split Layout with Floating Elements
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="hero-section" id="hero">
     <div class="swiper heroSwiper">
       <div class="swiper-wrapper">
@@ -208,9 +138,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        INFO STRIP - Blue Contact Bar
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="info-strip">
     <div class="container">
       <div class="row align-items-center gy-3">
@@ -237,16 +167,16 @@
         <div class="col-lg-4 col-md-12 text-lg-end">
           <a href="tel:+919825007975" class="btn-emergency">
             <iconify-icon icon="ph:first-aid-kit-bold"></iconify-icon>
-            Emergency – 24×7 Available
+            Emergency â€“ 24Ã—7 Available
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        ABOUT SECTION - Journey to Healthier Smile
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="about-section spacer-y" id="about">
     <div class="container">
       <div class="row align-items-center gy-5">
@@ -269,7 +199,7 @@
             </span>
             <h2 class="section-title gsap-text-reveal">Your Journey to a Healthier Smile Begins Here</h2>
             <p>At Dr. Batra's Dentistree, we combine clinical excellence with genuine compassion. Our state-of-the-art facility is designed to make every visit comfortable, efficient, and rewarding.</p>
-            <p>With advanced technology and a highly skilled team, we deliver personalized treatment plans that address your unique dental needs—from preventive care to complex full mouth rehabilitations.</p>
+            <p>With advanced technology and a highly skilled team, we deliver personalized treatment plans that address your unique dental needsâ€”from preventive care to complex full mouth rehabilitations.</p>
 
             <div class="about-features">
               <div class="about-feature-item gsap-fade-up">
@@ -302,9 +232,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        SERVICES SECTION - Isotope Filterable Grid
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="services-section spacer-y" id="services" style="background: var(--bg-soft);">
     <div class="container">
       <div class="text-center mb-5 reveal-item">
@@ -325,10 +255,10 @@
         <button class="filter-btn" data-filter=".infection-control">Infection Control</button>
       </div>
 
-      <!-- Services Grid (Populated by services.js) — DESKTOP/TABLET -->
+      <!-- Services Grid (Populated by services.js) â€” DESKTOP/TABLET -->
       <div class="row grid" id="servicesGrid"></div>
 
-      <!-- Services Swiper (Populated by services.js) — MOBILE ONLY -->
+      <!-- Services Swiper (Populated by services.js) â€” MOBILE ONLY -->
       <div class="services-mobile-swiper-wrap" id="servicesMobileWrap">
         <div class="swiper servicesMobileSwiper">
           <div class="swiper-wrapper" id="servicesMobileWrapper"></div>
@@ -345,9 +275,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        WHY CHOOSE US - Stats Section
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="why-choose-section spacer-y">
     <div class="container">
       <div class="text-center mb-5 reveal-item">
@@ -400,9 +330,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        DIAGNOSIS CENTRAL DIAGRAM
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="diagnosis-section spacer-y" style="background: var(--bg-soft);">
     <div class="container">
       <div class="text-center mb-5 gsap-fade-up">
@@ -478,9 +408,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        PROCESS STEPS
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="process-section spacer-y">
     <div class="container">
       <div class="text-center mb-5 gsap-fade-up">
@@ -526,9 +456,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        TESTIMONIALS
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="testimonials-section spacer-y" style="background: var(--bg-soft);">
     <div class="container">
       <div class="text-center mb-5 gsap-fade-up">
@@ -548,7 +478,7 @@
               <div class="quote-icon">
                 <iconify-icon icon="ph:quotes-bold"></iconify-icon>
               </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
               <p class="testimonial-text">"Exceptional dental care! Dr. Batra and team made my root canal completely painless. The clinic is spotless and the staff is incredibly warm. Highly recommend to everyone."</p>
               <div class="client-info">
                 <div class="client-avatar">RP</div>
@@ -565,7 +495,7 @@
               <div class="quote-icon">
                 <iconify-icon icon="ph:quotes-bold"></iconify-icon>
               </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
               <p class="testimonial-text">"Got my smile designed here and the results are beyond amazing. The attention to detail and professionalism is world-class. Best dental clinic in Vadodara without a doubt!"</p>
               <div class="client-info">
                 <div class="client-avatar">PS</div>
@@ -582,7 +512,7 @@
               <div class="quote-icon">
                 <iconify-icon icon="ph:quotes-bold"></iconify-icon>
               </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
               <p class="testimonial-text">"My kids love visiting Dr. Batra's Dentistree! The child-friendly approach and gentle care have made dental visits something they actually look forward to. Amazing team!"</p>
               <div class="client-info">
                 <div class="client-avatar">AM</div>
@@ -599,7 +529,7 @@
               <div class="quote-icon">
                 <iconify-icon icon="ph:quotes-bold"></iconify-icon>
               </div>
-              <div class="stars">★★★★★</div>
+              <div class="stars">â˜…â˜…â˜…â˜…â˜…</div>
               <p class="testimonial-text">"Had dental implants done here after researching many clinics. Dr. Batra's expertise is unmatched. The implants feel completely natural. Worth every penny. Thank you, team!"</p>
               <div class="client-info">
                 <div class="client-avatar">VD</div>
@@ -617,9 +547,9 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        CONTACT / WHATSAPP FORM SECTION
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="contact-section spacer-y" id="contact">
     <div class="container">
       <div class="text-center mb-5 gsap-fade-up">
@@ -720,7 +650,7 @@
               </div>
               <div>
                 <h6>Working Hours</h6>
-                <p>Mon – Sat: 10:00 AM – 7:30 PM<br>Sunday: By Appointment</p>
+                <p>Mon â€“ Sat: 10:00 AM â€“ 7:30 PM<br>Sunday: By Appointment</p>
               </div>
             </div>
 
@@ -730,7 +660,7 @@
               </div>
               <div>
                 <h6>Emergency</h6>
-                <p>24×7 Emergency dental care available. Call us anytime.</p>
+                <p>24Ã—7 Emergency dental care available. Call us anytime.</p>
               </div>
             </div>
           </div>
@@ -739,28 +669,27 @@
     </div>
   </section>
 
-  <!-- ═══ FOOTER (Injected by script.js) ═══ -->
+  <!-- â•â•â• FOOTER (Injected by script.js) â•â•â• -->
   <footer id="footer"></footer>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        SCRIPTS
-       ═══════════════════════════════════════════ -->
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <!-- Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script defer src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
   <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
+    
   <!-- App Scripts -->
   <script src="js/critical.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/whatsapp-form.js"></script>
+  <script defer src="js/lazy-loader.js"></script>
+  <script defer src="js/performance-optimizer.js"></script>
+  <script defer src="js/services.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/whatsapp-form.js"></script>
   
   <script>
     /* ========================================================
@@ -774,7 +703,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function initIndexGSAP() {
     if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
 
-    /* ── Floating Hero Shapes (Slow continuous) ── */
+    /* â”€â”€ Floating Hero Shapes (Slow continuous) â”€â”€ */
     gsap.utils.toArray(".hero-shape").forEach((shape, i) => {
       gsap.to(shape, {
         y: `random(-20, 20)`,
@@ -788,7 +717,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    /* ── Diagnosis items fade in ── */
+    /* â”€â”€ Diagnosis items fade in â”€â”€ */
     gsap.utils.toArray(".diagnosis-item").forEach((item, i) => {
       gsap.from(item, {
         scrollTrigger: { trigger: item, start: "top 90%", once: true },
@@ -800,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    /* ── Process Steps ── */
+    /* â”€â”€ Process Steps â”€â”€ */
     gsap.utils.toArray(".process-step").forEach((step, i) => {
       gsap.from(step, {
         scrollTrigger: { trigger: step, start: "top 90%", once: true },
@@ -865,3 +794,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 </body>
 </html>
+
+
+
+

@@ -234,6 +234,12 @@ p {
   gap: 20px;
 }
 
+#preloader.preloader-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
 .loader-content {
   text-align: center;
 }
@@ -259,6 +265,37 @@ p {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--primary-blue);
+}
+
+body.loading #mainNavbar,
+body.loading main,
+body.loading section,
+body.loading footer {
+  opacity: 0.001;
+}
+
+html.fcp-ready body.loading #mainNavbar,
+html.fcp-ready body.loading main,
+html.fcp-ready body.loading section,
+html.fcp-ready body.loading footer {
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skeleton-block {
+  background: linear-gradient(90deg, #eef4f8 25%, #dde8f0 37%, #eef4f8 63%);
+  background-size: 400% 100%;
+  animation: skeletonPulse 1.5s ease-in-out infinite;
+  border-radius: 10px;
+}
+
+@keyframes skeletonPulse {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /* ==============================================

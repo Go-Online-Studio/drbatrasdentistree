@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Dr. Batra's Dentistree - Vadodara</title>
-  <meta name="description" content="Explore our clinic gallery – state-of-the-art facilities, treatment rooms, and modern dental equipment at Dr. Batra's Dentistree, Vadodara." />
+  <meta name="description" content="Explore our clinic gallery â€“ state-of-the-art facilities, treatment rooms, and modern dental equipment at Dr. Batra's Dentistree, Vadodara." />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Fancybox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+
+<style id="critical-above-fold-css">
+:root{--primary-blue:#056ba3;--primary-green:#24b14b;--primary-gradient:linear-gradient(135deg, #bbd700 0%, #24b14b 100%);--bg-white:#ffffff;--bg-soft:#f4f9fc;--text-dark:#2d3748;--text-muted:#718096;--text-white:#ffffff;--radius-lg:24px;--brand-height:72px;--nav-height:max(65px, calc(var(--brand-height) + 16px));--spacer-section:clamp(80px, 10vw, 120px)}#mainNavbar{min-height:130px}@media (max-width:991px){#mainNavbar{min-height:72px}}body{font-family:Inter,"Segoe UI",sans-serif;color:var(--text-dark);background-color:var(--bg-white);overflow-x:hidden;-webkit-font-smoothing:antialiased}body.loading{overflow:hidden}#preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg-white);z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px}.loader-content{text-align:center}.preloader-spinner{width:50px;height:50px;border:3px solid rgba(5,107,163,.1);border-top-color:var(--primary-blue);border-radius:50%;animation:.8s linear infinite spin;margin:0 auto 16px}@keyframes spin{to{transform:rotate(360deg)}}.loader-text{font-family:Outfit,sans-serif;font-weight:700;font-size:1.1rem;color:var(--primary-blue)}.custom-cursor{width:20px;height:20px;border:2px solid var(--primary-blue);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;transition:transform .15s,opacity .3s;opacity:0;mix-blend-mode:difference}.custom-cursor.active{opacity:1}.custom-cursor.hover{transform:scale(2);background:rgba(5,107,163,.1)}@media (pointer:coarse){.custom-cursor{display:none!important}}
+</style>
+
 </head>
 <body class="loading">
 
@@ -30,14 +32,14 @@
       <h1 class="reveal-item">Our Gallery</h1>
       <div class="breadcrumb-nav reveal-item">
         <a href="index.html">Home</a>
-        <span class="separator">›</span>
+        <span class="separator">â€º</span>
         <span>Gallery</span>
       </div>
     </div>
   </section>
 
   <!-- Gallery Section -->
-  <section class="spacer-y">
+   <section class="spacer-y">
     <div class="container">
       <div class="text-center mb-4">
         <p class="section-desc reveal-item">Take a visual tour of our modern clinic, advanced equipment, and welcoming treatment areas.</p>
@@ -146,15 +148,42 @@
 
   <footer id="footer"></footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="js/critical.js"></script>
-  <script src="js/script.js"></script>
+  <script defer src="js/lazy-loader.js"></script>
+  <script defer src="js/performance-optimizer.js"></script>
+  <script defer src="js/script.js"></script>
+  
 
   <script>
   document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
+    const hasGSAP = typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined";
+    if (hasGSAP) {
+      gsap.registerPlugin(ScrollTrigger);
+    }
     function debounce(fn, delay) { let t; return function () { clearTimeout(t); t = setTimeout(fn, delay); }; }
+
+    function bindFancyboxSafe() {
+      if (typeof Fancybox === "undefined") return false;
+      Fancybox.unbind("[data-fancybox]");
+      Fancybox.bind("[data-fancybox]", {
+        Thumbs: { showOnStart: false },
+        Toolbar: { display: { left: [], middle: [], right: ["close"] } }
+      });
+      return true;
+    }
+
+    // Fancybox can arrive late due to defer/lazy loading.
+    if (!bindFancyboxSafe()) {
+      let tries = 0;
+      const maxTries = 20;
+      const timer = setInterval(() => {
+        tries += 1;
+        if (bindFancyboxSafe() || tries >= maxTries) clearInterval(timer);
+      }, 150);
+    }
 
     /* ── Gallery Filter Logic ── */
     const filterBtns = document.querySelectorAll(".gallery-filter-btn");
@@ -174,7 +203,12 @@
         if (filter === "all" || item.dataset.category === filter) {
           item.style.display = "";
           item.setAttribute("data-fancybox", "gallery");
-          gsap.fromTo(item, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" });
+          if (hasGSAP) {
+            gsap.fromTo(item, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" });
+          } else {
+            item.style.opacity = "1";
+            item.style.transform = "none";
+          }
         } else {
           item.style.display = "none";
           item.removeAttribute("data-fancybox");
@@ -182,15 +216,7 @@
       });
 
       // Rebind Fancybox to only include visible items
-      if (typeof Fancybox !== "undefined") {
-        Fancybox.unbind("[data-fancybox]");
-        Fancybox.bind("[data-fancybox]", {
-          Thumbs: { showOnStart: false },
-          Toolbar: {
-            display: { left: [], middle: [], right: ["close"] },
-          },
-        });
-      }
+      bindFancyboxSafe();
     }
 
     // Attach click events
@@ -200,26 +226,15 @@
       });
     });
 
-    // Load initial filter from localStorage or default to 'all'
-    // const savedFilter = localStorage.getItem("activeGalleryFilter") || "all";
-    // applyFilter(savedFilter);
-
-    // setTimeout(() => {
-    //   gsap.utils.toArray(".gallery-item").forEach((item, i) => {
-    //     gsap.from(item, {
-    //       scrollTrigger: { trigger: item, start: "top 90%", once: true },
-    //       y: 30,
-    //       opacity: 0,
-    //       duration: 0.6,
-    //       delay: i * 0.08,
-    //       ease: "power2.out",
-    //       clearProps: "all"
-    //     });
-    //   });
-    // }, 1300);
-
-    window.addEventListener("resize", debounce(() => { ScrollTrigger.refresh(); }, 300));
+    if (hasGSAP) {
+      window.addEventListener("resize", debounce(() => { ScrollTrigger.refresh(); }, 300));
+    }
   });
   </script>
 </body>
 </html>
+
+
+
+
+

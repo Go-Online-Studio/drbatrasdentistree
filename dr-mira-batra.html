@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Mira Batra | Dr. Batra's Dentistree - Vadodara</title>
-  <meta name="description" content="Meet Dr. Mira Batra – MDS Periodontology & Implantology. Chief Dentist at Dr. Batra's Dentistree with expertise in laser dentistry and personalized patient care." />
+  <meta name="description" content="Meet Dr. Mira Batra â€“ MDS Periodontology & Implantology. Chief Dentist at Dr. Batra's Dentistree with expertise in laser dentistry and personalized patient care." />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+<style id="critical-above-fold-css">
+:root{--primary-blue:#056ba3;--primary-green:#24b14b;--primary-gradient:linear-gradient(135deg, #bbd700 0%, #24b14b 100%);--bg-white:#ffffff;--bg-soft:#f4f9fc;--text-dark:#2d3748;--text-muted:#718096;--text-white:#ffffff;--radius-lg:24px;--brand-height:72px;--nav-height:max(65px, calc(var(--brand-height) + 16px));--spacer-section:clamp(80px, 10vw, 120px)}#mainNavbar{min-height:130px}@media (max-width:991px){#mainNavbar{min-height:72px}}body{font-family:Inter,"Segoe UI",sans-serif;color:var(--text-dark);background-color:var(--bg-white);overflow-x:hidden;-webkit-font-smoothing:antialiased}body.loading{overflow:hidden}#preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg-white);z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px}.loader-content{text-align:center}.preloader-spinner{width:50px;height:50px;border:3px solid rgba(5,107,163,.1);border-top-color:var(--primary-blue);border-radius:50%;animation:.8s linear infinite spin;margin:0 auto 16px}@keyframes spin{to{transform:rotate(360deg)}}.loader-text{font-family:Outfit,sans-serif;font-weight:700;font-size:1.1rem;color:var(--primary-blue)}.custom-cursor{width:20px;height:20px;border:2px solid var(--primary-blue);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;transition:transform .15s,opacity .3s;opacity:0;mix-blend-mode:difference}.custom-cursor.active{opacity:1}.custom-cursor.hover{transform:scale(2);background:rgba(5,107,163,.1)}@media (pointer:coarse){.custom-cursor{display:none!important}}
+</style>
 </head>
 <body class="loading">
 
@@ -28,9 +28,9 @@
       <h1 class="reveal-item">Dr. Mira Batra</h1>
       <div class="breadcrumb-nav reveal-item">
         <a href="index.html">Home</a>
-        <span class="separator">›</span>
+        <span class="separator">â€º</span>
         <a href="#">About Us</a>
-        <span class="separator">›</span>
+        <span class="separator">â€º</span>
         <span>Dr. Mira Batra</span>
       </div>
     </div>
@@ -45,7 +45,7 @@
             <iconify-icon icon="ph:stethoscope-bold"></iconify-icon> MDS - Periodontology & Implantology
           </span>
           <h2 class="section-title reveal-item">About <span class="text-gradient">Dr. Mira Batra</span></h2>
-          <p class="reveal-item"><strong>Dr. Mira Batra (MDS — Periodontology and Implantology)</strong> is a chief dentist at Dr. Batra's Dentistree. A vivacious and friendly dentist who strongly believes that every client walking out of the clinic should go with a smile on their face.</p>
+          <p class="reveal-item"><strong>Dr. Mira Batra (MDS â€” Periodontology and Implantology)</strong> is a chief dentist at Dr. Batra's Dentistree. A vivacious and friendly dentist who strongly believes that every client walking out of the clinic should go with a smile on their face.</p>
           <p class="reveal-item">She has done her <strong>BDS and MDS both from Gujarat University</strong>, receiving the top position in her speciality. She is a young dynamic dentist with special interest in general, implant and laser dentistry.</p>
           <p class="reveal-item">She combines her scientific background with an artistic eye to bring the highest quality of personalized care to each of her client. Dr. Mira is a caring, gentle and understanding professional. She continuously keeps abreast of the latest advances and developments in the field of dentistry.</p>
         </div>
@@ -226,12 +226,15 @@
 
   <footer id="footer"></footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/critical.js"></script>
-  <script src="js/script.js"></script>
+  <script defer src="js/lazy-loader.js"></script>
+  <script defer src="js/performance-optimizer.js"></script>
+  <script defer src="js/script.js"></script>
 
   <script>
   document.addEventListener("DOMContentLoaded", function () {
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
     gsap.registerPlugin(ScrollTrigger);
     function debounce(fn, delay) { let t; return function () { clearTimeout(t); t = setTimeout(fn, delay); }; }
 
@@ -260,3 +263,8 @@
   </script>
 </body>
 </html>
+
+
+
+
+

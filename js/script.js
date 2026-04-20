@@ -4,7 +4,9 @@
    ======================================================== */
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
-  gsap.registerPlugin(ScrollTrigger);
+  if (window.gsap && window.ScrollTrigger) {
+    window.gsap.registerPlugin(window.ScrollTrigger);
+  }
 
   /* ── Global Config ── */
   const CONFIG = {
@@ -190,12 +192,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function dismissPreloader() {
     const preloader = document.getElementById("preloader");
     if (!preloader) return;
-    preloader.style.transition = "opacity 0.5s ease";
-    preloader.style.opacity = "0";
+    preloader.classList.add("preloader-hidden");
     setTimeout(() => {
-      preloader.style.display = "none";
+      if (preloader.parentNode) preloader.parentNode.removeChild(preloader);
       document.body.classList.remove("loading");
-    }, 500);
+    }, 360);
   }
 
   /* ══════════════════════════════════════════════
@@ -273,7 +274,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Refresh ScrollTrigger
-    ScrollTrigger.refresh(true);
+    if (window.ScrollTrigger) {
+      window.ScrollTrigger.refresh(true);
+    }
 
     // Re-layout Isotope if available
     if (window.servicesIso) {
@@ -355,24 +358,22 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ══════════════════════════════════════════════
      8. APP INITIALIZATION SEQUENCE
      ══════════════════════════════════════════════ */
-  // Wait for all resources to settle, then run global setups:
-  setTimeout(() => {
-    dismissPreloader();
-    
-    // Globally invoke generic animation tracking
+  // Initialize non-blocking observers immediately.
+  if (window.AppUtils) {
+    window.AppUtils.initRevealObserver();
+  }
+
+  // If performance optimizer is not loaded, fallback to quick loader dismissal.
+  window.setTimeout(function () {
+    if (!document.documentElement.classList.contains("fcp-ready")) {
+      dismissPreloader();
+    }
+  }, 800);
+
+  // Re-run animation setup when gsap is lazy-loaded later.
+  window.setTimeout(function () {
     if (window.AppUtils) {
       window.AppUtils.initGenericGSAP();
-      window.AppUtils.initRevealObserver();
-    }
-
-    // Init Fancybox if globally available
-    if (typeof Fancybox !== "undefined") {
-      Fancybox.bind("[data-fancybox]", {
-        Thumbs: false,
-        Toolbar: {
-          display: { left: [], middle: [], right: ["close"] },
-        },
-      });
     }
   }, 1200);
 
