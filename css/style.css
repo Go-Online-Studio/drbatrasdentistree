@@ -94,16 +94,39 @@ h6 {
   line-height: 1.2;
 }
 
-h1 {
+h1,.h1 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
-h2 {
+h2,.h2 {
   font-size: clamp(1.75rem, 4vw, 3rem);
 }
-h3 {
+h3,.h3 {
   font-size: clamp(1.25rem, 3vw, 1.75rem);
 }
 
+.certificate-box{
+  padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: var(--transition-smooth);
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  max-width: 170px;
+}
+.certificate-box:hover{
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-float);
+}
+
+.cerificateTitle{
+  font-size: clamp(10px, 1vw, 14px);
+  color: var(--primary-blue); 
+  margin: 0;
+  text-align: center;
+}
 p {
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   line-height: 1.75;
@@ -2758,13 +2781,17 @@ background:var(--primary-gradient);color:#fff;padding:20px 28px;border-radius:va
 /* ==============================================
    CTA SECTION (Reusable)
    ============================================== */
-.cta-section {
+.cta-section,.accreditation-section {
   background: var(--primary-blue);
   position: relative;
   overflow: hidden;
 }
 
-.cta-section::before {
+.accreditation-section{
+  padding: 50px 0;
+}
+
+.cta-section::before,.accreditation-section::before {
   content: "";
   position: absolute;
   top: -100px;
@@ -2776,7 +2803,7 @@ background:var(--primary-gradient);color:#fff;padding:20px 28px;border-radius:va
   pointer-events: none;
 }
 
-.cta-section::after {
+.cta-section::after,.accreditation-section::after {
   content: "";
   position: absolute;
   bottom: -80px;
