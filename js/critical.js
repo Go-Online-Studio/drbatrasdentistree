@@ -289,9 +289,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a class="nav-link" href="infection-control.html">Infection Control</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery<iconify-icon icon="prime:caret-down"></iconify-icon></a>
+                <ul class="dropdown-menu">
+
+                  <li><a class="dropdown-item" href="gallery.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 512 512"><rect width="416" height="352" x="48" y="80" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" rx="48" ry="48"/><circle cx="336" cy="176" r="32" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m304 335.79l-90.66-90.49a32 32 0 0 0-43.87-1.3L48 352m176 80l123.34-123.34a32 32 0 0 1 43.11-2L464 368"/></svg> Photos
+                  </a></li>
+                  <li><a class="dropdown-item" href="gallery2.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15.75v-7.5a2 2 0 0 1 2-2h8.5a2 2 0 0 1 2 2v7.5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2m17.168-8.759l-4 3.563a.5.5 0 0 0-.168.373v1.778a.5.5 0 0 0 .168.373l4 3.563a.5.5 0 0 0 .832-.374V7.365a.5.5 0 0 0-.832-.374"/></svg> Videos
+                  </a></li>
+
+                </ul>
+              </li> 
 
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>

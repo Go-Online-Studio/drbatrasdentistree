@@ -171,6 +171,14 @@
     gap: 8px;
     margin-bottom: 32px;
   }
+
+  /* Video gallery: hide grid, show swiper on mobile */
+  .video-gallery-grid {
+    display: none !important;
+  }
+  .video-mobile-swiper-wrap {
+    display: block;
+  }
 }
 
 @media (max-width: 575px) {
@@ -270,4 +278,22 @@
   max-width: 128px;
   height: 100%;
 }
+
+  /* Video cards smaller play button on small screens */
+  .video-card-play {
+    width: 48px;
+    height: 48px;
+  }
+  .video-card-play iconify-icon {
+    font-size: 1.3rem;
+  }
+  .video-card-body {
+    padding: 16px 18px;
+  }
+  .video-card-body h5 {
+    font-size: 0.92rem;
+  }
+  .video-card-body p {
+    font-size: 0.8rem;
+  }
 }
