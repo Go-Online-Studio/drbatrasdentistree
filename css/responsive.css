@@ -38,6 +38,9 @@
   .offcanvas {
     max-width: 272px;
   }
+  .heroSwiper .swiper-slide {
+  min-height: calc(100vh - 88px);  
+}
 }
 
 @media (max-width: 768px) {

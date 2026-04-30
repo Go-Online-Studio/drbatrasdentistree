@@ -47,8 +47,15 @@ document.addEventListener("DOMContentLoaded", function () {
           <a class="navbar-brand m-0" href="index.html" aria-label="Dr. Batra's Dentistree Home">
             <img height="72px" width="174.3px" src="img/DR_BatraDentistreeLogo.webp" alt="Dr. Batra's Dentistree Logo">
           </a>
+          
           <div class="d-flex align-items-center gap-4">
             <!-- Timing -->
+            <div class="d-flex align-items-center gap-4 d-none d-xl-flex">
+            <!-- Timing -->
+            <img height="48px" width="48px" class="img-fluid imgHeder" loading="lazy" alt="1st IN GUJARAT (in 4-8 chairs category)" title="1st IN GUJARAT (in 4-8 chairs category)" src="img/Certi1.webp">
+            <img height="48px" width="48px" class="img-fluid imgHeder" loading="lazy" alt="ISO 9001:2015 Certified Dental Clinic" title="ISO 9001:2015 Certified Dental Clinic" src="img/Certi2.webp">
+            </div>
+
             <div class="d-flex align-items-center gap-3">
               <div class="top-info-icon">
                 <iconify-icon icon="ph:clock-bold" style="font-size:1.6rem;color:var(--primary-blue);"></iconify-icon>
