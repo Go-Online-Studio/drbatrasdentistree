@@ -109,11 +109,32 @@
     el.innerHTML = data.features.map(f => `
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="usecase-card reveal-item">
-          <div class="uc-icon">
-            <iconify-icon icon="${f.icon}" width="32" height="32"></iconify-icon>
-          </div>
+          ${f.image 
+            ? `<img src="${f.image}" alt="${f.title}" class="img-fluid rounded mb-3" />` 
+            : `<div class="uc-icon"><iconify-icon icon="${f.icon}" width="32" height="32"></iconify-icon></div>`
+          }
           <h5>${f.title}</h5>
           <p>${f.desc}</p>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  /* --- Populate Demographics --- */
+  function renderDemographics(data) {
+    const el = document.getElementById('demographicsList');
+    if (!el || !data.treatmentsByAge || !data.treatmentsByAge.length) {
+      const section = document.getElementById('demographicsSection');
+      if (section) section.style.display = 'none';
+      return;
+    }
+
+    el.innerHTML = data.treatmentsByAge.map(t => `
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="usecase-card reveal-item">
+          ${t.image ? `<img src="${t.image}" alt="${t.title}" class="img-fluid rounded mb-3" />` : ''}
+          <h5>${t.title}</h5>
+          <p>${t.desc}</p>
         </div>
       </div>
     `).join('');
@@ -313,6 +334,16 @@
       });
     }
 
+    /* --- Demographics Cards --- */
+    const demoCards = gsap.utils.toArray('#demographicsList .usecase-card');
+    if (demoCards.length) {
+      animateIn(demoCards, { y: 40, opacity: 0, scale: 0.95, duration: 0.65 }, {
+        stagger: 0.12,
+        triggerEl: demoCards[0],
+        start: 'top 88%'
+      });
+    }
+
     /* --- Process Steps --- */
     const steps = gsap.utils.toArray('.process-step');
     if (steps.length) {
@@ -389,6 +420,7 @@
     renderBenefits(data);
     renderSteps(data);
     renderFeatures(data);
+    renderDemographics(data);
     renderFAQs(data);
     renderCTA(data);
     renderSchema(data);

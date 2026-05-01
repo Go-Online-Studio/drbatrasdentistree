@@ -41,6 +41,9 @@
   .heroSwiper .swiper-slide {
   min-height: calc(100vh - 88px);  
 }
+.usecase-card {
+  padding: 16px 10px;
+}
 }
 
 @media (max-width: 768px) {

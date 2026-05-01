@@ -91,9 +91,14 @@
       { "title": "Regular Adjustments", "desc": "Scheduled follow-up visits every 4-6 weeks for wire adjustments, ensuring your teeth move progressively toward their ideal positions." }
     ],
     "features": [
-      { "icon": "mdi:tooth-outline", "title": "Metal Braces", "desc": "Traditional stainless steel braces offering proven effectiveness and reliability for comprehensive orthodontic correction." },
-      { "icon": "ph:diamond-bold", "title": "Ceramic Braces", "desc": "Tooth-colored ceramic brackets that blend seamlessly with your teeth, offering a discreet alternative to metal braces." },
-      { "icon": "ph:star-bold", "title": "Self-Ligating Braces", "desc": "Advanced bracket systems that use specialized clips instead of elastic ties, offering faster treatment times and fewer adjustments." }
+      { "image": "img/ServiceImages/TraditionalMetalBraces.webp", "icon": "mdi:tooth-outline", "title": "Traditional Metal Braces", "desc": "Time-tested and highly effective, traditional metal braces use high-grade stainless steel brackets and wires to correct even the most complex alignment issues with precision." },
+      { "image": "img/ServiceImages/CeramicBraces.webp", "icon": "ph:diamond-bold", "title": "Ceramic Braces", "desc": "Tooth-colored ceramic brackets that blend seamlessly with your natural teeth, offering a discreet and aesthetically pleasing alternative to metal braces without compromising on results." },
+      { "image": "img/ServiceImages/ClearAligners.webp", "icon": "ph:star-bold", "title": "Clear Aligners", "desc": "Virtually invisible and removable custom-made trays that comfortably shift your teeth into proper alignment, allowing you to eat, brush, and floss with complete freedom." }
+    ],
+    "treatmentsByAge": [
+      { "image": "img/ServiceImages/EarlyOrthodonticTreatment.webp", "title": "Early Orthodontic Treatment", "desc": "Phase one orthodontics designed for young children to guide proper jaw development, create space for incoming permanent teeth, and correct bite issues early to prevent severe problems later." },
+      { "image": "img/ServiceImages/TeenOrthodontics.webp", "title": "Teen Orthodontics", "desc": "Comprehensive orthodontic care tailored for adolescents, utilizing the most active growth phase to achieve optimal bite correction and a perfectly aligned, confident smile for the future." },
+      { "image": "img/ServiceImages/AdultOrthodontics.webp", "title": "Adult Orthodontics", "desc": "Advanced, discreet orthodontic solutions customized for adults seeking to improve their smile aesthetics, correct functional bite issues, and enhance long-term dental health at any age." }
     ],
     "faqs": [
       { "q": "How long does orthodontic treatment take?", "a": "Treatment duration typically ranges from 12-24 months depending on the complexity of your case. Minor corrections may be completed in as few as 6 months, while complex cases may take up to 30 months." },
