@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <!-- Timing -->
             <div class="d-flex align-items-center gap-4 d-none d-xl-flex">
             <!-- Timing -->
-            <img height="48px" width="48px" class="img-fluid imgHeder" loading="lazy" alt="1st IN GUJARAT (in 4-8 chairs category)" title="1st IN GUJARAT (in 4-8 chairs category)" src="img/Certi1.webp">
-            <img height="48px" width="48px" class="img-fluid imgHeder" loading="lazy" alt="ISO 9001:2015 Certified Dental Clinic" title="ISO 9001:2015 Certified Dental Clinic" src="img/Certi2.webp">
+            <img height="48px" width="48px" class="img-fluid imgHeder" loading="eager" alt="1st IN GUJARAT (in 4-8 chairs category)" title="1st IN GUJARAT (in 4-8 chairs category)" src="img/Certi1.webp">
+            <img height="48px" width="48px" class="img-fluid imgHeder" loading="eager" alt="ISO 9001:2015 Certified Dental Clinic" title="ISO 9001:2015 Certified Dental Clinic" src="img/Certi2.webp">
             </div>
 
             <div class="d-flex align-items-center gap-3">
