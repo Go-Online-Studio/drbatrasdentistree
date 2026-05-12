@@ -57,14 +57,14 @@
   },
   {
     "id": "orthodontic-braces",
-    "title": "Braces (Bite & Jaw Correction)",
-    "metaTitle": "Orthodontic Braces (Bite & Jaw Correction) in Vadodara | Dr Batra's Dentistree",
-    "metaDescription": "Straighten your teeth with modern orthodontic braces at Dr Batra's Dentistree, Vadodara. Metal, ceramic, and self-ligating braces for all ages.",
+    "title": "Braces and Aligners",
+    "metaTitle": "Orthodontic Braces and Aligners in Vadodara | Dr Batra's Dentistree",
+    "metaDescription": "Straighten your teeth with modern orthodontic braces and aligners at Dr Batra's Dentistree, Vadodara. Metal, ceramic, and self-ligating braces for all ages.",
     "hero": {
       "subtitle": "Smile Correction",
       "subtitleIcon": "ph:tooth-bold",
-      "heading": "Orthodontic Braces",
-      "breadcrumb": "Orthodontic Braces"
+      "heading": "Orthodontic Braces and Aligners",
+      "breadcrumb": "Orthodontic Braces and Aligners"
     },
     "intro": {
       "subtitle": "What Is Orthodontic Treatment?",
@@ -72,7 +72,7 @@
       "heading": "Achieving Perfect <span class=\"text-gradient\">Teeth Alignment</span>",
       "paragraphs": [
         "Orthodontic treatment helps straighten teeth and fix bite issues like crowding, gaps, overbite, underbite, and crossbite. It’s a simple and effective way to improve both your smile and overall dental health. Today’s braces and aligners are more comfortable, less noticeable, and suitable for all age groups.",
-        "At Dr. Batra’s Dentistree, we offer different orthodontic options including metal braces, ceramic (tooth-colored) braces, self-ligating braces, and clear aligners. We use digital planning and advanced 3D imaging to design a treatment that fits your teeth perfectly.",
+        "At Dr. Batra’s Dentistree, we offer different orthodontic options including traditional metal braces, advanced speed braces, ceramic braces, lingual braces, and a complete range of clear aligners. We use digital planning and advanced 3D imaging to design a treatment that fits your teeth perfectly.",
         "Our focus is not just on straight teeth, but on giving you a balanced, healthy, and confident smile that lasts long."
       ]
     },
@@ -80,20 +80,27 @@
       { "title": "Improved Smile Aesthetics", "desc": "Properly aligned teeth create a beautiful, symmetrical smile that enhances your facial appearance and boosts your confidence." },
       { "title": "Better Oral Health", "desc": "Straight teeth are easier to clean, reducing the risk of cavities, gum disease, and plaque buildup in hard-to-reach areas." },
       { "title": "Correct Bite Problems", "desc": "Orthodontic treatment fixes overbites, underbites, and crossbites, preventing jaw pain, uneven wear, and TMJ disorders." },
-      { "title": "Multiple Options Available", "desc": "From traditional metal braces to invisible ceramic options, we offer solutions that match your lifestyle, budget, and aesthetic preferences." },
-      { "title": "Prevent Future Dental Issues", "desc": "Addressing misalignment early prevents more serious dental problems, tooth damage, and costly treatments down the road." },
-      { "title": "Suitable for All Ages", "desc": "Modern orthodontics is not just for teens. Adults of all ages benefit from orthodontic treatment with discreet options available." }
+      { "title": "Multiple Options Available", "desc": "From traditional metal braces to invisible ceramic options and clear aligners, we offer solutions that match your lifestyle, budget, and aesthetic preferences." },
+      { "title": "Removable & Convenient", "desc": "With clear aligners, you can remove your trays to eat your favorite foods and maintain your normal brushing and flossing routine." },
+      { "title": "Suitable for All Ages", "desc": "Modern orthodontics is not just for teens. Adults of all ages benefit from orthodontic treatment with discreet options like aligners available." }
     ],
     "steps": [
-      { "title": "Initial Consultation", "desc": "Complete dental examination with X-rays, photographs, and digital impressions to assess your orthodontic needs." },
+      { "title": "Initial Consultation", "desc": "Complete dental examination with X-rays, photographs, and digital impressions/3D scans to assess your orthodontic needs." },
       { "title": "Custom Treatment Plan", "desc": "Your personalized plan is designed using 3D digital models, outlining the treatment timeline, appliance selection, and expected results." },
-      { "title": "Braces Placement", "desc": "Brackets are carefully bonded to your teeth and connected with archwires. The process is comfortable and takes about 60-90 minutes." },
-      { "title": "Regular Adjustments", "desc": "Scheduled follow-up visits every 4-6 weeks for wire adjustments, ensuring your teeth move progressively toward their ideal positions." }
+      { "title": "Appliance Placement", "desc": "Brackets are carefully bonded to your teeth, or you receive your first set of custom clear aligner trays with instructions for use." },
+      { "title": "Regular Progress Checks", "desc": "Scheduled follow-up visits every 4-6 weeks for wire adjustments or to receive new aligner trays, ensuring your teeth move progressively toward their ideal positions." }
     ],
     "features": [
-      { "image": "img/ServiceImages/TraditionalMetalBraces.webp", "icon": "mdi:tooth-outline", "title": "Traditional Metal Braces", "desc": "Time-tested and highly effective, traditional metal braces use high-grade stainless steel brackets and wires to correct even the most complex alignment issues with precision." },
+      { "image": "img/ServiceImages/TraditionalMetalBraces.webp", "icon": "mdi:tooth-outline", "title": "Standard Conventional Braces", "desc": "Time-tested and highly effective, traditional metal braces use high-grade stainless steel brackets and wires to correct even the most complex alignment issues with precision." },
+      { "image": "img/ServiceImages/TraditionalMetalBraces.webp", "icon": "ph:lightning-bold", "title": "Advance Speed Braces or Self Ligating", "desc": "Innovative braces that use a slide mechanism instead of elastics, reducing friction, increasing comfort, and potentially shortening treatment time." },
       { "image": "img/ServiceImages/CeramicBraces.webp", "icon": "ph:diamond-bold", "title": "Ceramic Braces", "desc": "Tooth-colored ceramic brackets that blend seamlessly with your natural teeth, offering a discreet and aesthetically pleasing alternative to metal braces without compromising on results." },
-      { "image": "img/ServiceImages/ClearAligners.webp", "icon": "ph:star-bold", "title": "Clear Aligners", "desc": "Virtually invisible and removable custom-made trays that comfortably shift your teeth into proper alignment, allowing you to eat, brush, and floss with complete freedom." }
+      { "icon": "ph:eye-slash-bold", "title": "Lingual Braces", "desc": "Custom-made brackets attached to the back (lingual) side of your teeth, making them completely invisible from the outside." }
+    ],
+    "alignersFeatures": [
+      { "image": "img/ServiceImages/ClearAligners.webp", "icon": "ph:star-bold", "title": "Standard Aligners", "desc": "Virtually invisible and removable custom-made clear trays that comfortably shift your teeth into proper alignment." },
+      { "icon": "mdi:human-child", "title": "Aligner for Teens/Kids", "desc": "Specially designed clear aligners that accommodate growing jaws and erupting teeth, often featuring compliance indicators." },
+      { "icon": "mdi:human-adult", "title": "Aligner for Adults", "desc": "Discreet, removable aligners perfectly suited for adult lifestyles, allowing you to straighten your teeth without anyone noticing." },
+      { "icon": "mdi:all-inclusive", "title": "Aligner for Any Age", "desc": "Versatile clear aligner systems customized for patients of all ages, offering a comfortable, metal-free path to a perfect smile." }
     ],
     "treatmentsByAge": [
       { "image": "img/ServiceImages/EarlyOrthodonticTreatment.webp", "title": "Early Orthodontic Treatment", "desc": "Phase one orthodontics designed for young children to guide proper jaw development, create space for incoming permanent teeth, and correct bite issues early to prevent severe problems later." },
@@ -101,11 +108,13 @@
       { "image": "img/ServiceImages/AdultOrthodontics.webp", "title": "Adult Orthodontics", "desc": "Advanced, discreet orthodontic solutions customized for adults seeking to improve their smile aesthetics, correct functional bite issues, and enhance long-term dental health at any age." }
     ],
     "faqs": [
-      { "q": "How long does orthodontic treatment take?", "a": "Treatment duration typically ranges from 12-24 months depending on the complexity of your case. Minor corrections may be completed in as few as 6 months, while complex cases may take up to 30 months." },
-      { "q": "Are braces painful?", "a": "You may experience mild discomfort for 3-5 days after initial placement and after each adjustment. This is completely normal and manageable with over-the-counter pain relievers. The discomfort decreases significantly with each visit." },
-      { "q": "Can adults get braces?", "a": "Absolutely! There is no age limit for orthodontic treatment. In fact, an increasing number of adults are seeking orthodontic care. We offer discreet options like ceramic braces and clear aligners specifically designed for adult patients." },
-      { "q": "How do I care for my braces?", "a": "Brush thoroughly after every meal, use interdental brushes to clean around brackets, floss daily with special orthodontic flossers, and avoid hard, sticky, or chewy foods that could damage your braces." },
-      { "q": "Will I need to wear retainers after treatment?", "a": "Yes, retainers are essential after braces removal to maintain your new smile. You'll typically wear them full-time initially, then transition to nighttime-only wear." }
+      { "q": "How long does orthodontic treatment take?", "a": "Treatment duration typically ranges from 12-24 months depending on the complexity of your case. Minor corrections with aligners may be completed in as few as 6 months." },
+      { "q": "Are braces or aligners painful?", "a": "You may experience mild discomfort for a few days after initial placement of braces or when starting a new aligner tray. This is normal and manageable." },
+      { "q": "How do clear aligners work compared to braces?", "a": "Aligners use a series of custom-made, clear plastic trays to gently shift teeth into place over time, whereas braces use brackets and wires to pull teeth into alignment." },
+      { "q": "Can adults get braces or aligners?", "a": "Absolutely! There is no age limit for orthodontic treatment. In fact, an increasing number of adults choose discreet options like ceramic braces and clear aligners." },
+      { "q": "How many hours a day do I need to wear aligners?", "a": "For clear aligners to be effective, they must be worn for 20 to 22 hours a day, removing them only to eat, drink, brush, and floss." },
+      { "q": "How do I care for my braces or aligners?", "a": "For braces, brush thoroughly and use special floss. For aligners, remove them to eat, clean them daily with a soft brush, and keep them in their case when not worn." },
+      { "q": "Will I need to wear retainers after treatment?", "a": "Yes, retainers are essential after both braces and aligners to maintain your new smile. You'll typically wear them full-time initially, then transition to nighttime-only wear." }
     ],
     "cta": {
       "heading": "Ready for a <span class=\"text-gradient\">Straighter Smile?</span>",

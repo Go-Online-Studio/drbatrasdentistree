@@ -8,9 +8,9 @@
   },
   {
     "id": "orthodontic-braces",
-    "title": "Braces (Bite & Jaw Correction)",
-    "image": "img/Icons/OrthodonticBraces.svg",
-    "shortDesc": "Straighten misaligned teeth with modern metal, ceramic, and self-ligating braces customized for every age group.",
+    "title": "Braces and Aligners",
+    "image": "img/Icons/OrthodonticBraces.svg", 
+    "shortDesc": "Straighten misaligned teeth with modern metal, ceramic, self-ligating braces, and clear aligners customized for every age group.",
     "category": "dental-services"
   },
   {
