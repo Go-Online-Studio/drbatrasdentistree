@@ -59,7 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
               <li><a href="index.html#services">Our Treatments</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="infection-control.html">Infection Control</a></li> 
+              <li><a href="infection-control.html">Infection Control</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
             </ul>
           </div>
 

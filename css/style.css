@@ -1772,7 +1772,7 @@ background:var(--primary-gradient);color:#fff;padding:20px 28px;border-radius:va
   overflow: hidden;
 }
 
-.page-hero::before {
+.page-hero::before,.blog-hero::before {
   content: "";
   position: absolute;
   top: -80px;
@@ -1784,7 +1784,7 @@ background:var(--primary-gradient);color:#fff;padding:20px 28px;border-radius:va
   pointer-events: none;
 }
 
-.page-hero::after {
+.page-hero::after,.blog-hero::after {
   content: "";
   position: absolute;
   bottom: -60px;
