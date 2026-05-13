@@ -48,7 +48,7 @@
           <span class="separator" style="color:rgba(45,55,72,0.5);">&#8250;</span>
           <span id="heroBreadcrumb" style="color:rgba(45,55,72,0.9);"></span>
         </div>
-        <div class="blogImg mb-4"><img loading="eager" id="heroImgBlog" src="" alt=""></div>
+        <div class="blogImg mb-4"><img loading="eager" id="heroImgBlog" class="img-loading-state" src="" alt="" onload="if(this.src) { this.classList.remove('img-loading-state'); this.classList.add('img-loaded-state'); }"></div>
         <span class="blog-hero-category" id="heroCategory"></span>
         <h1 id="heroTitle"></h1>
         <div class="blog-hero-meta" id="heroMeta"></div>

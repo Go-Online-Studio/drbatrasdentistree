@@ -41,7 +41,7 @@
       <div class="col-lg-4 col-md-6" data-category="${blog.category}">
         <a href="blog-post.html?slug=${blog.slug}" class="blog-card reveal-item" style="position:relative; display:flex;">
           <div class="blog-card-img">
-            <img src="${blog.featuredImage}" alt="${blog.title}" loading="lazy" width="400" height="250">
+            <img src="${blog.featuredImage}" alt="${blog.title}" loading="lazy" width="400" height="250" class="img-loading-state" onload="this.classList.remove('img-loading-state'); this.classList.add('img-loaded-state');">
             <span class="blog-card-category">${blog.categoryLabel}</span>
           </div>
           <div class="blog-card-body">
