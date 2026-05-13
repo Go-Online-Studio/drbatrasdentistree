@@ -91,16 +91,16 @@
       { "title": "Regular Progress Checks", "desc": "Scheduled follow-up visits every 4-6 weeks for wire adjustments or to receive new aligner trays, ensuring your teeth move progressively toward their ideal positions." }
     ],
     "features": [
-      { "image": "img/ServiceImages/TraditionalMetalBraces.webp", "icon": "mdi:tooth-outline", "title": "Standard Conventional Braces", "desc": "Time-tested and highly effective, traditional metal braces use high-grade stainless steel brackets and wires to correct even the most complex alignment issues with precision." },
+      { "image": "img/ServiceImages/StandardConventionalBraces.webp", "icon": "mdi:tooth-outline", "title": "Standard Conventional Braces", "desc": "Time-tested and highly effective, traditional metal braces use high-grade stainless steel brackets and wires to correct even the most complex alignment issues with precision." },
       { "image": "img/ServiceImages/TraditionalMetalBraces.webp", "icon": "ph:lightning-bold", "title": "Advance Speed Braces or Self Ligating", "desc": "Innovative braces that use a slide mechanism instead of elastics, reducing friction, increasing comfort, and potentially shortening treatment time." },
       { "image": "img/ServiceImages/CeramicBraces.webp", "icon": "ph:diamond-bold", "title": "Ceramic Braces", "desc": "Tooth-colored ceramic brackets that blend seamlessly with your natural teeth, offering a discreet and aesthetically pleasing alternative to metal braces without compromising on results." },
-      { "icon": "ph:eye-slash-bold", "title": "Lingual Braces", "desc": "Custom-made brackets attached to the back (lingual) side of your teeth, making them completely invisible from the outside." }
+      { "image": "img/ServiceImages/LingualBraces.webp", "icon": "ph:eye-slash-bold", "title": "Lingual Braces", "desc": "Custom-made brackets attached to the back (lingual) side of your teeth, making them completely invisible from the outside." }
     ],
     "alignersFeatures": [
       { "image": "img/ServiceImages/ClearAligners.webp", "icon": "ph:star-bold", "title": "Standard Aligners", "desc": "Virtually invisible and removable custom-made clear trays that comfortably shift your teeth into proper alignment." },
-      { "icon": "mdi:human-child", "title": "Aligner for Teens/Kids", "desc": "Specially designed clear aligners that accommodate growing jaws and erupting teeth, often featuring compliance indicators." },
-      { "icon": "mdi:human-adult", "title": "Aligner for Adults", "desc": "Discreet, removable aligners perfectly suited for adult lifestyles, allowing you to straighten your teeth without anyone noticing." },
-      { "icon": "mdi:all-inclusive", "title": "Aligner for Any Age", "desc": "Versatile clear aligner systems customized for patients of all ages, offering a comfortable, metal-free path to a perfect smile." }
+      { "image": "img/ServiceImages/AlignerForTeens_Kids.webp", "icon": "mdi:human-child", "title": "Aligner for Teens/Kids", "desc": "Specially designed clear aligners that accommodate growing jaws and erupting teeth, often featuring compliance indicators." },
+      { "image": "img/ServiceImages/AlignerForAdults.webp", "icon": "mdi:human-adult", "title": "Aligner for Adults", "desc": "Discreet, removable aligners perfectly suited for adult lifestyles, allowing you to straighten your teeth without anyone noticing." },
+      { "image": "img/ServiceImages/AlignerForAnyAge.webp", "icon": "mdi:all-inclusive", "title": "Aligner for Any Age", "desc": "Versatile clear aligner systems customized for patients of all ages, offering a comfortable, metal-free path to a perfect smile." }
     ],
     "treatmentsByAge": [
       { "image": "img/ServiceImages/EarlyOrthodonticTreatment.webp", "title": "Early Orthodontic Treatment", "desc": "Phase one orthodontics designed for young children to guide proper jaw development, create space for incoming permanent teeth, and correct bite issues early to prevent severe problems later." },
