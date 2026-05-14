@@ -9,6 +9,9 @@
     text-align: center;
     padding: 40px 0;
   }
+  .offcanvas .nav-link {
+    font-size: 13px;
+  }
 
   .hero-text {
     max-width: 100%;
