@@ -520,9 +520,9 @@ html.fcp-ready body.loading footer {
 
 .offcanvas .nav-link {
   color: var(--text-dark) !important;
-  padding: 8px 10px !important;
+  padding: 8px 6px !important;
   border-bottom: 1px solid rgba(5, 107, 163, 0.06);
-  font-size: 13px;
+  font-size: 10px;
   position: relative;
 }
 .offcanvas .nav-link iconify-icon {
