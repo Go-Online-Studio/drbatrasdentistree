@@ -79,17 +79,25 @@
     if (state.fancyRequested || !window.LazyAssets) return;
     if (!document.querySelector("[data-fancybox]")) return;
     state.fancyRequested = true;
-    Promise.all([
-      window.LazyAssets.loadStyle("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"),
-      window.LazyAssets.loadScript("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"),
-    ]).then(function () {
+
+    const initFancybox = function () {
       if (window.Fancybox) {
         window.Fancybox.bind("[data-fancybox]", {
           Thumbs: false,
           Toolbar: { display: { left: [], middle: [], right: ["close"] } },
         });
       }
-    }).catch(function () {});
+    };
+
+    if (window.Fancybox) {
+      initFancybox();
+      return;
+    }
+
+    Promise.all([
+      window.LazyAssets.loadStyle("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"),
+      window.LazyAssets.loadScript("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"),
+    ]).then(initFancybox).catch(function () {});
   }
 
   function loadSwiperIfNeeded() {
