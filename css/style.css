@@ -2457,6 +2457,34 @@ html.fcp-ready body.loading footer {
   column-gap: 20px;
 }
 
+.gallery-grid.few-items {
+  column-count: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-grid.few-items .gallery-item {
+  flex: 0 0 calc(33.333% - 14px);
+  max-width: calc(33.333% - 14px);
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid.few-items .gallery-item {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-grid.few-items .gallery-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 .gallery-item {
   break-inside: avoid;
   margin-bottom: 20px;

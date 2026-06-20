@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -54,6 +54,7 @@
         <button class="gallery-filter-btn" data-filter="camp">Camp</button> 
         <button class="gallery-filter-btn" data-filter="awards">Awards</button> 
         <button class="gallery-filter-btn" data-filter="social-events">SOCIAL EVENTS</button> 
+        <button class="gallery-filter-btn" data-filter="before-after">BEFORE AFTER</button> 
       </div>
 
       <!-- Masonry Gallery Grid -->
@@ -304,6 +305,14 @@
           <img src="img/Gallery/Thumb/52_social_event_photo.webp" alt="Social Event" loading="lazy" />    
           <div class="gallery-overlay"><iconify-icon icon="ph:magnifying-glass-plus-bold"></iconify-icon></div>
         </a>
+        <a href="img/Gallery/before-after-image-1.png" data-fancybox="gallery" data-caption="before after image 1" class="gallery-item" data-category="before-after">
+          <img src="img/Gallery/Thumb/before-after-image-1.webp" alt="before after image 1" loading="lazy" />    
+          <div class="gallery-overlay"><iconify-icon icon="ph:magnifying-glass-plus-bold"></iconify-icon></div>
+        </a>
+        <a href="img/Gallery/before-after-image-2.png" data-fancybox="gallery" data-caption="before after image 2" class="gallery-item" data-category="before-after">
+          <img src="img/Gallery/Thumb/before-after-image-2.webp" alt="before after image 2" loading="lazy" />    
+          <div class="gallery-overlay"><iconify-icon icon="ph:magnifying-glass-plus-bold"></iconify-icon></div>
+        </a>
 
 
       </div>
@@ -376,10 +385,12 @@
       // localStorage.setItem("activeGalleryFilter", filter);
 
       // Filter items & update Fancybox groups
+      let visibleCount = 0;
       galleryItems.forEach((item) => {
         if (filter === "all" || item.dataset.category === filter) {
           item.style.display = "";
           item.setAttribute("data-fancybox", "gallery");
+          visibleCount++;
           if (hasGSAP) {
             gsap.fromTo(item, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" });
           } else {
@@ -394,6 +405,15 @@
 
       // Rebind Fancybox to only include visible items
       bindFancyboxSafe();
+
+      const grid = document.getElementById("galleryGrid");
+      if (grid) {
+        if (visibleCount > 0 && visibleCount <= 3) {
+          grid.classList.add("few-items");
+        } else {
+          grid.classList.remove("few-items");
+        }
+      }
     }
 
     // Attach click events
