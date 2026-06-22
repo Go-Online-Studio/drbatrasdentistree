@@ -148,6 +148,128 @@
         display: none !important
       }
     }
+
+    .split-hero-section{
+  background: linear-gradient(#00000067,#00000067), url('../img/BannerBackHoem.webp') center/cover no-repeat;
+}
+
+.heroSwiper {
+  width: 100%;
+}
+
+.heroSwiper .swiper-slide {
+  min-height: calc(100vh - 145.5px);
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 80px 0;
+  z-index: 1;
+}
+
+.split-hero-text {
+  max-width: 600px;
+}
+
+.split-hero-text .hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--bg-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.split-hero-text h1, .split-hero-text h2 {
+  color: var(--text-dark);
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.split-hero-text h1 span, .split-hero-text h2 span {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.swiper-slide h1,.swiper-slide .h1{
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} 
+
+.split-hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-white);
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.split-hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-hero-image-clip {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+
+.split-hero-image-clip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  .heroSwiper .swiper-slide .container>.row{
+    gap: 40px 40px;
+  }
+  .heroSwiper .swiper-slide {
+    padding: 100px 0 60px;
+  }
+  .split-hero-text {
+    margin: 0 auto;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* Swiper Pagination */
+.heroSwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--primary-blue);
+  opacity: 0.3;
+  transition: var(--transition-fast);
+}
+
+.heroSwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 30px;
+  border-radius: 5px;
+  background: var(--primary-gradient);
+}
+
   </style>
 </head>
 
