@@ -1,6 +1,0 @@
-[
-  {"id":"trainer-1","name":"Alex Carter","role":"Head Coach","specialty":"Strength & Conditioning","image":"assets/images/trainers/trainer-1.webp","bio":"10+ years of experience in competitive powerlifting and athletic coaching.","social":{"instagram":"#","twitter":"#","linkedin":"#"}},
-  {"id":"trainer-2","name":"Sarah Mitchell","role":"Fitness Coach","specialty":"Weight Loss & HIIT","image":"assets/images/trainers/trainer-2.webp","bio":"Certified nutritionist and HIIT specialist with a passion for transformation.","social":{"instagram":"#","twitter":"#","linkedin":"#"}},
-  {"id":"trainer-3","name":"James Rodriguez","role":"Personal Trainer","specialty":"Muscle Building","image":"assets/images/trainers/trainer-3.webp","bio":"Former bodybuilding champion dedicated to helping clients achieve peak physique.","social":{"instagram":"#","twitter":"#","linkedin":"#"}},
-  {"id":"trainer-4","name":"Priya Sharma","role":"Yoga & Flexibility","specialty":"Yoga & Recovery","image":"assets/images/trainers/trainer-4.webp","bio":"Certified yoga instructor specializing in flexibility, mobility, and mindful recovery.","social":{"instagram":"#","twitter":"#","linkedin":"#"}}
-]

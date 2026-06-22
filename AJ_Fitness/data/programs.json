@@ -1,8 +1,0 @@
-[
-  {"id":"muscle-building","name":"Muscle Building","category":"strength","image":"assets/images/programs/muscle-building.webp","icon":"mdi:dumbbell","description":"Build lean muscle mass with progressive overload training designed by expert coaches.","duration":"60 min","level":"All Levels"},
-  {"id":"weight-loss","name":"Weight Loss","category":"cardio","image":"assets/images/programs/weight-loss.webp","icon":"mdi:fire","description":"Burn fat and boost metabolism with high-intensity cardio and strength combos.","duration":"45 min","level":"Beginner Friendly"},
-  {"id":"strength-power","name":"Strength & Power","category":"strength","image":"assets/images/programs/strength-power.webp","icon":"mdi:arm-flex","description":"Improve raw power and athletic performance with powerlifting techniques.","duration":"75 min","level":"Intermediate"},
-  {"id":"fitness-conditioning","name":"Fitness & Conditioning","category":"cardio","image":"assets/images/programs/fitness-conditioning.webp","icon":"mdi:heart-pulse","description":"Improve endurance, agility, and overall fitness with functional training.","duration":"50 min","level":"All Levels"},
-  {"id":"personal-training","name":"Personal Training","category":"strength","image":"assets/images/programs/personal-training.webp","icon":"mdi:account-supervisor","description":"One-on-one sessions with certified trainers for bespoke workout programming.","duration":"60 min","level":"All Levels"},
-  {"id":"nutrition-plans","name":"Nutrition Plans","category":"nutrition","image":"assets/images/programs/nutrition-plans.webp","icon":"mdi:food-apple","description":"Personalized diet plans crafted by certified nutritionists for your goals.","duration":"Ongoing","level":"All Levels"}
-]
