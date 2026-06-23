@@ -117,8 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <!-- Footer Bottom -->
         <div class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-          <p>© <span id="year"></span> All Rights Reserved by ${CONFIG.clinicName} | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
-                    <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
+          <p>© <span id="year"></span> All Rights Reserved by ${CONFIG.clinicName} | Developed by <a href="#" target="_blank">
+                    <b>SM&nbsp;Enterprise</b>
                   </a></p>
         </div>
       </div>

@@ -1,0 +1,51 @@
+You are acting as an Elite 10-Year Senior Frontend Developer and Technical SEO Expert. We are moving the dental practice website for Dr. Batra's Dentistree from a GitHub-configured environment to a live, production-grade cloud hosting environment. The canonical target domain is strictly: https://drbatrasdentistree.in/
+
+Analyze the entire codebase, templates, and routing structure to execute and enforce the following pre-live production checklist. Rectify any structural failures, missing configuration files, or anti-patterns found.
+
+---
+
+### 1. ENVIRONMENT TRANSITION (GitHub to Production Hosting)
+- [ ] Remove GitHub Pages Configuration: Strip out any GitHub Pages deployment workflows (e.g., `.github/workflows/gh-pages.yml`), custom actions, or repository-specific base paths.
+- [ ] Relative to Absolute Assets: Ensure asset paths do not reference GitHub repository subdirectories. All asset references must point cleanly relative to the site root or use the absolute production origin.
+- [ ] Server Redirects (Non-www to WWW, or vice-versa): Provide the configuration code (e.g., .htaccess for Apache/LiteSpeed, nginx.conf for Nginx, or vercel.json / netlify.toml depending on target host) ensuring a single, authoritative canonical domain variant.
+
+### 2. DYNAMIC & AUTOMATED SITEMAP SETTING
+- [ ] Dynamic Sitemap Generation: Configure or output a production sitemap script/configuration targeting 'https://drbatrasdentistree.in'. It must auto-update when new services or pages are created.
+- [ ] Robots.txt Enlistment: Explicitly append the line: `Sitemap: https://drbatrasdentistree.in` to the production robots.txt file. Ensure all staging paths or preview URLs are globally disallowed.
+
+### 3. MANDATORY CORE TECHNICAL SEO & FRONTEND CHECKLIST
+
+#### [ ] A. HTML Skeleton, Hardcoded Layouts & Navigations
+- Verify all standalone pages contain a valid semantic HTML5 skeleton (`<!DOCTYPE html>`, `<html lang="en">`, `<head>`, `<body>`).
+- Confirm the global navigation header and the dental clinic footer are explicitly hardcoded or natively imported via clean components on every single viewport. No broken links or placeholder anchor fragments (`href="#"`) permitted.
+
+#### [ ] B. Structural JSON-LD Schema Markup
+- Generate and inject absolute, valid JSON-LD code into the `<head>` of pages. 
+- Home & Contact Pages: Must feature a deeply nested `MedicalBusiness` / `Dentist` Schema including clinic name ("Dr. Batra's Dentistree"), absolute telephone contacts, geo-coordinates, precise local address (Vadodara, Gujarat), and active opening hours.
+- Service Pages: Every individual dental service page (e.g., Root Canal, Implant Dentistry, Orthodontic Braces) must feature a nested `MedicalProcedure` or `Service` Schema mapped explicitly back to the main clinic.
+
+#### [ ] C. Media Optimization & Alt Accessibility
+- Inspect every visual element (`<img>`, `<picture>`, SVG inline icons). 
+- Every image must explicitly declare native HTML rendering dimensions (`width` and `height`) to reserve spatial boxes on layout compilation.
+- Every image must have a descriptive, contextual `alt` attribute utilizing local semantic keywords (e.g., "Dr. Samir Batra Cosmetic Dentist Vadodara") rather than generic terms.
+
+#### [ ] D. Canonical and Meta Assurance
+- <link rel="canonical">: Inject a strict, hard-coded self-referencing canonical tag onto every single absolute page template referencing the secure live URL (e.g., `<link rel="canonical" href="https://drbatrasdentistree.in">`).
+- Social Open Graph & Twitter Cards: Provide the mandatory standard meta cluster (`og:title`, `og:description`, `og:url`, `og:image`, `og:type`, `twitter:card`) inside the global document head to maximize rich-media click-through rates.
+
+#### [ ] E. Core Web Vitals Optimization (90+ Lighthouse Structure)
+- LCP (Largest Contentful Paint) Optimizations: 
+  * Identify top hero sections and add `fetchpriority="high"` and `rel="preload"` declarations onto primary critical screen images.
+  * Enforce native CSS/JS minification and apply modern compressed layout wrappers (`.webp` or `.avif`).
+- CLS (Cumulative Layout Shift) Optimizations:
+  * Audit layout layout shifts. Ensure non-standard fonts utilize a `font-display: swap;` style attribute.
+  * Inject strict CSS Aspect Ratio boxes on dynamic modules, banners, or interactive review frames.
+
+---
+
+### Output Requirements
+Deliver a detailed, comprehensive code blueprint containing:
+1. The exact server configuration script for the server redirect/domain mapping.
+2. The dynamic `sitemap.xml` format.
+3. The exact boilerplate JSON-LD structures ready for pasting.
+4. Clean HTML5 macro component examples reflecting the exact meta tag and link rules defined above.
