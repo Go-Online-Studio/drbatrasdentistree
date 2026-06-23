@@ -8,8 +8,7 @@
     if (headerEl.dataset.navReady === "true") return;
     headerEl.dataset.navReady = "true";
 
-    headerEl.innerHTML = window.__DRB_NAV_HTML__ || "";
-    if (!headerEl.innerHTML) return;
+
 
     var currentPage = window.location.pathname.split("/").pop() || "index.html";
     headerEl.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
