@@ -6,7 +6,7 @@
   "use strict";
 
   const BLOG_DATA_URL = "data/blogsData.json";
-  const BASE_URL = "https://drbatrasdentistree.com/";
+  const BASE_URL = "https://drbatrasdentistree.in/";
 
   function getSlug() {
     const params = new URLSearchParams(window.location.search);

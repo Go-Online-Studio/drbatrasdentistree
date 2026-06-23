@@ -1,0 +1,18 @@
+# robots.txt for Dr. Batra's Dentistree
+# Canonical Domain: https://drbatrasdentistree.in/
+
+User-agent: *
+Allow: /
+
+# Block non-public directories and files
+Disallow: /.github/
+Disallow: /data/
+Disallow: /text.txt
+Disallow: /RefrenceWebsites.txt
+Disallow: /performance-budget.json
+Disallow: /.lighthouserc.json
+Disallow: /webpack.config.js
+Disallow: /generate-sitemap.js
+
+# Sitemap location
+Sitemap: https://drbatrasdentistree.in/sitemap.xml

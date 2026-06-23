@@ -278,15 +278,26 @@
       "@type": "MedicalProcedure",
       name: data.title,
       description: data.metaDescription,
-      url: `https://drbatrasdentistree.com/${data.id}.html`,
+      url: `https://drbatrasdentistree.in/${data.id}.html`,
+      procedureType: "http://schema.org/TherapeuticProcedure",
       performedBy: {
         "@type": "Dentist",
+        "@id": "https://drbatrasdentistree.in/#dentist",
         name: "Dr. Batra's Dentistree",
+        url: "https://drbatrasdentistree.in/",
+        telephone: ["+919879625787", "+919825007975"],
         address: {
           "@type": "PostalAddress",
+          streetAddress: "FF-145, S9 Square, Opp. Lotus Aura, Sama-Savli Road, Vemali",
           addressLocality: "Vadodara",
           addressRegion: "Gujarat",
+          postalCode: "390008",
           addressCountry: "IN",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 22.3544478,
+          longitude: 73.1992098,
         },
       },
     };

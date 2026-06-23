@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
               Your smile is in expert hands. We provide world-class dental care using cutting-edge technology and a patient-first approach. Every treatment is designed for lasting results.
             </p>
             <div class="footer-social">
-              <a href="#" aria-label="Facebook"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
-              <a href="#" aria-label="Instagram"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
-              <a href="#" aria-label="YouTube"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
-              <a href="#" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+              <a href="https://www.facebook.com/drbatrasdentistree/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+              <a href="https://www.instagram.com/dr.batras_dentistree/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+              <a href="https://www.youtube.com/@DrBatrasDentistree" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+              <a href="https://www.linkedin.com/company/dr-batra-s-dentistree-clinic/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
             </div>
           </div>
 
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <!-- Footer Bottom -->
         <div class="footer-bottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-          <p>© <span id="year"></span> All Rights Reserved by ${CONFIG.clinicName} | Developed by <a href="#" target="_blank">
+          <p>© <span id="year"></span> All Rights Reserved by ${CONFIG.clinicName} | Developed by <a href="javascript:void(0)" target="_blank">
                     <b>SM&nbsp;Enterprise</b>
                   </a></p>
         </div>
