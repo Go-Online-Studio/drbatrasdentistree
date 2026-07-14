@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ── Global Config ── */
   const CONFIG = {
     whatsappNumber: "919879625787",
-    whatsappMessage: "Hi Dr. Batra's Dentistree! I'd like to book an appointment.\n\nPlease share available slots.\n\nThank you!",
+    whatsappMessage:
+      "Hi Dr. Batra's Dentistree! I'd like to book an appointment.\n\nPlease share available slots.\n\nThank you!",
     clinicName: "Dr. Batra's Dentistree",
     animationDuration: 800,
   };
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
      1. FOOTER INJECTION
      ══════════════════════════════════════════════ */
 
- /* <div class="footer-map">
+  /* <div class="footer-map">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.978310763274!2d73.1992098!3d22.3544478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf9988a9773b%3A0x2b808d0c55732bc2!2sDr.%20Batra&#39;s%20Dentistree!5e0!3m2!1sen!2sin!4v1775815107268!5m2!1sen!2sin"
     allowfullscreen="" loading="lazy"
@@ -146,13 +147,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Back-to-top visibility
   const scrollTopBtn = document.getElementById("scrollTopBtn");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 500) {
-      scrollTopBtn.classList.add("visible");
-    } else {
-      scrollTopBtn.classList.remove("visible");
-    }
-  }, { passive: true });
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add("visible");
+      } else {
+        scrollTopBtn.classList.remove("visible");
+      }
+    },
+    { passive: true },
+  );
 
   scrollTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -170,7 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Hover effect on interactive elements
-    const hoverTargets = "a, button, .service-card, .filter-btn, .fab-btn, input, textarea, .nav-link";
+    const hoverTargets =
+      "a, button, .service-card, .filter-btn, .fab-btn, input, textarea, .nav-link";
     document.querySelectorAll(hoverTargets).forEach((el) => {
       el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
       el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
@@ -181,8 +187,12 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(hoverTargets).forEach((el) => {
         if (!el.dataset.cursorBound) {
           el.dataset.cursorBound = "true";
-          el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
-          el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+          el.addEventListener("mouseenter", () =>
+            cursor.classList.add("hover"),
+          );
+          el.addEventListener("mouseleave", () =>
+            cursor.classList.remove("hover"),
+          );
         }
       });
     });
@@ -213,29 +223,100 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ══════════════════════════════════════════════
      6. GENERIC GSAP ANIMATIONS
      ══════════════════════════════════════════════ */
+
+  // Single-run guard – prevents double-animation when both the
+  // performance-optimizer Promise callback AND the setTimeout fallback fire.
+  var _gsapInitDone = false;
+
+  /**
+   * Split a .gsap-text-reveal element into animated word spans,
+   * preserving any child <span> elements (e.g. the coloured accent spans).
+   *
+   * Strategy: walk childNodes. For TEXT nodes, split on whitespace and
+   * wrap each word. For ELEMENT nodes (spans), treat the element's
+   * textContent as a single "word unit" and wrap the whole element.
+   */
+  function _splitTextReveal(el) {
+    // Collect (word | element) units from existing children
+    var units = [];
+
+    el.childNodes.forEach(function (node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        // Split plain text on whitespace, ignore empty tokens
+        node.textContent.split(/\s+/).forEach(function (w) {
+          if (w) units.push({ type: "text", value: w });
+        });
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        // Clone the accent span and mark it with .word-accent so the CSS
+        // gradient-clip rule targets it precisely (not the wrapper spans).
+        var cloned = node.cloneNode(true);
+        cloned.classList.add("word-accent");
+        units.push({ type: "element", node: cloned });
+      }
+    });
+
+    // Replace element content with wrapped word spans.
+    // Space is kept INSIDE the .word inner span so it's contained within
+    // the overflow:hidden wrapper — no stray bare text nodes outside.
+    el.innerHTML = "";
+    units.forEach(function (unit, i) {
+      var wrapper = document.createElement("span");
+      wrapper.className = "word-wrap";
+      wrapper.style.display = "inline-block";
+      wrapper.style.overflow = "hidden";
+      wrapper.style.verticalAlign = "bottom";
+      wrapper.style.lineHeight = "inherit";
+
+      var inner = document.createElement("span");
+      inner.className = "word";
+      inner.style.display = "inline-block";
+      inner.style.transform = "translateY(110%)";
+      inner.style.willChange = "transform";
+      inner.style.lineHeight = "inherit";
+
+      if (unit.type === "text") {
+        // Trailing space inside the clipped span — avoids stray bare text nodes
+        inner.textContent = unit.value + (i < units.length - 1 ? " " : "");
+      } else {
+        inner.appendChild(unit.node);
+      }
+
+      wrapper.appendChild(inner);
+      el.appendChild(wrapper);
+    });
+  }
+
   window.AppUtils.initGenericGSAP = function () {
-    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+    // Hard guard: run animations exactly once per page load
+    if (_gsapInitDone) return;
 
-    /* ── Text Reveal (word-by-word) ── */
-    document.querySelectorAll(".gsap-text-reveal").forEach((text) => {
-      if (text.dataset.initialized) return;
-      text.dataset.initialized = "true";
-      const words = text.textContent.trim().split(/\s+/);
-      text.innerHTML = "";
-      words.forEach((word) => {
-        const wrapper = document.createElement("span");
-        wrapper.className = "word-wrap";
-        const inner = document.createElement("span");
-        inner.className = "word";
-        inner.style.display = "inline-block";
-        inner.style.transform = "translateY(110%)";
-        inner.innerHTML = word + "&nbsp;";
-        wrapper.appendChild(inner);
-        text.appendChild(wrapper);
-      });
+    // Ensure GSAP + plugin are both present before proceeding
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined")
+      return;
 
-      gsap.to(text.querySelectorAll(".word"), {
-        scrollTrigger: { trigger: text, start: "top 90%", once: true },
+    // Always register the plugin here – safe to call multiple times in GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
+    _gsapInitDone = true;
+
+    // Add activation class to document element
+    document.documentElement.classList.add("gsap-activated");
+
+    /* ── Text Reveal (word-by-word, <span>-aware) ── */
+    document.querySelectorAll(".gsap-text-reveal").forEach(function (el) {
+      // DOM split (idempotent – already checked by _gsapInitDone above,
+      // but keep the attribute as a safety net for late-injected elements)
+      if (el.dataset.gsapSplit) return;
+      el.dataset.gsapSplit = "true";
+
+      _splitTextReveal(el);
+
+      gsap.to(el.querySelectorAll(".word"), {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 90%",
+          once: true,
+        },
         y: "0%",
         duration: 0.8,
         stagger: 0.06,
@@ -244,17 +325,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* ── General Fade Up ── */
-    gsap.utils.toArray(".gsap-fade-up").forEach((el) => {
-      if (el.dataset.initialized) return;
-      el.dataset.initialized = "true";
-      gsap.from(el, {
-        scrollTrigger: { trigger: el, start: "top 90%", once: true },
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        ease: "power2.out",
-        clearProps: "all"
-      });
+    gsap.utils.toArray(".gsap-fade-up").forEach(function (el) {
+      if (el.dataset.gsapFade) return;
+      el.dataset.gsapFade = "true";
+      gsap.fromTo(el, 
+        {
+          y: 40,
+          opacity: 0
+        },
+        {
+          scrollTrigger: { trigger: el, start: "top 90%", once: true },
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          clearProps: "all",
+        }
+      );
     });
   };
 
@@ -262,21 +349,20 @@ document.addEventListener("DOMContentLoaded", function () {
      8. RESIZE DEBOUNCE & RESPONSIVE HANDLER
      ══════════════════════════════════════════════ */
   function debounce(fn, delay) {
-    let timer;
-    return function (...args) {
+    var timer;
+    return function () {
+      var args = arguments;
       clearTimeout(timer);
-      timer = setTimeout(() => fn.apply(this, args), delay);
+      timer = setTimeout(function () {
+        fn.apply(this, args);
+      }, delay);
     };
   }
 
-  const handleResize = debounce(function () {
-    // Reset word-wrap text splits
-    document.querySelectorAll(".gsap-text-reveal").forEach((el) => {
-      const words = el.querySelectorAll(".word");
-      words.forEach((w) => (w.style.transform = "translateY(0%)"));
-    });
-
-    // Refresh ScrollTrigger
+  var handleResize = debounce(function () {
+    // Refresh ScrollTrigger positions after layout reflow.
+    // Word animations use once:true so they don't need to be re-run;
+    // ScrollTrigger.refresh() is enough to recalculate trigger offsets.
     if (window.ScrollTrigger) {
       window.ScrollTrigger.refresh(true);
     }
@@ -287,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 300);
 
-  window.addEventListener("resize", handleResize);
+  window.addEventListener("resize", handleResize, { passive: true });
 
   /* ══════════════════════════════════════════════
      7. REVEAL OBSERVER (Modular Generic Init)
@@ -295,15 +381,20 @@ document.addEventListener("DOMContentLoaded", function () {
   window.AppUtils.initRevealObserver = function () {
     const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
     const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
 
           // Handle stat counters if present inside or on the element itself
-          const statCounters = entry.target.querySelectorAll('.stat-number');
-          const countersToRun = statCounters.length > 0 ? Array.from(statCounters) : (entry.target.classList.contains('stat-number') ? [entry.target] : []);
+          const statCounters = entry.target.querySelectorAll(".stat-number");
+          const countersToRun =
+            statCounters.length > 0
+              ? Array.from(statCounters)
+              : entry.target.classList.contains("stat-number")
+                ? [entry.target]
+                : [];
 
-          countersToRun.forEach(statNumber => {
+          countersToRun.forEach((statNumber) => {
             if (!statNumber.dataset.counted) {
               statNumber.dataset.counted = "true";
               runCounter(statNumber);
@@ -338,13 +429,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mutation observer to catch dynamically added .reveal-item components
     const DOMObserver = new MutationObserver((mutations) => {
-      mutations.forEach(mutation => {
-        mutation.addedNodes.forEach(node => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
           if (node.nodeType === 1) {
-            if (node.classList.contains('reveal-item')) {
+            if (node.classList.contains("reveal-item")) {
               revealObserver.observe(node);
             }
-            node.querySelectorAll('.reveal-item').forEach(child => {
+            node.querySelectorAll(".reveal-item").forEach((child) => {
               revealObserver.observe(child);
             });
           }
@@ -354,9 +445,10 @@ document.addEventListener("DOMContentLoaded", function () {
     DOMObserver.observe(document.body, { childList: true, subtree: true });
 
     // Initial observe
-    document.querySelectorAll('.reveal-item').forEach(el => revealObserver.observe(el));
+    document
+      .querySelectorAll(".reveal-item")
+      .forEach((el) => revealObserver.observe(el));
   };
-
 
   /* ══════════════════════════════════════════════
      8. APP INITIALIZATION SEQUENCE
@@ -373,11 +465,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 800);
 
-  // Re-run animation setup when gsap is lazy-loaded later.
+  // Fallback: if GSAP was already loaded synchronously (e.g. inline script),
+  // attempt to init now. The _gsapInitDone guard makes repeated calls a no-op.
+  // The primary trigger is the performance-optimizer's Promise.all().then() callback.
   window.setTimeout(function () {
-    if (window.AppUtils) {
+    if (window.AppUtils && !_gsapInitDone) {
       window.AppUtils.initGenericGSAP();
     }
-  }, 1200);
-
+  }, 1500);
 });

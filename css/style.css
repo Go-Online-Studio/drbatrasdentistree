@@ -73,8 +73,42 @@ body {
   overflow-x: hidden;
 }
 
+/* ── GSAP Text-Reveal Animation Helpers ── */
+/* Each word is wrapped in .word-wrap (clips overflow) containing .word (slides in) */
+.word-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: inherit;
+}
+
+.word-wrap .word {
+  display: inline-block;
+  /* Initial state set by JS: transform: translateY(110%) */
+  /* will-change set by JS for GPU compositing */
+}
+
 section {
   overflow: hidden;
+}
+
+/* Initial hidden state to prevent FOUT (flash of unstyled/unanimated text) */
+.gsap-text-reveal,
+.gsap-fade-up {
+  opacity: 0;
+}
+
+/* Once GSAP successfully activates and splits, show the containers */
+.gsap-activated .gsap-text-reveal,
+.gsap-activated .gsap-fade-up {
+  opacity: 1;
+}
+
+/* Fallback: if loader is dismissed (fcp-ready) but GSAP failed to load/activate, restore visibility */
+.fcp-ready:not(.gsap-activated) .gsap-text-reveal,
+.fcp-ready:not(.gsap-activated) .gsap-fade-up {
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
 
 body.loading {
@@ -626,13 +660,14 @@ html.fcp-ready body.loading footer {
 }
 
 .split-hero-text h1, .split-hero-text h2 {
-  color: var(--text-dark);
+  color: var(--text-white);
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.15;
 }
 
-.split-hero-text h1 span, .split-hero-text h2 span {
+.split-hero-text h1 .word-accent,
+.split-hero-text h2 .word-accent {
   background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

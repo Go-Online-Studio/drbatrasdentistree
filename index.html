@@ -300,25 +300,28 @@
 }
 
 .split-hero-text h1, .split-hero-text h2 {
-  color: var(--text-dark);
+  color: var(--text-white);
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.15;
 }
 
-.split-hero-text h1 span, .split-hero-text h2 span {
+.split-hero-text h1 .word-accent,
+.split-hero-text h2 .word-accent {
   background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.swiper-slide h1,.swiper-slide .h1{
+/* Hero heading gradient: target only the accent span, NOT the JS word-wrap/word spans */
+.swiper-slide h1 .word-accent,
+.swiper-slide .h1 .word-accent {
   background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-} 
+}
 
 .split-hero-text p {
   font-size: 1.05rem;
@@ -1869,14 +1872,14 @@
       // Function to initialize Swipers specific to the Home page
       function initIndexSwipers() {
         if (typeof Swiper === "undefined") return;
-
+// autoplay: { delay: 5000, disableOnInteraction: false },
         // Hero Swiper
         const heroSwiperEl = document.querySelector(".heroSwiper");
         if (heroSwiperEl) {
           new Swiper(".heroSwiper", {
             loop: true,
             speed: 800,
-            autoplay: { delay: 5000, disableOnInteraction: false },
+            
             pagination: {
               el: ".heroSwiper .swiper-pagination",
               clickable: true,

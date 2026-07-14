@@ -26,23 +26,28 @@
   }
 
   function setupFastLoaderDismiss() {
-    const maxWait = 800;
+    const hasGsapReveal = document.querySelector(".gsap-fade-up, .gsap-text-reveal, [data-animate]");
+    // If GSAP is present, allow more time for GSAP to load and hide the loader.
+    // Otherwise, hide it quickly.
+    const maxWait = hasGsapReveal ? 2500 : 800;
     window.setTimeout(hideLoader, maxWait);
 
-    if ("PerformanceObserver" in window) {
-      try {
-        const po = new PerformanceObserver(function (list) {
-          if (list.getEntries().length > 0) {
-            hideLoader();
-            po.disconnect();
-          }
-        });
-        po.observe({ type: "paint", buffered: true });
-      } catch (_err) {
+    if (!hasGsapReveal) {
+      if ("PerformanceObserver" in window) {
+        try {
+          const po = new PerformanceObserver(function (list) {
+            if (list.getEntries().length > 0) {
+              hideLoader();
+              po.disconnect();
+            }
+          });
+          po.observe({ type: "paint", buffered: true });
+        } catch (_err) {
+          window.requestAnimationFrame(hideLoader);
+        }
+      } else {
         window.requestAnimationFrame(hideLoader);
       }
-    } else {
-      window.requestAnimationFrame(hideLoader);
     }
   }
 
@@ -55,17 +60,25 @@
   }
 
   function loadGSAPIfNeeded() {
-    if (state.gsapRequested || !window.LazyAssets) return;
-    if (!document.querySelector(".gsap-fade-up, .gsap-text-reveal, [data-animate]")) return;
+    if (state.gsapRequested || !window.LazyAssets) return Promise.resolve();
+    if (!document.querySelector(".gsap-fade-up, .gsap-text-reveal, [data-animate]")) return Promise.resolve();
     state.gsapRequested = true;
-    Promise.all([
-      window.LazyAssets.loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"),
-      window.LazyAssets.loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"),
-    ]).then(function () {
-      if (window.AppUtils && typeof window.AppUtils.initGenericGSAP === "function") {
-        window.AppUtils.initGenericGSAP();
-      }
-    }).catch(function () {});
+
+    // Load GSAP core first, then ScrollTrigger (order matters – ST needs window.gsap)
+    return window.LazyAssets.loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
+      .then(function () {
+        return window.LazyAssets.loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js");
+      })
+      .then(function () {
+        if (window.AppUtils && typeof window.AppUtils.initGenericGSAP === "function") {
+          window.AppUtils.initGenericGSAP();
+        }
+        // Defer hideLoader until GSAP is loaded and elements are split/styled!
+        hideLoader();
+      })
+      .catch(function () {
+        hideLoader(); // Fallback hide on failure
+      });
   }
 
   function loadIconifyIfNeeded() {
@@ -172,9 +185,15 @@
         navigator.serviceWorker.register("service-worker.js").catch(function () {});
       }, { once: true });
     }
-    whenIdle(function () {
+    
+    const hasGsapReveal = document.querySelector(".gsap-fade-up, .gsap-text-reveal, [data-animate]");
+    if (hasGsapReveal) {
       loadGSAPIfNeeded();
-    });
+    } else {
+      whenIdle(function () {
+        loadGSAPIfNeeded();
+      });
+    }
   }
 
   if (document.readyState === "loading") {
