@@ -570,9 +570,9 @@ html.fcp-ready body.loading footer {
   position: relative;
 }
 
-.offcanvas .nav-link iconify-icon {
+.offcanvas .nav-link svg {
   font-size: 12px;
-  margin-bottom: -3px;
+  margin-bottom: 4px;
 }
 
 .dropdown-toggle::after {
@@ -623,7 +623,7 @@ html.fcp-ready body.loading footer {
    ============================================== */
 
 .split-hero-section{
-  background: linear-gradient(#00000067,#00000067), url('../img/BannerBackHoem.webp') center/cover no-repeat;
+  background: linear-gradient(#00000067,#00000067), url('../img/BannerBackHoem.avif') center/cover no-repeat;
 }
 
 .heroSwiper {
