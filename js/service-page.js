@@ -1,564 +1,69 @@
-/* ==============================================
-   SERVICE PAGE RENDERER
-   Reads data-service-id from <body>, fetches JSON,
-   populates page sections, and initializes GSAP.
-   ============================================== */
-(function () {
-  "use strict";
-
-  const SERVICE_DATA_URL = "data/serviceMainPagesData.json";
-
-  /* --- Utility: Debounce --- */
-  function debounce(fn, delay) {
-    let timer;
-    return function () {
-      clearTimeout(timer);
-      timer = setTimeout(fn, delay);
-    };
-  }
-
-  /* --- Utility: Get Service ID --- */
-  function getServiceId() {
-    return document.body.getAttribute("data-service-id");
-  }
-
-  /* --- Fetch Service Data --- */
-  async function fetchServiceData(serviceId) {
-    try {
-      const res = await fetch(SERVICE_DATA_URL);
-      if (!res.ok) throw new Error("Failed to fetch service data");
-      const data = await res.json();
-      return data.find((s) => s.id === serviceId) || null;
-    } catch (err) {
-      console.error("[ServicePage] Error fetching data:", err);
-      return null;
-    }
-  }
-
-  /* --- Populate Intro Section --- */
-  function renderIntro(data) {
-    const el = document.getElementById("serviceIntro");
-    if (!el || !data.intro) return;
-
-    const paragraphs = (data.intro.paragraphs || [])
-      .map((p) => `<p class="reveal-item">${p}</p>`)
-      .join("");
-
-    el.innerHTML = paragraphs;
-  }
-
-  /* --- Populate Benefits (advantage-card grid) --- */
-  function renderBenefits(data) {
-    const el = document.getElementById("benefitsList");
-    if (!el || !data.benefits || !data.benefits.length) {
-      const section = document.getElementById("benefitsSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    el.innerHTML = data.benefits
-      .map(
-        (b, i) => `
-      <div class="col-md-6 mb-4">
-        <div class="advantage-card reveal-item">
-          <div class="adv-num">${String(i + 1).padStart(2, "0")}</div>
-          <div>
-            <h6>${b.title}</h6>
-            <p>${b.desc}</p>
-          </div>
-        </div>
-      </div>
-    `,
-      )
-      .join("");
-  }
-
-  /* --- Populate Steps (process-step) --- */
-  function renderSteps(data) {
-    const el = document.getElementById("stepsList");
-    if (!el || !data.steps || !data.steps.length) {
-      const section = document.getElementById("stepsSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    /* Preserve the process-connector, append step columns */
-    const connector = el.querySelector(".process-connector");
-    const stepsHTML = data.steps
-      .map(
-        (s, i) => `
-      <div class="col-md-3 col-sm-6 mb-4">
-        <div class="process-step reveal-item">
-          <div class="step-number">${i + 1}</div>
-          <h5>${s.title}</h5>
-          <p>${s.desc}</p>
-        </div>
-      </div>
-    `,
-      )
-      .join("");
-
-    if (connector) {
-      connector.insertAdjacentHTML("afterend", stepsHTML);
-    } else {
-      el.innerHTML = stepsHTML;
-    }
-  }
-
-  /* --- Populate Features (usecase-card) --- */
-  function renderFeatures(data) {
-    const el = document.getElementById("featuresList");
-    if (!el || !data.features || !data.features.length) {
-      const section = document.getElementById("featuresSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    el.innerHTML = data.features
-      .map(
-        (f) => `
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="usecase-card reveal-item">
-          ${
-            f.image
-              ? `<img src="${f.image}" alt="${f.title}" class="img-fluid rounded mb-3" />`
-              : `<div class="uc-icon"><iconify-icon icon="${f.icon}" width="32" height="32"></iconify-icon></div>`
-          }
-          <h5>${f.title}</h5>
-          <p>${f.desc}</p>
-        </div>
-      </div>
-    `,
-      )
-      .join("");
-  }
-
-  /* --- Populate Aligners (usecase-card) --- */
-  function renderAligners(data) {
-    const el = document.getElementById("alignersList");
-    if (!el || !data.alignersFeatures || !data.alignersFeatures.length) {
-      const section = document.getElementById("alignersSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    el.innerHTML = data.alignersFeatures
-      .map(
-        (f) => `
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="usecase-card reveal-item">
-          ${
-            f.image
-              ? `<img src="${f.image}" alt="${f.title}" class="img-fluid rounded mb-3" />`
-              : `<div class="uc-icon"><iconify-icon icon="${f.icon}" width="32" height="32"></iconify-icon></div>`
-          }
-          <h5>${f.title}</h5>
-          <p>${f.desc}</p>
-        </div>
-      </div>
-    `,
-      )
-      .join("");
-  }
-
-  /* --- Populate Demographics --- */
-  function renderDemographics(data) {
-    const el = document.getElementById("demographicsList");
-    if (!el || !data.treatmentsByAge || !data.treatmentsByAge.length) {
-      const section = document.getElementById("demographicsSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    el.innerHTML = data.treatmentsByAge
-      .map(
-        (t) => `
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="usecase-card reveal-item">
-          ${t.image ? `<img src="${t.image}" alt="${t.title}" class="img-fluid rounded mb-3" />` : ""}
-          <h5>${t.title}</h5>
-          <p>${t.desc}</p>
-        </div>
-      </div>
-    `,
-      )
-      .join("");
-  }
-
-  /* --- Populate FAQs (accordion) --- */
-  function renderFAQs(data) {
-    const el = document.getElementById("faqList");
-    if (!el || !data.faqs || !data.faqs.length) {
-      const section = document.getElementById("faqSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    const serviceId = data.id;
-    el.innerHTML = data.faqs
-      .map((faq, i) => {
-        const collapseId = `faq-${serviceId}-${i}`;
-        const isFirst = i === 0;
-        return `
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button ${isFirst ? "" : "collapsed"}" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${isFirst}">
-              ${faq.q}
-            </button>
-          </h2>
-          <div id="${collapseId}" class="accordion-collapse collapse ${isFirst ? "show" : ""}" data-bs-parent="#faqList">
-            <div class="accordion-body">${faq.a}</div>
-          </div>
-        </div>
-      `;
-      })
-      .join("");
-  }
-
-  /* --- Populate CTA --- */
-  function renderCTA(data) {
-    const heading = document.getElementById("ctaHeading");
-    const desc = document.getElementById("ctaDesc");
-    const btn = document.getElementById("ctaButton");
-
-    if (!data.cta) return;
-    if (heading) heading.innerHTML = data.cta.heading;
-    if (desc) desc.textContent = data.cta.desc;
-    if (btn) {
-      btn.textContent = data.cta.buttonText;
-      btn.href = data.cta.buttonLink;
-    }
-  }
-
-  /* --- Populate Related Services --- */
-  async function renderRelated(data, allServices) {
-    const el = document.getElementById("relatedGrid");
-    if (!el || !data.relatedServices || !data.relatedServices.length) {
-      const section = document.getElementById("relatedSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    const relatedItems = data.relatedServices
-      .map((id) => allServices.find((s) => s.id === id))
-      .filter(Boolean);
-
-    if (!relatedItems.length) {
-      const section = document.getElementById("relatedSection");
-      if (section) section.style.display = "none";
-      return;
-    }
-
-    el.innerHTML = relatedItems
-      .map(
-        (service) => `
+!function(){"use strict";let e="data/serviceMainPagesData.json";async function t(t){try{let i=await fetch(e);if(!i.ok)throw Error("Failed to fetch service data");let a=await i.json();return a.find(e=>e.id===t)||null}catch(n){return console.error("[ServicePage] Error fetching data:",n),null}}async function i(e,t){let i=document.getElementById("relatedGrid");if(!i||!e.relatedServices||!e.relatedServices.length){let a=document.getElementById("relatedSection");a&&(a.style.display="none");return}let n=e.relatedServices.map(e=>t.find(t=>t.id===e)).filter(Boolean);if(!n.length){let r=document.getElementById("relatedSection");r&&(r.style.display="none");return}i.innerHTML=n.map(e=>`
       <div class="col-lg-4 col-md-6 mb-4">
-        <a href="${service.id}.html" class="text-decoration-none">
+        <a href="${e.id}.html" class="text-decoration-none">
           <div class="service-card reveal-item h-100">
             <div class="card-icon">
-              <iconify-icon icon="${service.hero.subtitleIcon || "ph:tooth-bold"}" width="48" height="48"></iconify-icon>
+              <iconify-icon icon="${e.hero.subtitleIcon||"ph:tooth-bold"}" width="48" height="48"></iconify-icon>
             </div>
-            <h5>${service.title}</h5>
-            <p class="card-desc">${service.intro.paragraphs[0].substring(0, 120)}...</p>
+            <h5>${e.title}</h5>
+            <p class="card-desc">${e.intro.paragraphs[0].substring(0,120)}...</p>
             <span class="know-more">
               Learn More <iconify-icon icon="ph:arrow-right-bold" width="16"></iconify-icon>
             </span>
           </div>
         </a>
       </div>
-    `,
-      )
-      .join("");
-  }
-
-  /* --- Insert Schema Markup --- */
-  function renderSchema(data) {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "MedicalProcedure",
-      name: data.title,
-      description: data.metaDescription,
-      url: `https://drbatrasdentistree.in/${data.id}.html`,
-      procedureType: "http://schema.org/TherapeuticProcedure",
-      performedBy: {
-        "@type": "Dentist",
-        "@id": "https://drbatrasdentistree.in/#dentist",
-        name: "Dr. Batra's Dentistree",
-        url: "https://drbatrasdentistree.in/",
-        telephone: ["+919879625787", "+919825007975"],
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "FF-145, S9 Square, Opp. Lotus Aura, Sama-Savli Road, Vemali",
-          addressLocality: "Vadodara",
-          addressRegion: "Gujarat",
-          postalCode: "390008",
-          addressCountry: "IN",
-        },
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: 22.3544478,
-          longitude: 73.1992098,
-        },
-      },
-    };
-
-    // FAQ Schema
-    if (data.faqs && data.faqs.length) {
-      const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: data.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.a,
-          },
-        })),
-      };
-
-      const faqScript = document.createElement("script");
-      faqScript.type = "application/ld+json";
-      faqScript.textContent = JSON.stringify(faqSchema);
-      document.head.appendChild(faqScript);
-    }
-
-    const procScript = document.createElement("script");
-    procScript.type = "application/ld+json";
-    procScript.textContent = JSON.stringify(schema);
-    document.head.appendChild(procScript);
-  }
-
-  /* --- GSAP Animation Init --- */
-  function initServiceGSAP() {
-    /* Call global text reveal only — do NOT call initRevealObserver here.
-       IntersectionObserver from script.js adds .is-visible but its CSS
-       sets opacity:1 via a class, which conflicts with GSAP inline opacity:0.
-       We handle all reveal animations below via GSAP exclusively. */
-    if (
-      window.AppUtils &&
-      typeof window.AppUtils.initGenericGSAP === "function"
-    ) {
-      window.AppUtils.initGenericGSAP();
-    }
-
-    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined")
-      return;
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    /* Helper: build a ScrollTrigger gsap.fromTo() that always finishes cleanly.
-       Using fromTo() instead of from() guarantees the "to" end-state is always
-       applied, even if the element is already in-view when the trigger fires. */
-    function animateIn(
-      targets,
-      fromVars,
-      { stagger = 0.1, triggerEl, start = "top 90%" } = {},
-    ) {
-      const toVars = {
-        opacity: 1,
-        y: 0,
-        x: 0,
-        scale: 1,
-        duration: fromVars.duration || 0.6,
-        ease: fromVars.ease || "power2.out",
-        clearProps: "all" /* remove inline styles so CSS takes over */,
-        stagger: stagger,
-        scrollTrigger: {
-          trigger: triggerEl || (Array.isArray(targets) ? targets[0] : targets),
-          start: start,
-          once: true /* fire once and never re-animate */,
-        },
-      };
-
-      const from = Object.assign(
-        { opacity: 0, y: 0, x: 0, scale: 1 },
-        fromVars,
-      );
-      delete from.duration;
-      delete from.ease;
-
-      // Prevent CSS transitions from fighting GSAP by stripping the classes
-      const elementArray = Array.isArray(targets) ? targets : [targets];
-      elementArray.forEach((el) => {
-        el.classList.remove("reveal-item", "is-visible");
-      });
-
-      gsap.fromTo(targets, from, toVars);
-    }
-
-    /* --- Advantage Cards (benefits grid) --- */
-    const advCards = gsap.utils.toArray(".advantage-card");
-    if (advCards.length) {
-      animateIn(
-        advCards,
-        { y: 40, opacity: 0, duration: 0.65 },
-        {
-          stagger: 0.1,
-          triggerEl: advCards[0],
-          start: "top 90%",
-        },
-      );
-    }
-
-    /* --- Usecase / Feature Cards --- */
-    const ucCards = gsap.utils.toArray("#featuresList .usecase-card");
-    if (ucCards.length) {
-      animateIn(
-        ucCards,
-        { y: 40, opacity: 0, scale: 0.95, duration: 0.65 },
-        {
-          stagger: 0.12,
-          triggerEl: ucCards[0],
-          start: "top 88%",
-        },
-      );
-    }
-
-    /* --- Aligner Cards --- */
-    const alignerCards = gsap.utils.toArray("#alignersList .usecase-card");
-    if (alignerCards.length) {
-      animateIn(
-        alignerCards,
-        { y: 40, opacity: 0, scale: 0.95, duration: 0.65 },
-        {
-          stagger: 0.12,
-          triggerEl: alignerCards[0],
-          start: "top 88%",
-        },
-      );
-    }
-
-    /* --- Demographics Cards --- */
-    const demoCards = gsap.utils.toArray("#demographicsList .usecase-card");
-    if (demoCards.length) {
-      animateIn(
-        demoCards,
-        { y: 40, opacity: 0, scale: 0.95, duration: 0.65 },
-        {
-          stagger: 0.12,
-          triggerEl: demoCards[0],
-          start: "top 88%",
-        },
-      );
-    }
-
-    /* --- Process Steps --- */
-    const steps = gsap.utils.toArray(".process-step");
-    if (steps.length) {
-      animateIn(
-        steps,
-        { y: 30, opacity: 0, duration: 0.55 },
-        {
-          stagger: 0.15,
-          triggerEl: steps[0],
-          start: "top 90%",
-        },
-      );
-    }
-
-    /* --- FAQ Accordion Items --- */
-    const faqItems = gsap.utils.toArray(".faq-accordion .accordion-item");
-    if (faqItems.length) {
-      animateIn(
-        faqItems,
-        { x: -30, opacity: 0, duration: 0.5 },
-        {
-          stagger: 0.08,
-          triggerEl: faqItems[0],
-          start: "top 92%",
-        },
-      );
-    }
-
-    /* --- Related Service Cards --- */
-    const relCards = gsap.utils.toArray("#relatedGrid .service-card");
-    if (relCards.length) {
-      animateIn(
-        relCards,
-        { y: 40, opacity: 0, duration: 0.65 },
-        {
-          stagger: 0.12,
-          triggerEl: relCards[0],
-          start: "top 90%",
-        },
-      );
-    }
-
-    /* --- Reveal items injected by JS (paragraphs, etc.) --- */
-    const revealItems = gsap.utils.toArray("#serviceIntro .reveal-item");
-    if (revealItems.length) {
-      animateIn(
-        revealItems,
-        { y: 24, opacity: 0, duration: 0.55 },
-        {
-          stagger: 0.1,
-          triggerEl: revealItems[0],
-          start: "top 92%",
-        },
-      );
-    }
-
-    /* Refresh once after all tweens are set, then listen for resize */
-    ScrollTrigger.refresh();
-
-    window.addEventListener(
-      "resize",
-      debounce(() => {
-        ScrollTrigger.refresh();
-      }, 300),
-    );
-  }
-
-  /* --- Main Init --- */
-  async function init() {
-    const serviceId = getServiceId();
-    if (!serviceId) {
-      console.warn("[ServicePage] No data-service-id found on <body>");
-      return;
-    }
-
-    let allServices;
-    try {
-      const res = await fetch(SERVICE_DATA_URL);
-      allServices = await res.json();
-    } catch (err) {
-      console.error("[ServicePage] Failed to fetch service data:", err);
-      return;
-    }
-
-    const data = allServices.find((s) => s.id === serviceId);
-    if (!data) {
-      console.warn(`[ServicePage] Service "${serviceId}" not found in data`);
-      return;
-    }
-
-    /* Populate all sections first */
-    renderIntro(data);
-    renderBenefits(data);
-    renderSteps(data);
-    renderFeatures(data);
-    renderAligners(data);
-    renderDemographics(data);
-    renderFAQs(data);
-    renderCTA(data);
-    renderSchema(data);
-    await renderRelated(data, allServices);
-
-    /* Wait for layout to settle (2 frames + 300ms) before measuring positions
-       and setting up ScrollTrigger. This prevents the "stuck at opacity:0"
-       bug caused by GSAP measuring elements before they have layout. */
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        setTimeout(initServiceGSAP, 300);
-      });
-    });
-  }
-
-  /* --- Boot --- */
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
+    `).join("")}function a(){var e;if(window.AppUtils&&"function"==typeof window.AppUtils.initGenericGSAP&&window.AppUtils.initGenericGSAP(),"undefined"==typeof gsap||"undefined"==typeof ScrollTrigger)return;function t(e,t,{stagger:i=.1,triggerEl:a,start:n="top 90%"}={}){let r={opacity:1,y:0,x:0,scale:1,duration:t.duration||.6,ease:t.ease||"power2.out",clearProps:"all",stagger:i,scrollTrigger:{trigger:a||(Array.isArray(e)?e[0]:e),start:n,once:!0}},s=Object.assign({opacity:0,y:0,x:0,scale:1},t);delete s.duration,delete s.ease;let l=Array.isArray(e)?e:[e];l.forEach(e=>{e.classList.remove("reveal-item","is-visible")}),gsap.fromTo(e,s,r)}gsap.registerPlugin(ScrollTrigger);let i=gsap.utils.toArray(".advantage-card");i.length&&t(i,{y:40,opacity:0,duration:.65},{stagger:.1,triggerEl:i[0],start:"top 90%"});let a=gsap.utils.toArray("#featuresList .usecase-card");a.length&&t(a,{y:40,opacity:0,scale:.95,duration:.65},{stagger:.12,triggerEl:a[0],start:"top 88%"});let n=gsap.utils.toArray("#alignersList .usecase-card");n.length&&t(n,{y:40,opacity:0,scale:.95,duration:.65},{stagger:.12,triggerEl:n[0],start:"top 88%"});let r=gsap.utils.toArray("#demographicsList .usecase-card");r.length&&t(r,{y:40,opacity:0,scale:.95,duration:.65},{stagger:.12,triggerEl:r[0],start:"top 88%"});let s=gsap.utils.toArray(".process-step");s.length&&t(s,{y:30,opacity:0,duration:.55},{stagger:.15,triggerEl:s[0],start:"top 90%"});let l=gsap.utils.toArray(".faq-accordion .accordion-item");l.length&&t(l,{x:-30,opacity:0,duration:.5},{stagger:.08,triggerEl:l[0],start:"top 92%"});let o=gsap.utils.toArray("#relatedGrid .service-card");o.length&&t(o,{y:40,opacity:0,duration:.65},{stagger:.12,triggerEl:o[0],start:"top 90%"});let d=gsap.utils.toArray("#serviceIntro .reveal-item");d.length&&t(d,{y:24,opacity:0,duration:.55},{stagger:.1,triggerEl:d[0],start:"top 92%"}),ScrollTrigger.refresh();let c;window.addEventListener("resize",(e=()=>{ScrollTrigger.refresh()},function(){clearTimeout(c),c=setTimeout(e,300)}))}async function n(){let t=document.body.getAttribute("data-service-id");if(!t){console.warn("[ServicePage] No data-service-id found on <body>");return}let n;try{let r=await fetch(e);n=await r.json()}catch(s){console.error("[ServicePage] Failed to fetch service data:",s);return}let l=n.find(e=>e.id===t);if(!l){console.warn(`[ServicePage] Service "${t}" not found in data`);return}!function e(t){let i=document.getElementById("serviceIntro");if(!i||!t.intro)return;let a=(t.intro.paragraphs||[]).map(e=>`<p class="reveal-item">${e}</p>`).join("");i.innerHTML=a}(l),function e(t){let i=document.getElementById("benefitsList");if(!i||!t.benefits||!t.benefits.length){let a=document.getElementById("benefitsSection");a&&(a.style.display="none");return}i.innerHTML=t.benefits.map((e,t)=>`
+      <div class="col-md-6 mb-4">
+        <div class="advantage-card reveal-item">
+          <div class="adv-num">${String(t+1).padStart(2,"0")}</div>
+          <div>
+            <h6>${e.title}</h6>
+            <p>${e.desc}</p>
+          </div>
+        </div>
+      </div>
+    `).join("")}(l),function e(t){let i=document.getElementById("stepsList");if(!i||!t.steps||!t.steps.length){let a=document.getElementById("stepsSection");a&&(a.style.display="none");return}let n=i.querySelector(".process-connector"),r=t.steps.map((e,t)=>`
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="process-step reveal-item">
+          <div class="step-number">${t+1}</div>
+          <h5>${e.title}</h5>
+          <p>${e.desc}</p>
+        </div>
+      </div>
+    `).join("");n?n.insertAdjacentHTML("afterend",r):i.innerHTML=r}(l),function e(t){let i=document.getElementById("featuresList");if(!i||!t.features||!t.features.length){let a=document.getElementById("featuresSection");a&&(a.style.display="none");return}i.innerHTML=t.features.map(e=>`
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="usecase-card reveal-item">
+          ${e.image?`<img src="${e.image}" alt="${e.title}" class="img-fluid rounded mb-3" />`:`<div class="uc-icon"><iconify-icon icon="${e.icon}" width="32" height="32"></iconify-icon></div>`}
+          <h5>${e.title}</h5>
+          <p>${e.desc}</p>
+        </div>
+      </div>
+    `).join("")}(l),function e(t){let i=document.getElementById("alignersList");if(!i||!t.alignersFeatures||!t.alignersFeatures.length){let a=document.getElementById("alignersSection");a&&(a.style.display="none");return}i.innerHTML=t.alignersFeatures.map(e=>`
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="usecase-card reveal-item">
+          ${e.image?`<img src="${e.image}" alt="${e.title}" class="img-fluid rounded mb-3" />`:`<div class="uc-icon"><iconify-icon icon="${e.icon}" width="32" height="32"></iconify-icon></div>`}
+          <h5>${e.title}</h5>
+          <p>${e.desc}</p>
+        </div>
+      </div>
+    `).join("")}(l),function e(t){let i=document.getElementById("demographicsList");if(!i||!t.treatmentsByAge||!t.treatmentsByAge.length){let a=document.getElementById("demographicsSection");a&&(a.style.display="none");return}i.innerHTML=t.treatmentsByAge.map(e=>`
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="usecase-card reveal-item">
+          ${e.image?`<img src="${e.image}" alt="${e.title}" class="img-fluid rounded mb-3" />`:""}
+          <h5>${e.title}</h5>
+          <p>${e.desc}</p>
+        </div>
+      </div>
+    `).join("")}(l),function e(t){let i=document.getElementById("faqList");if(!i||!t.faqs||!t.faqs.length){let a=document.getElementById("faqSection");a&&(a.style.display="none");return}let n=t.id;i.innerHTML=t.faqs.map((e,t)=>{let i=`faq-${n}-${t}`,a=0===t;return`
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button ${a?"":"collapsed"}" type="button" data-bs-toggle="collapse" data-bs-target="#${i}" aria-expanded="${a}">
+              ${e.q}
+            </button>
+          </h2>
+          <div id="${i}" class="accordion-collapse collapse ${a?"show":""}" data-bs-parent="#faqList">
+            <div class="accordion-body">${e.a}</div>
+          </div>
+        </div>
+      `}).join("")}(l),function e(t){let i=document.getElementById("ctaHeading"),a=document.getElementById("ctaDesc"),n=document.getElementById("ctaButton");t.cta&&(i&&(i.innerHTML=t.cta.heading),a&&(a.textContent=t.cta.desc),n&&(n.textContent=t.cta.buttonText,n.href=t.cta.buttonLink))}(l),function e(t){let i={"@context":"https://schema.org","@type":"MedicalProcedure",name:t.title,description:t.metaDescription,url:`https://drbatrasdentistree.in/${t.id}.html`,procedureType:"http://schema.org/TherapeuticProcedure",performedBy:{"@type":"Dentist","@id":"https://drbatrasdentistree.in/#dentist",name:"Dr. Batra's Dentistree",url:"https://drbatrasdentistree.in/",telephone:["+919879625787","+919825007975"],address:{"@type":"PostalAddress",streetAddress:"FF-145, S9 Square, Opp. Lotus Aura, Sama-Savli Road, Vemali",addressLocality:"Vadodara",addressRegion:"Gujarat",postalCode:"390008",addressCountry:"IN"},geo:{"@type":"GeoCoordinates",latitude:22.3544478,longitude:73.1992098}}};if(t.faqs&&t.faqs.length){let a={"@context":"https://schema.org","@type":"FAQPage",mainEntity:t.faqs.map(e=>({"@type":"Question",name:e.q,acceptedAnswer:{"@type":"Answer",text:e.a}}))},n=document.createElement("script");n.type="application/ld+json",n.textContent=JSON.stringify(a),document.head.appendChild(n)}let r=document.createElement("script");r.type="application/ld+json",r.textContent=JSON.stringify(i),document.head.appendChild(r)}(l),await i(l,n),requestAnimationFrame(()=>{requestAnimationFrame(()=>{setTimeout(a,300)})})}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",n):n()}();

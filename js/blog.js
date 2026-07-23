@@ -1,58 +1,19 @@
-/* ==============================================
-   BLOG.JS - Blog Listing Page Logic
-   Dr. Batra's Dentistree
-   ============================================== */
-(function () {
-  "use strict";
-
-  const BLOG_DATA_URL = "data/blogsData.json";
-  const POSTS_PER_PAGE = 6;
-
-  let allBlogs = [];
-  let filteredBlogs = [];
-  let currentPage = 1;
-  let activeCategory = "all";
-  let searchQuery = "";
-
-  /* --- Fetch Blog Data --- */
-  async function fetchBlogs() {
-    try {
-      const res = await fetch(BLOG_DATA_URL);
-      if (!res.ok) throw new Error("Failed to fetch blog data");
-      allBlogs = await res.json();
-      filteredBlogs = [...allBlogs];
-      renderBlogs();
-      initFilters();
-      initSearch();
-    } catch (err) {
-      console.error("[Blog] Error:", err);
-    }
-  }
-
-  /* --- Format Date --- */
-  function formatDate(dateStr) {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString("gu-IN", { year: "numeric", month: "long", day: "numeric" });
-  }
-
-  /* --- Create Blog Card HTML --- */
-  function createBlogCard(blog) {
-    return `
-      <div class="col-lg-4 col-md-6" data-category="${blog.category}">
-        <a href="blog-post.html?slug=${blog.slug}" class="blog-card reveal-item" style="position:relative; display:flex;">
+!function(){"use strict";let t=[],e=[],l=1,i="all",a="";async function n(){try{let l=await fetch("data/blogsData.json");if(!l.ok)throw Error("Failed to fetch blog data");e=[...t=await l.json()],c(),function t(){let e=document.getElementById("blogFilterBar");e&&e.addEventListener("click",function(t){let l=t.target.closest(".filter-btn");l&&(e.querySelectorAll(".filter-btn").forEach(function(t){t.classList.remove("active")}),l.classList.add("active"),i=l.dataset.category,s())})}(),function t(){let e=document.getElementById("blogSearch");if(!e)return;let l;e.addEventListener("input",function(){clearTimeout(l),l=setTimeout(function(){a=e.value.trim().toLowerCase(),s()},300)})}()}catch(n){console.error("[Blog] Error:",n)}}function o(t){return`
+      <div class="col-lg-4 col-md-6" data-category="${t.category}">
+        <a href="blog-post.html?slug=${t.slug}" class="blog-card reveal-item" style="position:relative; display:flex;">
           <div class="blog-card-img">
-            <img src="${blog.featuredImage}" alt="${blog.title}" loading="lazy" width="400" height="250" class="img-loading-state" onload="this.classList.remove('img-loading-state'); this.classList.add('img-loaded-state');">
-            <span class="blog-card-category">${blog.categoryLabel}</span>
+            <img src="${t.featuredImage}" alt="${t.title}" loading="lazy" width="400" height="250" class="img-loading-state" onload="this.classList.remove('img-loading-state'); this.classList.add('img-loaded-state');">
+            <span class="blog-card-category">${t.categoryLabel}</span>
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span><iconify-icon icon="ph:calendar-bold" width="14"></iconify-icon> ${formatDate(blog.publishDate)}</span>
-              <span><iconify-icon icon="ph:clock-bold" width="14"></iconify-icon> ${blog.readingTime}</span>
+              <span><iconify-icon icon="ph:calendar-bold" width="14"></iconify-icon> ${function t(e){let l=new Date(e);return l.toLocaleDateString("gu-IN",{year:"numeric",month:"long",day:"numeric"})}(t.publishDate)}</span>
+              <span><iconify-icon icon="ph:clock-bold" width="14"></iconify-icon> ${t.readingTime}</span>
             </div>
-            <h3 class="blog-card-title">${blog.title}</h3>
-            <p class="blog-card-excerpt">${blog.excerpt}</p>
+            <h3 class="blog-card-title">${t.title}</h3>
+            <p class="blog-card-excerpt">${t.excerpt}</p>
             <div class="blog-card-footer">
-              <span class="blog-card-author">${blog.author}</span>
+              <span class="blog-card-author">${t.author}</span>
               <span class="blog-card-readmore">
                 Read More <iconify-icon icon="ph:arrow-right-bold" width="14"></iconify-icon>
               </span>
@@ -60,104 +21,4 @@
           </div>
         </a>
       </div>
-    `;
-  }
-
-  /* --- Render Blogs --- */
-  function renderBlogs() {
-    const grid = document.getElementById("blogGrid");
-    const noResults = document.getElementById("blogNoResults");
-    const loadMoreWrap = document.getElementById("blogLoadMore");
-    if (!grid) return;
-
-    const end = currentPage * POSTS_PER_PAGE;
-    const visible = filteredBlogs.slice(0, end);
-
-    if (visible.length === 0) {
-      grid.innerHTML = "";
-      noResults.style.display = "block";
-      loadMoreWrap.style.display = "none";
-      return;
-    }
-
-    noResults.style.display = "none";
-    grid.innerHTML = visible.map(createBlogCard).join("");
-
-    // Show/hide load more
-    if (end < filteredBlogs.length) {
-      loadMoreWrap.style.display = "block";
-    } else {
-      loadMoreWrap.style.display = "none";
-    }
-
-    // Re-init reveal observer for new cards
-    if (window.AppUtils && window.AppUtils.initRevealObserver) {
-      // The MutationObserver in script.js will auto-detect new .reveal-item elements
-    }
-  }
-
-  /* --- Filter Logic --- */
-  function applyFilters() {
-    currentPage = 1;
-    filteredBlogs = allBlogs.filter(function (blog) {
-      const matchCategory = activeCategory === "all" || blog.category === activeCategory;
-      const matchSearch = !searchQuery ||
-        blog.title.toLowerCase().includes(searchQuery) ||
-        blog.excerpt.toLowerCase().includes(searchQuery) ||
-        blog.title.includes(searchQuery); // Gujarati search (no toLowerCase needed for Unicode)
-      return matchCategory && matchSearch;
-    });
-    renderBlogs();
-  }
-
-  function initFilters() {
-    const filterBar = document.getElementById("blogFilterBar");
-    if (!filterBar) return;
-
-    filterBar.addEventListener("click", function (e) {
-      const btn = e.target.closest(".filter-btn");
-      if (!btn) return;
-
-      filterBar.querySelectorAll(".filter-btn").forEach(function (b) { b.classList.remove("active"); });
-      btn.classList.add("active");
-      activeCategory = btn.dataset.category;
-      applyFilters();
-    });
-  }
-
-  function initSearch() {
-    const searchInput = document.getElementById("blogSearch");
-    if (!searchInput) return;
-
-    let debounceTimer;
-    searchInput.addEventListener("input", function () {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(function () {
-        searchQuery = searchInput.value.trim().toLowerCase();
-        applyFilters();
-      }, 300);
-    });
-  }
-
-  /* --- Load More --- */
-  function initLoadMore() {
-    const btn = document.getElementById("loadMoreBtn");
-    if (!btn) return;
-    btn.addEventListener("click", function () {
-      currentPage++;
-      renderBlogs();
-    });
-  }
-
-  /* --- Init --- */
-  function init() {
-    fetchBlogs();
-    initLoadMore();
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
+    `}function c(){let t=document.getElementById("blogGrid"),i=document.getElementById("blogNoResults"),a=document.getElementById("blogLoadMore");if(!t)return;let n=6*l,c=e.slice(0,n);if(0===c.length){t.innerHTML="",i.style.display="block",a.style.display="none";return}i.style.display="none",t.innerHTML=c.map(o).join(""),n<e.length?a.style.display="block":a.style.display="none",window.AppUtils&&window.AppUtils.initRevealObserver}function s(){l=1,e=t.filter(function(t){let e="all"===i||t.category===i,l=!a||t.title.toLowerCase().includes(a)||t.excerpt.toLowerCase().includes(a)||t.title.includes(a);return e&&l}),c()}function r(){n(),function t(){let e=document.getElementById("loadMoreBtn");e&&e.addEventListener("click",function(){l++,c()})}()}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",r):r()}();
