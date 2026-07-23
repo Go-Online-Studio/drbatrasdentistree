@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -9,6 +9,22 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18324843209');
+</script>
+
+<!-- Google Ads Conversion Script -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18324843209/e_BOCOrXptMcEMnV-6FE',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -621,6 +637,16 @@
     }, 1300);
 
     window.addEventListener("resize", debounce(() => { ScrollTrigger.refresh(); }, 300));
+
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+      contactForm.addEventListener("submit", function () {
+        if (contactForm.checkValidity() && typeof window.gtag_report_conversion === 'function') {
+          // Call without URL to prevent page redirect, preserving WhatsApp functionality
+          window.gtag_report_conversion();
+        }
+      });
+    }
   });
   </script>
 </body>
