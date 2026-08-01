@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded",function(){"use strict";window.gsap
                 
                 <a href="https://maps.app.goo.gl/PkRdWAydQGrwxQ2y6" target="_blank" style="color:rgba(255,255,255,0.85); text-decoration: none;">
                   FF- 145, S9 Square, Opp. Lotus Aura,<br>
-                  Near Lillleria Party Plot, Above Patanjali Store,<br>
+                  Near Lilleria Party Plot, Above Patanjali Store,<br>
                   Sama-Savli Road, Vemali, Vadodara-390008
                 </a>
               </div>
