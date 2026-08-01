@@ -10,6 +10,23 @@
 
   gtag('config', 'AW-18324843209');
 </script>
+
+<!-- Google Ads Conversion Script -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.open(url, '_blank');
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18324843209/e_BOCOrXptMcEMnV-6FE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Dr. Batra's Dentistree - Vadodara</title>
@@ -642,7 +659,6 @@
           <div class="gallery-overlay"><iconify-icon icon="ph:magnifying-glass-plus-bold"></iconify-icon></div>
         </a>
 
-
       </div>
     </div>
   </section>
@@ -758,8 +774,6 @@
   </script>
 </body>
 </html>
-
-
 
 
 

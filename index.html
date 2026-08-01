@@ -17,7 +17,7 @@
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
-      window.location = url;
+      window.open(url, '_blank');
     }
   };
   gtag('event', 'conversion', {
@@ -27,6 +27,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Batra's Dentistree | Premium Dental Care in Vadodara</title>
